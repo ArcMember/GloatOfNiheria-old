@@ -1,0 +1,351 @@
+<!DOCTYPE HTML>
+<html lang="ru" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Сводки за 10 гЭР - Злорадство Нихерии</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../custom.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <script src="../../../tools.js"></script>
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Содержание">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../../index.html"><strong aria-hidden="true">1.</strong> Меню</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/manual.html"><strong aria-hidden="true">1.1.</strong> Руководство</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/manual/quick-start.html"><strong aria-hidden="true">1.1.1.</strong> Быстрый старт</a></li><li class="chapter-item "><a href="../../../menu/manual/about.html"><strong aria-hidden="true">1.1.2.</strong> О ролевой</a></li><li class="chapter-item "><a href="../../../menu/manual/rules.html"><strong aria-hidden="true">1.1.3.</strong> Правила</a></li><li class="chapter-item "><a href="../../../menu/manual/templates.html"><strong aria-hidden="true">1.1.4.</strong> Шаблоны</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/manual/templates/quenta.html"><strong aria-hidden="true">1.1.4.1.</strong> Анкета</a></li><li class="chapter-item "><a href="../../../menu/manual/templates/search-coop.html"><strong aria-hidden="true">1.1.4.2.</strong> Поиск игрока</a></li><li class="chapter-item "><a href="../../../menu/manual/templates/create-location.html"><strong aria-hidden="true">1.1.4.3.</strong> Создание локации</a></li></ol></li><li class="chapter-item "><a href="../../../menu/manual/masters.html"><strong aria-hidden="true">1.1.5.</strong> Штаб Мастеров</a></li><li class="chapter-item "><a href="../../../menu/manual/leveling.html"><strong aria-hidden="true">1.1.6.</strong> Прокачка героя</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook.html"><strong aria-hidden="true">1.2.</strong> Путеводитель</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/races.html"><strong aria-hidden="true">1.2.1.</strong> Расы</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/races/besties.html"><strong aria-hidden="true">1.2.1.1.</strong> Бестийцы</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/dwarfs.html"><strong aria-hidden="true">1.2.1.2.</strong> Дворфы</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/kharfirs.html"><strong aria-hidden="true">1.2.1.3.</strong> Кхарфиры</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/lamah.html"><strong aria-hidden="true">1.2.1.4.</strong> Ламах</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/humans.html"><strong aria-hidden="true">1.2.1.5.</strong> Люди</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/meries.html"><strong aria-hidden="true">1.2.1.6.</strong> Мерии</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/redrehan.html"><strong aria-hidden="true">1.2.1.7.</strong> Редрехан</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/vampires.html"><strong aria-hidden="true">1.2.1.8.</strong> Вампиры</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/werewolfs.html"><strong aria-hidden="true">1.2.1.9.</strong> Оборотни</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/guilds.html"><strong aria-hidden="true">1.2.2.</strong> Гильдии</a></li><li class="chapter-item "><a href="../../../menu/guidebook/army.html"><strong aria-hidden="true">1.2.3.</strong> Армии</a></li><li class="chapter-item "><a href="../../../menu/guidebook/education.html"><strong aria-hidden="true">1.2.4.</strong> Образование</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books.html"><strong aria-hidden="true">1.2.5.</strong> Книги</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science.html"><strong aria-hidden="true">1.2.5.1.</strong> Научная литература</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science/bestiary.html"><strong aria-hidden="true">1.2.5.1.1.</strong> Бестиарий</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/diseases.html"><strong aria-hidden="true">1.2.5.1.2.</strong> Болезни</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics.html"><strong aria-hidden="true">1.2.5.1.3.</strong> Инженерия и паромеханика</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/steam-engine.html"><strong aria-hidden="true">1.2.5.1.3.1.</strong> Устройство парового двигателя Фелинварда Синоба</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/digest.html"><strong aria-hidden="true">1.2.5.1.3.2.</strong> Дайджест промышленного комплекса Нихерии</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/map-of-lost.html"><strong aria-hidden="true">1.2.5.1.3.3.</strong> Краткая карта утерянных технологий</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/naat-guns.html"><strong aria-hidden="true">1.2.5.1.3.4.</strong> Алхимические винтовка и пистолет Наат-Тхаес</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/printing-press.html"><strong aria-hidden="true">1.2.5.1.3.5.</strong> Механический типографический станок</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy.html"><strong aria-hidden="true">1.2.5.1.4.</strong> Алхимический Увраж</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/poisons.html"><strong aria-hidden="true">1.2.5.1.4.1.</strong> Ядоварение</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/drugs.html"><strong aria-hidden="true">1.2.5.1.4.2.</strong> Наркотики</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/ingredients.html"><strong aria-hidden="true">1.2.5.1.4.3.</strong> Ингредиенты</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/tinctures.html"><strong aria-hidden="true">1.2.5.1.4.4.</strong> Популярные настойки</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/poultices.html"><strong aria-hidden="true">1.2.5.1.4.5.</strong> Припарки Бромса</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/elixirs.html"><strong aria-hidden="true">1.2.5.1.4.6.</strong> Славные эликсиры</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/weapon.html"><strong aria-hidden="true">1.2.5.1.5.</strong> Вооружен до зубов</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science/weapon/cold.html"><strong aria-hidden="true">1.2.5.1.5.1.</strong> Холодное оружие</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/weapon/fire.html"><strong aria-hidden="true">1.2.5.1.5.2.</strong> Огнестрельное оружие</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/weapon/armor.html"><strong aria-hidden="true">1.2.5.1.5.3.</strong> Броня</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/medical-theurgy.html"><strong aria-hidden="true">1.2.5.1.6.</strong> Медицинская теургия</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/folklore.html"><strong aria-hidden="true">1.2.5.2.</strong> Фольклор</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/folklore/phrases.html"><strong aria-hidden="true">1.2.5.2.1.</strong> Поговорки</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/misc.html"><strong aria-hidden="true">1.2.5.3.</strong> Разные статьи</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/misc/digest.html"><strong aria-hidden="true">1.2.5.3.1.</strong> Именной справочник</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/bestiary.html"><strong aria-hidden="true">1.2.6.</strong> Бестиарий</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.1.</strong> Бестии</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.</strong> Дракониды</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.1.</strong> Гавиары</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.2.</strong> Мутанты</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.3.</strong> Нёхи</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.</strong> Твари</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.1.</strong> Создания</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.2.</strong> Водные</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.2.1.</strong> Хирды</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.3.</strong> Насекомые</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.</strong> Сущности</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.1.</strong> Элементали</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.2.</strong> Нежить</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.3.</strong> Мороки</div></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/contests.html"><strong aria-hidden="true">1.2.7.</strong> Конкурсы</a></li><li class="chapter-item "><a href="../../../menu/guidebook/games.html"><strong aria-hidden="true">1.2.8.</strong> Игры</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/games/windwarf.html"><strong aria-hidden="true">1.2.8.1.</strong> Виндворф</a></li><li class="chapter-item "><a href="../../../menu/guidebook/games/guran-pool.html"><strong aria-hidden="true">1.2.8.2.</strong> Гуранский пул</a></li><li class="chapter-item "><a href="../../../menu/guidebook/games/plates.html"><strong aria-hidden="true">1.2.8.3.</strong> Плашки</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/magic.html"><strong aria-hidden="true">1.3.</strong> Магия</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/magic/basics.html"><strong aria-hidden="true">1.3.1.</strong> Основы магии</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/magic/basics/матчасть.html"><strong aria-hidden="true">1.3.1.1.</strong> Теория магии</a></li></ol></li><li class="chapter-item "><a href="../../../menu/magic/branches.html"><strong aria-hidden="true">1.3.2.</strong> Ветви магии</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/magic/branches/white.html"><strong aria-hidden="true">1.3.2.1.</strong> Белая магия</a></li><li class="chapter-item "><a href="../../../menu/magic/branches/black.html"><strong aria-hidden="true">1.3.2.2.</strong> Чёрная магия</a></li><li class="chapter-item "><a href="../../../menu/magic/branches/creation.html"><strong aria-hidden="true">1.3.2.3.</strong> Магия Созидания</a></li><li class="chapter-item "><a href="../../../menu/magic/branches/influence.html"><strong aria-hidden="true">1.3.2.4.</strong> Магия Влияния</a></li></ol></li><li class="chapter-item "><a href="../../../menu/magic/phenomena.html"><strong aria-hidden="true">1.3.3.</strong> Явления магии</a></li><li class="chapter-item "><a href="../../../menu/magic/influence.html"><strong aria-hidden="true">1.3.4.</strong> Влияние рун</a></li><li class="chapter-item "><a href="../../../menu/magic/places.html"><strong aria-hidden="true">1.3.5.</strong> Места магии</a></li><li class="chapter-item "><a href="../../../menu/magic/artifactory.html"><strong aria-hidden="true">1.3.6.</strong> Артефакторика</a></li></ol></li><li class="chapter-item "><a href="../../../menu/skills.html"><strong aria-hidden="true">1.4.</strong> Навыки</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/skills/military.html"><strong aria-hidden="true">1.4.1.</strong> Воинские дисциплины</a></li><li class="chapter-item "><a href="../../../menu/skills/crafts.html"><strong aria-hidden="true">1.4.2.</strong> Ремесла</a></li><li class="chapter-item "><a href="../../../menu/skills/science.html"><strong aria-hidden="true">1.4.3.</strong> Науки</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/skills/science/artifactory.html"><strong aria-hidden="true">1.4.3.1.</strong> Артефакторика</a></li><li class="chapter-item "><a href="../../../menu/skills/science/alchemy.html"><strong aria-hidden="true">1.4.3.2.</strong> Алхимия</a></li><li class="chapter-item "><a href="../../../menu/skills/science/linguistics.html"><strong aria-hidden="true">1.4.3.3.</strong> Лингвистика</a></li><li class="chapter-item "><a href="../../../menu/skills/science/mechanics.html"><strong aria-hidden="true">1.4.3.4.</strong> Паромеханика</a></li><li class="chapter-item "><a href="../../../menu/skills/science/unlife.html"><strong aria-hidden="true">1.4.3.5.</strong> Нежизнь</a></li><li class="chapter-item "><a href="../../../menu/skills/science/chimerology.html"><strong aria-hidden="true">1.4.3.6.</strong> Химерология</a></li></ol></li><li class="chapter-item "><a href="../../../menu/skills/occultism.html"><strong aria-hidden="true">1.4.4.</strong> Оккультизм</a></li><li class="chapter-item "><a href="../../../menu/skills/druidism.html"><strong aria-hidden="true">1.4.5.</strong> Друидизм</a></li></ol></li><li class="chapter-item expanded "><a href="../../../menu/history.html"><strong aria-hidden="true">1.5.</strong> История</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/history/elder-ages.html"><strong aria-hidden="true">1.5.1.</strong> Ветхие эпохи</a></li><li class="chapter-item "><a href="../../../menu/history/old-time.html"><strong aria-hidden="true">1.5.2.</strong> Старое время</a></li><li class="chapter-item "><a href="../../../menu/history/outgoing-age.html"><strong aria-hidden="true">1.5.3.</strong> Уходящая эпоха</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/history/outgoing-age/stillborn-indict.html"><strong aria-hidden="true">1.5.3.1.</strong> Индикт Мертворождения</a></li><li class="chapter-item "><a href="../../../menu/history/outgoing-age/recovery-period.html"><strong aria-hidden="true">1.5.3.2.</strong> Период Восстановления</a></li><li class="chapter-item "><a href="../../../menu/history/outgoing-age/renaissance-period.html"><strong aria-hidden="true">1.5.3.3.</strong> Веха Возрождения</a></li><li class="chapter-item "><a href="../../../menu/history/outgoing-age/ruins-haze.html"><strong aria-hidden="true">1.5.3.4.</strong> Туманы Руин</a></li></ol></li><li class="chapter-item "><a href="../../../menu/history/timeline.html"><strong aria-hidden="true">1.5.4.</strong> Таймлайн</a></li><li class="chapter-item expanded "><a href="../../../menu/history/archive.html"><strong aria-hidden="true">1.5.5.</strong> Архив</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/history/archive/epilogue.html"><strong aria-hidden="true">1.5.5.1.</strong> Эпилог 2020</a></li><li class="chapter-item expanded "><a href="../../../menu/history/archive/10yem.html" class="active"><strong aria-hidden="true">1.5.5.2.</strong> Сводки за 10 гЭР</a></li><li class="chapter-item "><a href="../../../menu/history/archive/46yne.html"><strong aria-hidden="true">1.5.5.3.</strong> Сводки за 46 гНЭ</a></li><li class="chapter-item "><a href="../../../menu/history/archive/45yne.html"><strong aria-hidden="true">1.5.5.4.</strong> Сводки за 45 гНЭ</a></li><li class="chapter-item "><a href="../../../menu/history/archive/44yne.html"><strong aria-hidden="true">1.5.5.5.</strong> Сводки за 44 гНЭ</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/plot.html"><strong aria-hidden="true">1.6.</strong> Сюжет</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/plot/main/sacral.html"><strong aria-hidden="true">1.6.1.</strong> Сакральный хладагент</a></li><li class="chapter-item "><a href="../../../menu/plot/main/apotheosis.html"><strong aria-hidden="true">1.6.2.</strong> Апофеоз войны</a></li><li class="chapter-item "><a href="../../../menu/plot/main/wanderers.html"><strong aria-hidden="true">1.6.3.</strong> Скитальцы</a></li><li class="chapter-item "><a href="../../../menu/plot/global/emptiness.html"><strong aria-hidden="true">1.6.4.</strong> Блаженство пустоты</a></li><li class="chapter-item "><a href="../../../menu/plot/global/heromantia.html"><strong aria-hidden="true">1.6.5.</strong> Херомантия</a></li><li class="chapter-item "><a href="../../../menu/plot/global/lokomotiv.html"><strong aria-hidden="true">1.6.6.</strong> Локомотив забытых истин</a></li><li class="chapter-item "><a href="../../../menu/plot/local/drama.html"><strong aria-hidden="true">1.6.7.</strong> Раскаты драмы</a></li><li class="chapter-item "><a href="../../../menu/plot/local/song.html"><strong aria-hidden="true">1.6.8.</strong> Тут вообще песня</a></li><li class="chapter-item "><a href="../../../menu/plot/local/shards.html"><strong aria-hidden="true">1.6.9.</strong> Осколки будущего</a></li></ol></li><li class="chapter-item "><a href="../../../menu/navigation.html"><strong aria-hidden="true">1.7.</strong> Навигация</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/navigation/geopolitics.html"><strong aria-hidden="true">1.7.1.</strong> Геополитика</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/languages.html"><strong aria-hidden="true">1.7.1.1.</strong> Языки</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/languages/riat-n-baspaan.html"><strong aria-hidden="true">1.7.1.1.1.</strong> Риат и Баспаа́н</a></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.2.</strong> Риат'Арьярд</div></li><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/languages/hodrtahrot.html"><strong aria-hidden="true">1.7.1.1.3.</strong> Ходртахрот</a></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.4.</strong> Арвийский</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.5.</strong> Ре́дрех</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.6.</strong> Ктаавехт</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.7.</strong> Мордвинский</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.8.</strong> Крат</div></li></ol></li><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/cultures.html"><strong aria-hidden="true">1.7.1.2.</strong> Культуры</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.1.</strong> Редрехан</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.2.</strong> Тейель</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.3.</strong> Кхафра</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.4.</strong> Луат</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.5.</strong> Адмиралтейство</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.6.</strong> Флатрия</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.7.</strong> Сикстинния</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.8.</strong> Ламах</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.9.</strong> Мордвин</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.10.</strong> Арвия</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.11.</strong> Хельгеран</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.12.</strong> Мародеры</div></li></ol></li><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/states.html"><strong aria-hidden="true">1.7.1.3.</strong> Державы</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.1.</strong> Реабор-Тхаес</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.2.</strong> Вече Тейель</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.3.</strong> Великая Афитра</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.4.</strong> Последняя Республика Луат</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.5.</strong> Коркафт</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.6.</strong> Доминион Флатрия</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.7.</strong> Сикстиннский Доминион</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.8.</strong> Доминион Секри</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.9.</strong> Древняя Мордвинская империя</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.10.</strong> Кланы Золотого Гребня</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.11.</strong> Хельгеран</div></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/guilds.html"><strong aria-hidden="true">1.7.1.4.</strong> Гильдии</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.1.</strong> Железнодорожники</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.2.</strong> Искра</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.3.</strong> Бюро Вычищения</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.4.</strong> Ассоциация С'Итш'Тас</div></li><li class="chapter-item "><a href="../../../menu/guidebook/guilds/inferdormis.html"><strong aria-hidden="true">1.7.1.4.5.</strong> Инфердормис</a></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.6.</strong> Девы Победы</div></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/navigation/geography.html"><strong aria-hidden="true">1.7.2.</strong> География</a></li><li class="chapter-item "><a href="../../../menu/navigation/locations.html"><strong aria-hidden="true">1.7.3.</strong> Локации</a></li><li class="chapter-item "><a href="../../../menu/navigation/transport.html"><strong aria-hidden="true">1.7.4.</strong> Транспорт</a></li><li class="chapter-item "><a href="../../../menu/navigation/cosmology.html"><strong aria-hidden="true">1.7.5.</strong> Космология</a></li><li class="chapter-item "><a href="../../../menu/navigation/new-lands.html"><strong aria-hidden="true">1.7.6.</strong> Новые земли</a></li></ol></li><li class="chapter-item "><a href="../../../menu/economy.html"><strong aria-hidden="true">1.8.</strong> Экономика</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/economy/about-money.html"><strong aria-hidden="true">1.8.1.</strong> О деньгах</a></li><li class="chapter-item "><a href="../../../menu/economy/earning.html"><strong aria-hidden="true">1.8.2.</strong> Заработок</a></li><li class="chapter-item "><a href="../../../menu/economy/finances.html"><strong aria-hidden="true">1.8.3.</strong> Финансы</a></li></ol></li><li class="chapter-item "><a href="../../../menu/characters.html"><strong aria-hidden="true">1.9.</strong> Персонажи</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/characters/registered.html"><strong aria-hidden="true">1.9.1.</strong> Зарегистрированные</a></li><li class="chapter-item "><a href="../../../menu/characters/canons.html"><strong aria-hidden="true">1.9.2.</strong> Каноны</a></li><li class="chapter-item "><a href="../../../menu/characters/graveyard.html"><strong aria-hidden="true">1.9.3.</strong> Кладбище</a></li></ol></li><li class="chapter-item "><a href="../../../menu/tools.html"><strong aria-hidden="true">1.10.</strong> Инструменты</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/tools/age.html"><strong aria-hidden="true">1.10.1.</strong> Возраст</a></li><li class="chapter-item "><a href="../../../menu/tools/banking.html"><strong aria-hidden="true">1.10.2.</strong> Банкинг</a></li><li class="chapter-item "><a href="../../../menu/tools/map.html"><strong aria-hidden="true">1.10.3.</strong> Карта</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+        
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Содержание" aria-label="Содержание" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Сменить тему" aria-label="Сменить тему" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Темы" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Светлый</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Темный</button></li>
+                        </ul>
+                        <a onclick="window.location.href = '../../../print.html'" title="Распечатать" aria-label="Распечатать">
+                            <i id="print-button" class="fa fa-print"></i><span style="font-family: 'Open Sans', sans-serif; cursor: default;">книга</span>
+                        </a>
+                        <a onclick="print()" title="Распечатать страницу" aria-label="Распечатать страницу">
+                            <i id="print-button" class="fa fa-print"></i><span style="font-family: 'Open Sans', sans-serif; cursor: default;">статья</span>
+                        </a>
+                    </div>
+
+                    <h1 class="menu-title">Злорадство Нихерии</h1>                    
+
+                    <div class="right-buttons">                        
+                        <span onclick="window.location.href = '../../../menu/tools.html';" style="cursor: default;">Инструменты:</span>
+                        <!-- Age Calculator -->
+                        <a href="../../../menu/tools/age.html" title="Калькулятор возраста" aria-label="Калькулятор возраста">
+                            <i id="age-calc-button" class="fa fa-hourglass-end"></i>
+                        </a>
+                        <!-- Banking Calculator -->
+                        <a href="../../../menu/tools/banking.html" title="Банковский калькулятор" aria-label="Банковский калькулятор">
+                            <i id="bank-calc-button" class="fa fa-university"></i>
+                        </a>
+                        <!-- Map -->
+                        <a href="../../../menu/tools/map.html" title="Карта" aria-label="Карта">
+                            <i id="map-button" class="fa fa-map"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <div class="niheria-nav main-menu-el">
+                            <a class="niheria-nav-btn main-menu-text" href="javascript:history.back()">Назад</a>  
+                            <a class="niheria-nav-btn main-menu-text" href="../../../index.html">Меню</a>  
+                        </div>
+                        <p>Хельгеран
+Город-республика Луат (абсолютно ни от одной страны не зависящий) продолжает активно расширяться народным ресурсом: туда стекается всё больше и больше тех, кого бросила разбитая думанская власть и кого достали оставшиеся без управы разбойники, дикари и отбросы общества. За лето вокруг города была возведена высокая стена, которая защищается не только воинами, но и магами. Луат называет себя единственным оплотом благоразумия в Хельгеране.
+Неизвестный вожак в Лесу Говорящих снялся с места и двинулся в сторону Андела вместе со своими новыми последователями. Прямо туда, где магическое государство мучается неизвестными небесными объектами, откачивающими магию (подробнее — в пред. новостях, «Иглы»). Андельцы заметили у своих границ необычайное оживление, но не спешат дружески лобызаться с полуголыми дикарями, которые заняли холмы и ведут себя тихо.
+Кассий Отриас (лидер Инфердормис) и Шаридахра собираются искать неизвестного Менталиста, что захватил Лес Говорящих. Их путь ляжет по его следам от Змеиной горы — к Анделу. Ещё не известно, чем грозит эта встреча еретикам: новым врагом или неожиданным союзником.</p>
+<p>Синларин
+Отряды редрехан из Синларина были замечены на границах Баспаны. Те из пограничных войск, кто уже сталкивался с ними, утверждают, что длинноухие враждебны как и к еретикам из Хельгерана, так и к баспанцам. Феликс Ир, узнав столь тревожные новости, распорядился захватить этих редрехан живыми. Не всех удалось захватить и некоторые бежали, чтобы вернуться с подкреплением. Многие из них предпочитали смерть плену, но королю ретардов улыбнулась удача: сейчас в его казематах есть живые лазутчики-редрехан. Король планирует допросы, а если надо — и казни.
+Бестийцы, которые ещё не покинули города в добровольных паломничествах и судьбах отшельников, массово переместились в Синларин. Только их редрехан согласны пропускать через свои границы и только через Белый Путь. Сейчас Триатра и Гаспар со своими сородичами подняли вопрос объединения легендарной Искры на закрытом совете с королями Ауанти и Ковеном Друидов.</p>
+<p>ДЯИ
+В провалах земли на местах сражения с аватарами Абхота были обнаружены входы в забытые коридоры и тейги Мордвинской империи. Первые же экспедиции, созданные благодаря шаткому перемирию между ДЯИ и новым Мордвином, наткнулись под землёй на неприятные сюрпризы: гигантские месторождения кристаллов эрхиума (сюжет «Эрхиум раздора»), одичавших дворфов и немыслимых количествах чудовищ, у которых есть теперь шанс прорваться на поверхность. В Бернезе и Картахене спуски под землю, а также шахту в самом Мордвине экстренно баррикадируют. Парламент ДЯИ готов вот-вот объявить войну мордвинским дворфам из-за явного дворфийского происхождения одичавших.</p>
+<p>Велавин
+Лотта Гретлин дала митингующему народу спустить пар и одновременно заключила с дипломатами из Наат-Тхаес новый договор. По его условиям, тёмные получат земли на северо-западе Велавина, чтобы построить там порт и иметь возможность отправлять дальние экспедиции к неизвестным краям Нихерии. А тёмные Велавину предоставят своих учёных, чтобы они снизили экологическую угрозу из-за продуктов жизнедеятельности токсичного дракона Кризиса.</p>
+<p>Наат-Тхаес
+Цветение внутреннего моря и распространение заразы, которая стала разрастаться после изъятия из экосистемы дракона Кризиса, привело к плачевным результатам. Больше населения погибло только во время Красного Рассвета. Многим тёмным редрехан на поверхности опасно возвращаться домой, а те, кто остались под землёй, спешно переезжают в Велавин. Природная опасность и потревоженные раскопками новые враги под землёй перечеркнули возможность мирного существования в одном из самых древних городов Нихерии. Среди заметных жертв (кроме необходимости оставить масштабные материальные ценности), стала смерть Мортис, правительницы Наат-Тхаес. Она, как и многие другие, не смогла выжить в наползающем на город тумане из смертельных миазмов. Наплыв беженцев из-под земли накалил обстановку в Велавине.
+Антифеминистическое движение со смертью Старейшей Мортис набрало обороты. Пользуясь массовым выходом тёмных на поверхность, активисты перехватили инициативу и наравне с жрицами из Конклава стали помогать выжившим обустраиваться и привыкать к поверхности. Вопрос о сохранении матриархата стал ребром. И, после внутренних переговоров, тёмные редрехан пришли к выводу, что сейчас, на поверхности, в отдельно выделенном им Велавином городе (под названием «Ад»), нужно соблюдать не традиции, а выживать.</p>
+<p>Мордвин
+Молодое дворфийское поколение стало использовать в качестве дополнительных аргумента против жажды вернуться к прошлому тот факт, что монстры, вылезающие из-под Картахена, когда-то могли быть дворфами. Власть у старого-доброго Брока может выскользнуть из рук прямо в коготки Граты Воргафф. Её политика — переход от мирной археологии к наращиванию военной мощи в связи с агрессивными выпадами ДЯИ и открытыми военными действиями в Арвии.
+Сейчас только в Мордвине наиболее стабильная экономическая обстановка. В Синларине экономики испокон веков не бывало. В ДЯИ кризис. В Велавине проблемы с экологией и наличием беженцев. Наат-Тхаес пал. В Арвии война. В Хельгеране хаос. Андел закрылся. Баспана занята эпидеймией пожрянки, подключая к решению проблемы все средства и силы, даже тайные вроде Алого Дола. Это шанс для Мордвина сохранить силу и богатство, а, может, даже примерить на себя роль старых империй, что тянули к себе слабых соседей.</p>
+<p>Арвия
+Арвия разрывает торговые отношения с ДЯИ на основе доказательств, что взрыв секрийского храма и спонсирование террористов Мейкне — инициатива яхонской власти. ДЯИ отправила в Арвию парламентёров, чтобы разобраться в ситуации, однако не успели они прибыть в южную столицу, как стали свидетелями линчевания Сефрон жителями города. Арвия погрузилась в хаос, замешанный на крови, золоте, порохе и всех мыслимых ресурсах, что можно только найти на Чёрном рынке. Также на стороне террористов были замечены и люди с вооружением с востока Нихерии. Арвия стала ареной старой скрытой войны между ДЯИ и ДИ и пала. Роберт Хейм с сыном бежал на РА, а риафийцы, когда-то переехавшие в Арвию, заняли порт «Алый якорь» и ушли в глухую оборону.</p>
+<p>Риафийский архипелаг и Агонтар
+Сражения на перешейке Холиша закончились численным перевесом еретиков. Город сожжён. Лука Монвел мёртв. Руины небезопасны, все корабли, сумевшие выбраться из пылающих портов, попали в ужасную бурю, что терзает сердце островного государства.
+Адмирал Ричард Хейм снарядил команду и на своём флагмане отбыл к эпицентру бури, чтобы или найти её источник, или достойно закончить свою жизнь, не дожидаясь разрушения своей крепости нарастающим катаклизмом.
+Ясконтий, на котором построен мерийской город Агонтар, не слушается жителей и друидов. Бури, шторма и зарево горящего Холиша спугнули громадное существо — и оно понесло куда глаза глядят. Часть мерий покинула Агонтар на ходу, а те, кто остались, повстречались в южных морях с Гармарнасом. Морской дракон составил ясконтию компанию и повёл куда-то далеко на восток вдоль берегов Арвии. С тех пор про Агонтар ничего не известно, а мериям не в первой выживать в необитаемых краях.</p>
+<p>Андел
+Изучение Игл немногочисленными отрядами ретардов из Андела не дало существенных результатов. Всё, что они узнали — некоторые Иглы теперь ярко сияют зелёным от начала и до конца. Но они также видели и совершенно «пустые» Иглы. Совсем недавно к совету магов попал один выживший из отряда, который считался без вести пропавшим. Розовый, сытый и счастливый, разведчик доложил, что видел кого-то, кто в одиночку подходил к Иглам и поглощал из них энергию.
+В то же время узаконивание нахождения дэвов на территории Андела повлекло за собой появление в государстве массы странных событий. Самым необычным из них стал визит человека, который попросил аудиенции у совета магов, который длился несколько дней за закрытыми дверями. Очевидцы уверяют, что неизвестный был похож на самого Тегана Ксатри. После этого Андел внезапно прекратил торговые, военные и политические действия в отношении всех стран и всё за магическими щитами затихло.</p>
+<p>Баспана
+Феликс Ир готовится к встрече с дипломатами из Синларина, желая пообщаться с ними насчёт пойманных отрядов редрехан. Он не ожидал, что во главе этих гостей прибудет Пророк Триатра. В это же время супруга Ира заболевает и перестает появляться на публике. В среде алхимиков и целителей ходят слухи, что Ир вызывал к себе самых лучших из них, но никто ещё не вернулся. А среди прислуги — что в закрытое крыло замка недавно привезли с полдюжины каких-то статуй.
+Ограничить распространение пожрянки получилось. Многие учёные Баспаны изучают болезнь и способы лечения. Заметных успехов добились видены из резервации под Тейелем, у которых был прямой доступ к заражённым. Правда, лечат они только тех, кто побывал у них в застенках, и очень медленно, практически по одному.
+Раскол Альянса Шести привёл к тому, что крыло Гатоха Сейта отправилось вглубь Хельгерана и пока на связь не выходило. А крыло Кайрелис Иллинтис также не даёт о себе знать, даже ничего не предприняв. Все считают историю мирового альянса трагически завершённой.
+Король Феликс Ир официально упразднил титулы и наследное право. Сам же объявил о начале активного реформирования в управленческой структуре, в том числе о сборе местных парламентов и передачи им определенных полномочий на местах. Много зубов наточено на мятежного короля, и большинство из них напитаны ядом.</p>
+<h1 id="Весна-2020"><a class="header" href="#Весна-2020">Весна 2020</a></h1>
+<p>Хельгеран
+В городе Луат сформировался одноименный город-республика (полис) под началом нескольких лидеров. Это некоторые бывшие думанцы собрались там, чтобы лучше противостоять и абхотистам, и андельцам-баспанцам — мол, сами с усами, пшли все нахер отседова. Туда устремляются многие хельгеранцы, которые «против всех». Там начата разработка крупной заброшенной железной шахты и производство оружия. Маги и ретарды трудятся наравне.
+Шаридахра явилась к Сидайе вся в ужасе и рассказала, что к ним на Змеиную гору пришёл необычный незнакомец, который мановением рук всех её последователей сделал своими, а её саму выгнал. И теперь сидит там и в ус не дует, а её люди как будто совсем уж собственную волю потеряли — ходят, как заведённые, и возносят ему хвалы.
+Кассий Отриас, самопровозглашённый лидер Инфердормис, обосновался на территории Хельгерана в Вассерблате — бывшем поместье думанского барона. Так культ желает закрепиться и расширить своё влияние на востоке. Теперь ему предстоит долгая работа по превращению Вассерблата в столь же грозный и деятельный оплот Инфердормис, каким стал Озермарк.
+Сложно говорить о каком-то соблюдении законов и моральных принципов в Хельгеране. Однако, несмотря на это, ибэ-отшельник Морглен старается следовать по пути порядка и справедливости, наказывая и оберегая тех, кто, по его мнению, достоин этого. Но так ли он прав, совершая правосудие своими руками?
+На границе Баспаны и Хельгерана Альянс Шести (крыло Гатоха Сейта) случайно обнаружил лагерь еретиков. После его уничтожения и взятия в плен почти двадцати экстремистов выяснилось, что они готовили массовое ритуальное жертвоприношение. Для этого они собирались отравить реку. После допроса Альянс казнил еретиков, развесив их по деревьям с обличающими табличками.
+После разговора с Феликсом Иром Гатох Сейт направил в Гик сотню своих людей, которые должны под видом еретиков проникнуть в город и попытаться заручиться благосклонностью Сидайи. Гик станет ареной борьбы за власть над полуостровом между Альянсом Гатоха и Инфердормис.</p>
+<p>Синларин
+Встреча королей с Кадомиром прошла спокойно и Халамар, заинтересованный словами «пророка», отправился в храм, чтобы повторить его опыт. Вернувшись оттуда, он внезапно потребовал вмешаться в конфликт Баспаны и Андела, хотя ранее был абсолютно нейтрален к политике.
+Триатра приехала в Синларин для встречи с королями и обсуждения судьбы осколка Искры, который она некогда сдала сюда на хранение. Гаспар вернулся в ДЯИ в полушоковом состоянии и начал срочно собирать других бестийцев для путешествия в Синларин. Он утверждает, что во время миссии на РА им с Триатрой явилось видение Близнецов: надвигается тёмная сила и первенцы богов обязаны ей противостоять.</p>
+<p>ДЯИ
+В Осберуте среди множества якобы наследников выделился один шарлатан, который громче всех орал о своих правах на трон, а затем бесследно исчез. Это охладило пыл остальных претендентов и вызвало вопрос: что он сделал не так и чем мог насолить парламенту?
+Огромная центральная часть города Картахен просела и обрушилась спустя несколько лет после убийства там аватары Абхота. Погибла треть населения города. В результате катастрофы обнажился большой уцелевший участок Мордвинской империи. То же самое произошло в Бернезе. Дворфы активно заинтересовались этими случаями.
+Жан Кройцер, агент тайной полиции «Беркуты», вместе с напарником расследует дело об одной из самых крупных утечек новейшего яхонского вооружения в другие страны. Судя по некоторым уликам, дело масштабнее, чем кажется, потому что не исключено, что к нему имеет отношение кто-то из крупных деятелей парламента.
+Состоялся суд над Теобальдом Геллером, по итогам которого самого молодого в истории империи адмирала приговорили к казни. Однако из-за вмешательства неизвестных власть имущих покровителей вместо убийства его отправили в долгое изгнание, лишив всего имущества, наград и званий.</p>
+<p>Велавин
+Начались массовые протесты против нахождения Кризиса в пределах города. Мелькают требования «закопать его туда, откуда выкопали» и обвинения Лотты Гретлин в бездействии.
+По центральной улице Ваната проходит «Марш Матерей». Они несут в руках одежду или личные вещи детей, погибших из-за вредной экологии или тяжёлого труда на алхимическом производстве.
+Начинаются многочисленные протесты на алхимических фабриках. Формируется несколько профсоюзов, требующих лучших условий труда и более высокой оплаты для работников.
+Тёмные редрехан планируют экспедицию на запад Нихерии. Для этого они прибыли в Ванат, чтобы договориться с Лоттой о строительстве на побережье Велавина отправной точки (порта) для своих кораблей.</p>
+<p>Наат-Тхаес
+Внутреннее море начало «цвести». Оказывается, Кризис и продукты его жизнедеятельности удерживали разрастание болезнетворных водорослей и микроорганизмов. Миазмы начинают заполнять город над морем. Даже для тёмных редрехан они оказываются опасны, а при переизбытке могут и убить. Простой народ бьёт тревогу.
+Конклавом Жриц зафиксировано антифеминистическое движение тёмных редрехан мужского пола. Случилось несколько громких убийств знатных леди, в том числе одной из жриц Конклава. Сказались контакты с поверхностью и относительно равенства полов появился вопрос: «А что, так можно было?».</p>
+<p>Мордвин
+Эрхиум и арена привлекают всё больше представителей разных стран, пока в основном разного подозрительного сброда и приключенцев. Мордвин организует самый крупный в мире тотализатор, где можно сделать ставки на участников боёв на Арене.
+Молодёжь в связи с информацией об обвалах в Картахене и Бернезе настаивает на налаживании отношений с ДЯИ и экспедициях в Хельгеран. Эта цель высказана как крючок для стариков, жаждущих найти старинные останки своей цивилизации; на деле Грата Ворграфф, получающая всё более серьёзный вес на политической арене, видит стагнацию технологического развития Мордвина и жаждет получить доступ к новинкам ДЯИ на правах крупного торгового партнёра.
+В Вольном порте образовалась новая инфраструктура под руководством некоего дворфа по имени Грифт Ангвурд. Город понемногу отстраивается и порт постепенно обретает всё более работоспособный вид. Ходят слухи, что среди людей Грифта могут быть еретики.</p>
+<p>Арвия
+Взрыв секрийского храма террористами Мейкне. В стране введено чрезвычайное положение, ужесточается контроль городов войсками. Сефрон бушует и рычит. Есть подозрение, что террористы спонсируются кем-то, имеющим большие запасы взрывчатки и современного оружия.
+Начинается гражданская война: множество обездоленных бывших рабов примкнуло к Мейкне из-за того, что свобода не даровала им ни работы, ни признания, ни достатка. Их требование: дополнить власть королевы представителями разных социальных слоёв в качестве советников и защитников интересов этих слоёв при дворце. Фактически, они требуют создать парламент.
+В кругах группировки соклидов в Алом Якоре неспокойно: в «сходняке» произошло предательство. Объявлена охота на предателя и его сообщников. Теперь Дхарию и его старой знакомой Сун стоит поскорее покинуть Арвию, ведь по их следу уже рыщут их бывшие напарники.</p>
+<p>Риафийский архипелаг и Агонтар
+Учащаются нападения хельгеранцев-абхотистов на перешеек Холиша; происходит масштабный пожар в доках Холиша, где содержатся корабли Андела. Это провоцирует огромный скандал между Анделом и РА из-за халатности последних.
+Над Кратером на всё лето воцаряется небывалая буря. Нёхи в панике уплывают от него, предчувствуя что-то значимое. Ближайшие к Кратеру побережья всех стран подвергаются сильным ливням, ураганным ветрам и массовым нападениям нёхов. Больше всего достаётся РА. Мерии с Агонтара в панике пытаются вывести его в более безопасное место.
+В Дука организована судостроительная верфь для риафийских пароходов. Риаф вступает в век паровых технологий. Из Мордвина, Велавина и ДЯИ множество умов устремляется туда, подкупленные обещаниями больших свобод, перспектив и прав от Роберта Хейма, сына прославленного адмирала и супруга Сефрон Ифай.
+Перед отбытием в Ималион Триатра доверила поиск истинного наследника Ксатри своему племяннику Джоресу Фесей. Он вместе с наёмником-мерием подхватил эстафету и теперь должен направиться к Хейму, чтобы ещё раз просмотреть записи в его архиве, датируемые ещё эпохой Ожидания.</p>
+<p>Андел
+С небес на Андел близ города Чего обрушивается и втыкается в землю гигантский металлический стержень, который уже прозвали «Иглой». Она выглядит как стапятидесятиметровая призма из неизвестного и крайне прочного чёрного материала, от которой по ночам исходит слабое зеленоватое сияние. У подножия Иглы на одной из её граней заметили ярко-зелёную полосу. В радиусе пятнадцати километров происходит мощнейшее поглощение магической энергии. Зафиксированы случаи крайнего истощения и смерти магов. После восстановления сил они жалуются на то, что их магия «не так сильна, как прежде». Андельцы предполагают, что приблизиться к Игле могут лишь ретарды, бестийцы и нежить.
+Учащаются нападения тёмных шаманов и мороков, которые просачиваются за магические щиты сквозь Мглу. В это время в Саниме активно изучали пойманных дэвов и пришли к выводу, что те могут уничтожать места Порчи и, увы, места Силы, а также чуять и находить Немощи. Перспектива быстро и без человеческих потерь избавляться от проблем магического характера сподвигает Андел на государственном уровне легализовать изучение и поиск дэвов для внедрения их в работу государственного аппарата. Это перекликается с тем, как инквизиция ДЯИ использует нёхов-гончих для поиска магов.</p>
+<p>Баспана
+Из-за пожрянки введён карантин в крупной зоне вокруг Тейеля. Все прибывающие в Фалир должны проходить недельный карантин прежде, чем войти в город. Из-за этого падает ВВП страны (торговля страдает). Пожрянка мутирует: теперь у болезни более долгий инкубационный период, во время которого она не диагностируется, что создаёт опасность заражения больными гораздо большего числа людей.
+Долгая история Альянса, бывшего когда-то надеждой всей планеты и опорой всех государств, оплотом, принимавшим в свои ряды всех, кто хотел бороться с Абхотом, невзирая на их мировоззрение или способности, наконец завершилась. Раскол, начавшийся в конце Новой эпохи, все десять лет эпохи Разума становился всё ощутимее, пока наконец не привёл к тому, что совет из трёх возглавляющих Альянс нихерийцев рассыпался. Майрон Маруани оставил эту организацию, а Гатох Сейт и Кайрелис Иллинтис, не найдя общего языка, разошлись в разные стороны каждый со своим крылом. Обескровленный и разорванный, Альянс перестал существовать в том виде, в котором был создан. Теперь есть только два крыла под руководством бестийца и тёмной редреханки, которые должны будут искать новые способы выживания или смириться и исчезнуть окончательно.
+Кровавое болото на границе Баспаны оказалось больше, чем представлялось изначально. Его природа до сих пор не ясна. Полукровка Ангури Венон и ибэ Ниорак ведут расследование.
+Феликс Ир начинает широкомасштабную проверку крупных и средних землевладельцев. Усиливаются слухи о скорой отмене наследственного права и ослаблении титульной системы, однако пока их распускают только те, кто из-за низкой эффективности был снят с должностей и заменён другими управленцами — иногда не знатного происхождения.
+В ДЯИ отправляется делегация с целью получить печатные станки, специалистов и некоторые медицинские приблуды. Взамен Баспана предлагает железо, лес и некоторые знания виденов в области медицины. В составе делегации отправляются давние напарники — Грэхэм и Гудвин, которым Ир выдаёт некое персональное поручение во время встречи один на один.</p>
+<h1 id="Зима-2020"><a class="header" href="#Зима-2020">Зима 2020</a></h1>
+<p>Хельгеран
+В некоторых поселениях Хельгерана еретики и брошенные империей жители объединились в крупные поселения. Эти поселения нередко занимаются набегами друг на друга ради ресурсов, поэтому постоянно укрепляются и разрастаются. Говорят, в Хельгеране появился некий лидер, которому местные чуть ли не поклоняются и который намерен объединить всех разрозненных еретиков под своим началом. Кто он и откуда − показания расходятся.
+Инфердормис во главе с ближайшим подручным лича, Кассием, сумела заручиться поддержкой пиратов-изгоев, занимающих развалины «Вольного» порта. Им удалось уже добраться и до Хельгерана, приближая воплощение мрачных планов в жизнь. Сейчас в их чёрных глазах отражается Гик и желание разыскать своего владыку, Абхота.
+Климат в бывших территориях Думанской империи и Ламахского полуострова балует отступившими морозами. Между еретиками тает лёд, из-под сугробов показываются первые подснежники и трупы. В Тенистой Чаще между Баспаной и Анделом разлилось кровавое болото с красным туманом и странными огоньками. Оно наполнило некоторые реки, которые принесли к побережьям кровавые пенные водопады и кошмарный прибой, в котором блестят перламутром моллюски, словно выбитые зубы.</p>
+<p>Синларин
+Многие редрехан стали поддерживать тайные торговые связи с другими государствами, чтобы получить товары, которые с закрытием границ стали недоступными. Политикой братьев Ауанти большинство народа недовольно. Кто-то отправился вслед за друзьями и семьей из числа не-редрехан, которые могли быть изгнаны из Синларина. Отмечается рост теневого рынка и спекуляции дефицитным товаром.
+Мягкий абхотизм, продвигаемый братьями, породил религиозную раздробленность. Это привело к конфликтам между Ковеном Друидов и венценосными Ауанти. Конфликты не переходят в острую стадию, проявляясь лишь в долгих заунывных воззваниях к гласу рассудка королей.
+Очевидцы из числа пограничных жителей ДЯИ и Велавина клялись, что видели над лесами новообразованного Синларина и спорными территориями драконов. Казалось бы, что такого? Да вот только они были со всадниками и синларинскими штандартами на сёдлах.
+Многие знают, что Ималион застыл в вечном лете. Аномальное явление природы, не истолкованное Ковеном Друидов как зло, ещё не скоро сравняется с остальными территориями Синларина: там по-прежнему снежно и холодно.</p>
+<p>ДЯИ
+Из-за курса государства на расширение военной мощи в стране случился кризис, начался товарный дефицит, приведший к появлению нормированного распределения товаров, в том числе товаров первой необходимости, по карточкам. Нововведение массово коснулось рабочего класса населения. Влияние преступных группировок, той самой организованной преступности ДЯИ, стало ещё более серьёзным. Как бы в будущем власть парламент с криминалом не поделил. Или те и другие не смешались. А, может, уже, а мы и не заметили?
+Увеличение производства оружия спровоцировало дефицит металла. Пункты приёма металлов появились повсеместно, а ДЯИ напрягло все извилины и обратило все глаза в сторону ближайших гор и доступных торговых соглашений для решения проблемы.
+В верхней и нижней палате тем временем назревают страсти: находятся те, кто считает, что пора развязать активную войну с Велавином, но есть и те, кто категорически против. К первым относятся давние товарищи Теобальд Геллер и Франсуа Де Клесси. И бюрократическая машина ДЯИ не побрезговала зажевать даже их патриотичные планы на восстановление исторических территорий империи.</p>
+<p>Велавин
+В Велавине стали рождаться дети с несовместимыми с жизнью уродствами. Это появилось из-за отвратительных экологических условий. Велавин колеблется между решением избавиться от Кризиса или унести из городов алхимические производства. Первое грозит затяжными обсуждениями с союзным Наат-Тхаес, а второе обойдётся в кругленькую сумму, которая может привести к ослаблению обороны границ и упадку оборотов денежных средств внутри государства.
+Ходят слухи, что Лотта Гретлин активно защищает интересы не Велавина, а Наат-Тхаес. Распускают их подстрекатели или обиженные на жизнь велавинцы − пока не ясно. Досужие сплетни это или реальный факт − тоже. Послы Наат-Тхаес активно ищут источник этой «клеветы» и вызывают с родины помощь в этом деле. Может, и сторонним вмешательством не побрезгуют, наёмные детективы могут попытать счастья.</p>
+<p>Наат-Тхаес
+На политической арене ситуация накаляется. Казны Благородных Домов опустошены. С шахтами, которые десятилетиями вырабатывали тёмные, начались ожидаемые проблемы: они беднеют, каждый месяц появляется несколько новых опустевших месторождений.
+Удалённые от основного города районы из-за недостаточно хорошо ухоженных и расширенных путей обеспечения переживают дефицит продовольствия. Одно из поселений в результате обвала оказалось и вовсе отрезано.
+Встревоженные подземными активными работами в Мордвине и Озермарке нёхи и древние одичавшие дворфы начинают лезть изо всех щелей, доставляя проблемы не только в любых подземельях, но и окраинам Наат-Тхаес. Больше всего достаётся районам из числа «расширения».</p>
+<p>Мордвин
+Из-за углубления в подземные территории бывшей Мордвинской империи, наружу полезли нёхи и одичалые древние дворфы (та же проблема, что и у Наат-Тхаес). Дворфы перебросили все силы на то, чтобы очистить от нечисти захваченные ярусы своей полуподземной столицы. Их собственных сил едва хватает, поэтому в Андел уже отправлен запрос поддержки.
+Факт беспорядков после раскопок активно используется прогрессивной молодёжью в спорах с консерваторами: мол, нам нужно строить новое, а не ковырять старое. Участились забастовки, уже более серьезные; многие главы кланов перешли на сторону прогрессивного молодняка. В Мордвине летают клочья выдранных бород и назревает очередной раскол.</p>
+<p>Арвия
+Наблюдается недостаток рабочих мест для образованного − стараниями реформ Сефрон Ифай − населения; в городах проходят многочисленные забастовки и протестные акции из-за низкой оплаты труда. Простые арвийцы стали больше себя ценить, а особенно − бывшие рабы.
+Братство «Золотой Цепи» без дела не сидит, видя недовольства народа. Некоторые члены закрытого общества уже присели на уши правительнице, требуя предпринять что-нибудь, чтобы ограничить приток информации о лучшей жизни и радужных перспективах. Сефрон не согласна и споры в секрийском дворце не утихают уже которую неделю.
+Высокая коррумпированность власти привела к обеднению средних и низших слоев населения. Многочисленные торговцы и предприниматели стали банкротиться, что вызвало сильный отток платежеспособных гостей государства. Богачи держат лицо, стараясь пышными праздниками за свой счёт сгладить это впечатление, чтобы Арвия оставалась по-прежнему самой богатой страной Нихерии. Но Филиас Нибети знает, что это временная заплатка... нужно найти более категоричный способ решить экономическую проблему.
+Соклиды, которым стало мало обычной деятельности, решили пользоваться занятостью власть имущих и начали активизироваться в областях шантажа, вымогательства, рэкета и иных «крышуемых» направлениях. Самые частые случаи происходят на родине гильдии убийц, в Арвии. Под не смертельный удар соклида Дхария попали даже владельцы своего дела в портах.</p>
+<p>Риафийский архипелаг и Агонтар
+Серьёзный отток граждан в Арвию привёл к тому, что чужих в городах стало больше, чем своих, из-за чего уровень преступности возрос до критических масштабов. Теперь в городах Риафийского архипелага даже спят в сапогах с оружием в руках, а маги − скрючив в сторону окон и дверей пальцы.
+Многие корабли с годами износились, поэтому пришлось закупать воздушные суда, а также искать пути массовой поставки древесины для строительства более совершенных морских судов. Архипелаг наконец-то добыл информацию о строительстве пароходов, однако ему нужно найти место и ресурсы для их производства.
+Наплевательское отношение к договорённости с Анделом о сдерживании грязи из Хельгерана дало плоды: на многострадальный Холиш обрушилось несколько волн обезумевших от беззакония и вечной опасности дикарей. Отбили без труда, благодаря магическим щитам, но основание одного из них было повреждено по халатности риафийцев. Теперь у Холиша «пробоина в трюме».
+Ясконтий-Агонтар − самец. Вот это поворот для всех, особенно мерий! Ему уже 105 лет и пора думать о продолжении рода. Расслабившиеся тёмные друиды замечают в последний год за черепахой редкие отклонения от курса, нервозность, трудности в управление, но не придавали этому особого значения. Пока на горизонте в северных водах РА не появился другой взрослый самец − и понеслась! Вой, драка, брызги, крики горожан! Агонтар переживает самое сильное черепахотрясение в своей истории.</p>
+<p>Андел
+Оказывается, сквозь защитные купола можно просочиться сквозь Мглу! Такой неутешительный вывод сделал совет магов Андела из-за участившихся появлений и нападений тёмных шаманов (подчинённых Шаридахре). Чтобы пресечь панические настроения в обществе, вся вина была свалена на дэвов... вот только не сделали ли андельцы хуже, приплетая к своим бедам демонов, а не людей из плоти и крови?
+Рядом с границами магического щита Андела и даже внутри стали появляться небольшие, как крохотные язвы, Места Порчи. Их зачистка − одно из дел первостепенной важности.</p>
+<p>Баспана
+В городах Баспаны началась крупномасштабная эпидемия гнилостной пожрянки (из-за перенаселения сильно загрязнились водоёмы и стало сложнее добывать чистую воду для питья). Она движется от Тейеля вниз по течению рек. Сообщается уже о нескольких полностью вымерших деревнях.
+В преддверии конца зимы Баспана принимает в своих пределах триумвират советников Альянса. Тёплый приём, но холодные взгляды. Совет начался ранним утром за закрытыми дверями залы замковых кулуаров герцога «Ворона». Советник войны Гатох Сейт прибыл, чтобы обсудить затеянную им освободительную компанию Гика, святыни виденской расы. Жрица Кайрелис скептически настроена ко всему этому мероприятию, полагая, что дело разрешит только личный визит Его Величества короля Баспаны Феликса Ира. Эта встреча обещает быть судьбоносной: Альянс Шести уже давно стоит на обрыве.
+Увеличение количества артефактов на рынках, а также числа химер создало серьёзное напряжение среди тех слоёв ретардов, которые когда-то бежали из Думанской империи. В основном, это простые люди, малообразованные, неосведомлённые о политических играх верхних слоёв власти. Наблюдается травля чародеев, виденов и даже обычных алхимиков с их стороны. Несладко и тем частям Баспаны, где открыто используют магию.
+Кипы книг, снятые углём копии барельефов, древние карты и переводы старых риафийских диалектов. Майрон Маруани с особым рвением ударился в изучение истории своей фамилии и прошлого родного края. Не без помощи своей подруги-археолога, подняв со дна реки забвения сказания о могучем языческом божестве, что носит на своих ветвистых рогах солнце и луну. Они напали на след чего-то более материального. Тайна утерянного и давно забытого искусства ковки особенного меча, о боевых качествах которого северяне складывали легенды.
+Очередная проверка таинственного Алого Дола, в которой на этот раз приняли участие баспанский тайный агент Грэхэм и матерый чародей Гудвин, добралась до места назначения и уже находится в процессе проведения предписанных мероприятий. Встречающие хозяева Дола и их помощники и в этот раз сохранят свои тайны или всё же проверка вскроет что-то эдакое?</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../menu/history/archive/epilogue.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../../menu/history/archive/46yne.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../menu/history/archive/epilogue.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../../menu/history/archive/46yne.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+
+        <script src="../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+        <!-- Open details to print -->
+        <script>
+            // open closed details elements for printing
+            window.addEventListener('beforeprint',() =>
+            {
+                const allDetails = document.body.querySelectorAll('details');
+                for(let i=0; i<allDetails.length; i++)
+                {
+                    if(allDetails[i].open)
+                    {
+                        allDetails[i].dataset.open = '1';
+                    }
+                    else
+                    {
+                        allDetails[i].setAttribute('open', '');
+                    }
+                }
+            });
+
+            // after printing close details elements not opened before
+            window.addEventListener('afterprint',() =>
+            {
+                const allDetails = document.body.querySelectorAll('details');
+                for(let i=0; i<allDetails.length; i++)
+                {
+                    if(allDetails[i].dataset.open)
+                    {
+                        allDetails[i].dataset.open = '';
+                    }
+                    else
+                    {
+                        allDetails[i].removeAttribute('open');
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

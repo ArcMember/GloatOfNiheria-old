@@ -1,0 +1,350 @@
+<!DOCTYPE HTML>
+<html lang="ru" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Алхимия - Злорадство Нихерии</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../custom.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <script src="../../../tools.js"></script>
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Содержание">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../../index.html"><strong aria-hidden="true">1.</strong> Меню</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/manual.html"><strong aria-hidden="true">1.1.</strong> Руководство</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/manual/quick-start.html"><strong aria-hidden="true">1.1.1.</strong> Быстрый старт</a></li><li class="chapter-item "><a href="../../../menu/manual/about.html"><strong aria-hidden="true">1.1.2.</strong> О ролевой</a></li><li class="chapter-item "><a href="../../../menu/manual/rules.html"><strong aria-hidden="true">1.1.3.</strong> Правила</a></li><li class="chapter-item "><a href="../../../menu/manual/templates.html"><strong aria-hidden="true">1.1.4.</strong> Шаблоны</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/manual/templates/quenta.html"><strong aria-hidden="true">1.1.4.1.</strong> Анкета</a></li><li class="chapter-item "><a href="../../../menu/manual/templates/search-coop.html"><strong aria-hidden="true">1.1.4.2.</strong> Поиск игрока</a></li><li class="chapter-item "><a href="../../../menu/manual/templates/create-location.html"><strong aria-hidden="true">1.1.4.3.</strong> Создание локации</a></li></ol></li><li class="chapter-item "><a href="../../../menu/manual/masters.html"><strong aria-hidden="true">1.1.5.</strong> Штаб Мастеров</a></li><li class="chapter-item "><a href="../../../menu/manual/leveling.html"><strong aria-hidden="true">1.1.6.</strong> Прокачка героя</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook.html"><strong aria-hidden="true">1.2.</strong> Путеводитель</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/races.html"><strong aria-hidden="true">1.2.1.</strong> Расы</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/races/besties.html"><strong aria-hidden="true">1.2.1.1.</strong> Бестийцы</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/dwarfs.html"><strong aria-hidden="true">1.2.1.2.</strong> Дворфы</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/kharfirs.html"><strong aria-hidden="true">1.2.1.3.</strong> Кхарфиры</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/lamah.html"><strong aria-hidden="true">1.2.1.4.</strong> Ламах</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/humans.html"><strong aria-hidden="true">1.2.1.5.</strong> Люди</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/meries.html"><strong aria-hidden="true">1.2.1.6.</strong> Мерии</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/redrehan.html"><strong aria-hidden="true">1.2.1.7.</strong> Редрехан</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/vampires.html"><strong aria-hidden="true">1.2.1.8.</strong> Вампиры</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/werewolfs.html"><strong aria-hidden="true">1.2.1.9.</strong> Оборотни</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/guilds.html"><strong aria-hidden="true">1.2.2.</strong> Гильдии</a></li><li class="chapter-item "><a href="../../../menu/guidebook/army.html"><strong aria-hidden="true">1.2.3.</strong> Армии</a></li><li class="chapter-item "><a href="../../../menu/guidebook/education.html"><strong aria-hidden="true">1.2.4.</strong> Образование</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books.html"><strong aria-hidden="true">1.2.5.</strong> Книги</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science.html"><strong aria-hidden="true">1.2.5.1.</strong> Научная литература</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science/bestiary.html"><strong aria-hidden="true">1.2.5.1.1.</strong> Бестиарий</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/diseases.html"><strong aria-hidden="true">1.2.5.1.2.</strong> Болезни</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics.html"><strong aria-hidden="true">1.2.5.1.3.</strong> Инженерия и паромеханика</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/steam-engine.html"><strong aria-hidden="true">1.2.5.1.3.1.</strong> Устройство парового двигателя Фелинварда Синоба</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/digest.html"><strong aria-hidden="true">1.2.5.1.3.2.</strong> Дайджест промышленного комплекса Нихерии</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/map-of-lost.html"><strong aria-hidden="true">1.2.5.1.3.3.</strong> Краткая карта утерянных технологий</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/naat-guns.html"><strong aria-hidden="true">1.2.5.1.3.4.</strong> Алхимические винтовка и пистолет Наат-Тхаес</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/printing-press.html"><strong aria-hidden="true">1.2.5.1.3.5.</strong> Механический типографический станок</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy.html"><strong aria-hidden="true">1.2.5.1.4.</strong> Алхимический Увраж</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/poisons.html"><strong aria-hidden="true">1.2.5.1.4.1.</strong> Ядоварение</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/drugs.html"><strong aria-hidden="true">1.2.5.1.4.2.</strong> Наркотики</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/ingredients.html"><strong aria-hidden="true">1.2.5.1.4.3.</strong> Ингредиенты</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/tinctures.html"><strong aria-hidden="true">1.2.5.1.4.4.</strong> Популярные настойки</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/poultices.html"><strong aria-hidden="true">1.2.5.1.4.5.</strong> Припарки Бромса</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/elixirs.html"><strong aria-hidden="true">1.2.5.1.4.6.</strong> Славные эликсиры</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/weapon.html"><strong aria-hidden="true">1.2.5.1.5.</strong> Вооружен до зубов</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science/weapon/cold.html"><strong aria-hidden="true">1.2.5.1.5.1.</strong> Холодное оружие</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/weapon/fire.html"><strong aria-hidden="true">1.2.5.1.5.2.</strong> Огнестрельное оружие</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/weapon/armor.html"><strong aria-hidden="true">1.2.5.1.5.3.</strong> Броня</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/medical-theurgy.html"><strong aria-hidden="true">1.2.5.1.6.</strong> Медицинская теургия</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/folklore.html"><strong aria-hidden="true">1.2.5.2.</strong> Фольклор</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/folklore/phrases.html"><strong aria-hidden="true">1.2.5.2.1.</strong> Поговорки</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/misc.html"><strong aria-hidden="true">1.2.5.3.</strong> Разные статьи</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/misc/digest.html"><strong aria-hidden="true">1.2.5.3.1.</strong> Именной справочник</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/bestiary.html"><strong aria-hidden="true">1.2.6.</strong> Бестиарий</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.1.</strong> Бестии</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.</strong> Дракониды</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.1.</strong> Гавиары</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.2.</strong> Мутанты</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.3.</strong> Нёхи</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.</strong> Твари</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.1.</strong> Создания</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.2.</strong> Водные</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.2.1.</strong> Хирды</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.3.</strong> Насекомые</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.</strong> Сущности</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.1.</strong> Элементали</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.2.</strong> Нежить</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.3.</strong> Мороки</div></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/contests.html"><strong aria-hidden="true">1.2.7.</strong> Конкурсы</a></li><li class="chapter-item "><a href="../../../menu/guidebook/games.html"><strong aria-hidden="true">1.2.8.</strong> Игры</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/games/windwarf.html"><strong aria-hidden="true">1.2.8.1.</strong> Виндворф</a></li><li class="chapter-item "><a href="../../../menu/guidebook/games/guran-pool.html"><strong aria-hidden="true">1.2.8.2.</strong> Гуранский пул</a></li><li class="chapter-item "><a href="../../../menu/guidebook/games/plates.html"><strong aria-hidden="true">1.2.8.3.</strong> Плашки</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/magic.html"><strong aria-hidden="true">1.3.</strong> Магия</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/magic/basics.html"><strong aria-hidden="true">1.3.1.</strong> Основы магии</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/magic/basics/матчасть.html"><strong aria-hidden="true">1.3.1.1.</strong> Теория магии</a></li></ol></li><li class="chapter-item "><a href="../../../menu/magic/branches.html"><strong aria-hidden="true">1.3.2.</strong> Ветви магии</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/magic/branches/white.html"><strong aria-hidden="true">1.3.2.1.</strong> Белая магия</a></li><li class="chapter-item "><a href="../../../menu/magic/branches/black.html"><strong aria-hidden="true">1.3.2.2.</strong> Чёрная магия</a></li><li class="chapter-item "><a href="../../../menu/magic/branches/creation.html"><strong aria-hidden="true">1.3.2.3.</strong> Магия Созидания</a></li><li class="chapter-item "><a href="../../../menu/magic/branches/influence.html"><strong aria-hidden="true">1.3.2.4.</strong> Магия Влияния</a></li></ol></li><li class="chapter-item "><a href="../../../menu/magic/phenomena.html"><strong aria-hidden="true">1.3.3.</strong> Явления магии</a></li><li class="chapter-item "><a href="../../../menu/magic/influence.html"><strong aria-hidden="true">1.3.4.</strong> Влияние рун</a></li><li class="chapter-item "><a href="../../../menu/magic/places.html"><strong aria-hidden="true">1.3.5.</strong> Места магии</a></li><li class="chapter-item "><a href="../../../menu/magic/artifactory.html"><strong aria-hidden="true">1.3.6.</strong> Артефакторика</a></li></ol></li><li class="chapter-item expanded "><a href="../../../menu/skills.html"><strong aria-hidden="true">1.4.</strong> Навыки</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/skills/military.html"><strong aria-hidden="true">1.4.1.</strong> Воинские дисциплины</a></li><li class="chapter-item "><a href="../../../menu/skills/crafts.html"><strong aria-hidden="true">1.4.2.</strong> Ремесла</a></li><li class="chapter-item expanded "><a href="../../../menu/skills/science.html"><strong aria-hidden="true">1.4.3.</strong> Науки</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/skills/science/artifactory.html"><strong aria-hidden="true">1.4.3.1.</strong> Артефакторика</a></li><li class="chapter-item expanded "><a href="../../../menu/skills/science/alchemy.html" class="active"><strong aria-hidden="true">1.4.3.2.</strong> Алхимия</a></li><li class="chapter-item "><a href="../../../menu/skills/science/linguistics.html"><strong aria-hidden="true">1.4.3.3.</strong> Лингвистика</a></li><li class="chapter-item "><a href="../../../menu/skills/science/mechanics.html"><strong aria-hidden="true">1.4.3.4.</strong> Паромеханика</a></li><li class="chapter-item "><a href="../../../menu/skills/science/unlife.html"><strong aria-hidden="true">1.4.3.5.</strong> Нежизнь</a></li><li class="chapter-item "><a href="../../../menu/skills/science/chimerology.html"><strong aria-hidden="true">1.4.3.6.</strong> Химерология</a></li></ol></li><li class="chapter-item "><a href="../../../menu/skills/occultism.html"><strong aria-hidden="true">1.4.4.</strong> Оккультизм</a></li><li class="chapter-item "><a href="../../../menu/skills/druidism.html"><strong aria-hidden="true">1.4.5.</strong> Друидизм</a></li></ol></li><li class="chapter-item "><a href="../../../menu/history.html"><strong aria-hidden="true">1.5.</strong> История</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/history/elder-ages.html"><strong aria-hidden="true">1.5.1.</strong> Ветхие эпохи</a></li><li class="chapter-item "><a href="../../../menu/history/old-time.html"><strong aria-hidden="true">1.5.2.</strong> Старое время</a></li><li class="chapter-item "><a href="../../../menu/history/outgoing-age.html"><strong aria-hidden="true">1.5.3.</strong> Уходящая эпоха</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/history/outgoing-age/stillborn-indict.html"><strong aria-hidden="true">1.5.3.1.</strong> Индикт Мертворождения</a></li><li class="chapter-item "><a href="../../../menu/history/outgoing-age/recovery-period.html"><strong aria-hidden="true">1.5.3.2.</strong> Период Восстановления</a></li><li class="chapter-item "><a href="../../../menu/history/outgoing-age/renaissance-period.html"><strong aria-hidden="true">1.5.3.3.</strong> Веха Возрождения</a></li><li class="chapter-item "><a href="../../../menu/history/outgoing-age/ruins-haze.html"><strong aria-hidden="true">1.5.3.4.</strong> Туманы Руин</a></li></ol></li><li class="chapter-item "><a href="../../../menu/history/timeline.html"><strong aria-hidden="true">1.5.4.</strong> Таймлайн</a></li><li class="chapter-item "><a href="../../../menu/history/archive.html"><strong aria-hidden="true">1.5.5.</strong> Архив</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/history/archive/epilogue.html"><strong aria-hidden="true">1.5.5.1.</strong> Эпилог 2020</a></li><li class="chapter-item "><a href="../../../menu/history/archive/10yem.html"><strong aria-hidden="true">1.5.5.2.</strong> Сводки за 10 гЭР</a></li><li class="chapter-item "><a href="../../../menu/history/archive/46yne.html"><strong aria-hidden="true">1.5.5.3.</strong> Сводки за 46 гНЭ</a></li><li class="chapter-item "><a href="../../../menu/history/archive/45yne.html"><strong aria-hidden="true">1.5.5.4.</strong> Сводки за 45 гНЭ</a></li><li class="chapter-item "><a href="../../../menu/history/archive/44yne.html"><strong aria-hidden="true">1.5.5.5.</strong> Сводки за 44 гНЭ</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/plot.html"><strong aria-hidden="true">1.6.</strong> Сюжет</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/plot/main/sacral.html"><strong aria-hidden="true">1.6.1.</strong> Сакральный хладагент</a></li><li class="chapter-item "><a href="../../../menu/plot/main/apotheosis.html"><strong aria-hidden="true">1.6.2.</strong> Апофеоз войны</a></li><li class="chapter-item "><a href="../../../menu/plot/main/wanderers.html"><strong aria-hidden="true">1.6.3.</strong> Скитальцы</a></li><li class="chapter-item "><a href="../../../menu/plot/global/emptiness.html"><strong aria-hidden="true">1.6.4.</strong> Блаженство пустоты</a></li><li class="chapter-item "><a href="../../../menu/plot/global/heromantia.html"><strong aria-hidden="true">1.6.5.</strong> Херомантия</a></li><li class="chapter-item "><a href="../../../menu/plot/global/lokomotiv.html"><strong aria-hidden="true">1.6.6.</strong> Локомотив забытых истин</a></li><li class="chapter-item "><a href="../../../menu/plot/local/drama.html"><strong aria-hidden="true">1.6.7.</strong> Раскаты драмы</a></li><li class="chapter-item "><a href="../../../menu/plot/local/song.html"><strong aria-hidden="true">1.6.8.</strong> Тут вообще песня</a></li><li class="chapter-item "><a href="../../../menu/plot/local/shards.html"><strong aria-hidden="true">1.6.9.</strong> Осколки будущего</a></li></ol></li><li class="chapter-item "><a href="../../../menu/navigation.html"><strong aria-hidden="true">1.7.</strong> Навигация</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/navigation/geopolitics.html"><strong aria-hidden="true">1.7.1.</strong> Геополитика</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/languages.html"><strong aria-hidden="true">1.7.1.1.</strong> Языки</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/languages/riat-n-baspaan.html"><strong aria-hidden="true">1.7.1.1.1.</strong> Риат и Баспаа́н</a></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.2.</strong> Риат'Арьярд</div></li><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/languages/hodrtahrot.html"><strong aria-hidden="true">1.7.1.1.3.</strong> Ходртахрот</a></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.4.</strong> Арвийский</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.5.</strong> Ре́дрех</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.6.</strong> Ктаавехт</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.7.</strong> Мордвинский</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.8.</strong> Крат</div></li></ol></li><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/cultures.html"><strong aria-hidden="true">1.7.1.2.</strong> Культуры</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.1.</strong> Редрехан</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.2.</strong> Тейель</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.3.</strong> Кхафра</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.4.</strong> Луат</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.5.</strong> Адмиралтейство</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.6.</strong> Флатрия</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.7.</strong> Сикстинния</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.8.</strong> Ламах</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.9.</strong> Мордвин</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.10.</strong> Арвия</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.11.</strong> Хельгеран</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.12.</strong> Мародеры</div></li></ol></li><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/states.html"><strong aria-hidden="true">1.7.1.3.</strong> Державы</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.1.</strong> Реабор-Тхаес</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.2.</strong> Вече Тейель</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.3.</strong> Великая Афитра</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.4.</strong> Последняя Республика Луат</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.5.</strong> Коркафт</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.6.</strong> Доминион Флатрия</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.7.</strong> Сикстиннский Доминион</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.8.</strong> Доминион Секри</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.9.</strong> Древняя Мордвинская империя</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.10.</strong> Кланы Золотого Гребня</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.11.</strong> Хельгеран</div></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/guilds.html"><strong aria-hidden="true">1.7.1.4.</strong> Гильдии</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.1.</strong> Железнодорожники</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.2.</strong> Искра</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.3.</strong> Бюро Вычищения</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.4.</strong> Ассоциация С'Итш'Тас</div></li><li class="chapter-item "><a href="../../../menu/guidebook/guilds/inferdormis.html"><strong aria-hidden="true">1.7.1.4.5.</strong> Инфердормис</a></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.6.</strong> Девы Победы</div></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/navigation/geography.html"><strong aria-hidden="true">1.7.2.</strong> География</a></li><li class="chapter-item "><a href="../../../menu/navigation/locations.html"><strong aria-hidden="true">1.7.3.</strong> Локации</a></li><li class="chapter-item "><a href="../../../menu/navigation/transport.html"><strong aria-hidden="true">1.7.4.</strong> Транспорт</a></li><li class="chapter-item "><a href="../../../menu/navigation/cosmology.html"><strong aria-hidden="true">1.7.5.</strong> Космология</a></li><li class="chapter-item "><a href="../../../menu/navigation/new-lands.html"><strong aria-hidden="true">1.7.6.</strong> Новые земли</a></li></ol></li><li class="chapter-item "><a href="../../../menu/economy.html"><strong aria-hidden="true">1.8.</strong> Экономика</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/economy/about-money.html"><strong aria-hidden="true">1.8.1.</strong> О деньгах</a></li><li class="chapter-item "><a href="../../../menu/economy/earning.html"><strong aria-hidden="true">1.8.2.</strong> Заработок</a></li><li class="chapter-item "><a href="../../../menu/economy/finances.html"><strong aria-hidden="true">1.8.3.</strong> Финансы</a></li></ol></li><li class="chapter-item "><a href="../../../menu/characters.html"><strong aria-hidden="true">1.9.</strong> Персонажи</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/characters/registered.html"><strong aria-hidden="true">1.9.1.</strong> Зарегистрированные</a></li><li class="chapter-item "><a href="../../../menu/characters/canons.html"><strong aria-hidden="true">1.9.2.</strong> Каноны</a></li><li class="chapter-item "><a href="../../../menu/characters/graveyard.html"><strong aria-hidden="true">1.9.3.</strong> Кладбище</a></li></ol></li><li class="chapter-item "><a href="../../../menu/tools.html"><strong aria-hidden="true">1.10.</strong> Инструменты</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/tools/age.html"><strong aria-hidden="true">1.10.1.</strong> Возраст</a></li><li class="chapter-item "><a href="../../../menu/tools/banking.html"><strong aria-hidden="true">1.10.2.</strong> Банкинг</a></li><li class="chapter-item "><a href="../../../menu/tools/map.html"><strong aria-hidden="true">1.10.3.</strong> Карта</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+        
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Содержание" aria-label="Содержание" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Сменить тему" aria-label="Сменить тему" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Темы" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Светлый</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Темный</button></li>
+                        </ul>
+                        <a onclick="window.location.href = '../../../print.html'" title="Распечатать" aria-label="Распечатать">
+                            <i id="print-button" class="fa fa-print"></i><span style="font-family: 'Open Sans', sans-serif; cursor: default;">книга</span>
+                        </a>
+                        <a onclick="print()" title="Распечатать страницу" aria-label="Распечатать страницу">
+                            <i id="print-button" class="fa fa-print"></i><span style="font-family: 'Open Sans', sans-serif; cursor: default;">статья</span>
+                        </a>
+                    </div>
+
+                    <h1 class="menu-title">Злорадство Нихерии</h1>                    
+
+                    <div class="right-buttons">                        
+                        <span onclick="window.location.href = '../../../menu/tools.html';" style="cursor: default;">Инструменты:</span>
+                        <!-- Age Calculator -->
+                        <a href="../../../menu/tools/age.html" title="Калькулятор возраста" aria-label="Калькулятор возраста">
+                            <i id="age-calc-button" class="fa fa-hourglass-end"></i>
+                        </a>
+                        <!-- Banking Calculator -->
+                        <a href="../../../menu/tools/banking.html" title="Банковский калькулятор" aria-label="Банковский калькулятор">
+                            <i id="bank-calc-button" class="fa fa-university"></i>
+                        </a>
+                        <!-- Map -->
+                        <a href="../../../menu/tools/map.html" title="Карта" aria-label="Карта">
+                            <i id="map-button" class="fa fa-map"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <div class="niheria-nav main-menu-el">
+                            <a class="niheria-nav-btn main-menu-text" href="javascript:history.back()">Назад</a>  
+                            <a class="niheria-nav-btn main-menu-text" href="../../../index.html">Меню</a>  
+                        </div>
+                        <div class="side-board">
+<div>
+<img class="cover" src="alchemy/cover.png">
+<div class="art-credits"><a href="https://www.artstation.com/alexkonstad">Автор арта — Alex Konstad</a></div>
+</div>
+<div class="side-block left toc">
+<ul>
+<li><a href="#%D0%90%D0%BB%D1%85%D0%B8%D0%BC%D0%B8%D1%8F-%D0%B2-%D0%B6%D0%B8%D0%B7%D0%BD%D0%B8-%D0%9D%D0%B8%D1%85%D0%B5%D1%80%D0%B8%D0%B8">Алхимия в жизни Нихерии</a></li>
+<li><a href="#%D0%9D%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0%D1%83%D0%BA%D0%B8">Направления науки</a></li>
+<li><a href="#%D0%A0%D0%B5%D1%86%D0%B5%D0%BF%D1%82%D1%83%D1%80%D0%B0">Рецептура</a></li>
+<li><a href="#%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B0%D0%BB%D1%85%D0%B8%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B8%D0%BD%D0%B3%D1%80%D0%B8%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D1%8B">«Классические» алхимические ингридиенты</a>
+<ul>
+<li><a href="#%D0%AF%D0%B4%D0%BE%D0%B2%D0%B8%D1%82%D1%8B%D0%B5">Ядовитые</a></li>
+<li><a href="#%D0%9B%D0%B5%D0%BA%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5">Лекарственные</a></li>
+<li><a href="#%D0%A1%D0%B5%D0%B4%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5">Седативные</a></li>
+<li><a href="#%D0%93%D0%B0%D0%BB%D1%8E%D1%86%D0%B8%D0%BD%D0%BE%D0%B3%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5">Галюциногенные</a></li>
+<li><a href="#%D0%93%D0%BE%D1%80%D1%8E%D1%87%D0%B8%D0%B5">Горючие</a></li>
+<li><a href="#%D0%9F%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5">Промышленные</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<blockquote attention>
+<p>Самая старая из всех наук в мире. <strong>Алхимия — это колбочки, реторты, перегонные кубы, ступки и пестики.</strong> Искусство варки зелий и ядов — это не управление материей, как в случае с магией, это умение использовать законы природы в своих целях. Но, несмотря на это, непросвещённый народ так и норовит обозвать работу алхимика колдовством. Светящаяся баночка с зельем — магия. Горящий порошок — магия. Мазь, заживляющая раны, — тоже магия. Так и сформировался стереотип, превративший науку пользования дарами природы в полумистическую ересь, обросшую толстым слоем слухов и домыслов. Среди нелепиц есть утверждения, что алхимия может превратить слабака в богатыря, уродину в красавицу, деревяшку в золото. В основном, всё это не правда. Но, как говорят, в каждом слухе есть крупица истины.</p>
+<p>Алхимия в Нихерии сумела подстроиться под общество в разных уголках мира, подавила обычную медицину и подарила людям и нелюдям порох.</p>
+</blockquote>
+<h2 id="Алхимия-в-жизни-Нихерии"><a class="header" href="#Алхимия-в-жизни-Нихерии">Алхимия в жизни Нихерии</a></h2>
+<ul>
+<li>Использование трав, <strong>создание снадобий</strong>. Процесс это трудоёмкий, требующий внимательности, точности и терпения. Некоторые зелья приходится готовить месяцами, а некоторые требуют, чтобы их постоянно помешивали. В связи с этим всё алхимическое производство очень дорогое, зато действенное.</li>
+<li><strong>В алхимии лекарство и яд — средства одного порядка</strong>. Алхимия позволила не только излечить множество болезней и спасти жизнь сотням пострадавшим в битвах, но и стала частым подспорьем хитроумных отравителей и основой массовых чисток. </li>
+<li>Многие знатные и богатые женщины готовы выложить крупные суммы за <strong>чудодейственные мази</strong>, что делают кожу бархатистой, светлой и чистой. Ремесло зельеварения сильно повлияло на индустрию моды. </li>
+<li>Алхимия повлияла на развитие <strong>травничества</strong>. Чтобы создавать зелья, необходимо искать травы и ингредиенты с особыми свойствами, из-за чего у алхимии никогда не случалось периодов застоя.</blockquote></li>
+</ul>
+<h2 id="Направления-науки"><a class="header" href="#Направления-науки">Направления науки</a></h2>
+<p>В алхимии есть несколько направлений: <strong>зельеварение</strong> (включающее помимо зелий также эликсиры, настойки, снадобья, мази, припарки и т.д); <strong>ядоварение</strong> и <strong>трансмутация</strong>. Если с первыми двумя всё ясно из названий, то о трансмутации стоит поговорить подробнее.</p>
+<p><strong>Трансмутация</strong> — это направление, в котором как раз и изучается тот самый способ превращения дерева в золото. Но добиться этого пока никому, конечно, не удалось. Грубо говоря, трансмутацией занимаются алхимики-позёры, которым приятны слава и ажиотаж, а не получение результата трудов. Их бесплодные попытки удерживают интерес общества к алхимии и являются как предметом споров многих великих умов, так и сюжетом для многих сказок и легенд.</p>
+<blockquote>Важнейший аспект и закон алхимии: она позволяет изменять структуру, но никогда не создаёт что-то новое. </blockquote>
+<p>Алхимия берёт в одном месте и всегда даёт что-то в другом, подобно влиянию друидов на природу. В основном алхимия используется для влияния на уже имеющиеся процессы в теле живого существа. Ускорить или замедлить обмен веществ, вызвать состояние глубокого сна, заставить тело обновиться (в рамках разумного) или, наоборот, застыть в нынешнем состоянии на долгое время.</p>
+<h2 id="Рецептура"><a class="header" href="#Рецептура">Рецептура</a></h2>
+<p>Алхимия включает в себя сотни рецептов зелий, тысячи видов растений и грибов, множество ингредиентов животного происхождения и десятки вариаций названий всего этого на разных языках.</p>
+<p>В каждом уголке Нихерии есть свои списки и энциклопедии по алхимии.</p>
+<blockquote text>
+<p><strong>Основы для приготовления зелий, эликсиров, порошков и прочего:</strong></p>
+<ul>
+<li>Эфирные и растительные масла, животный жир — для составов наружного применения.</li>
+<li>Вода и спирт — для принятия внутрь.</li>
+<li>Ещё бывают порошки. Их можно вдыхать, поджигать для окуривания, поджигать для взрывания (нюхательная соль, порох, лечебные порошки).</li>
+</ul>
+</blockquote>
+<h2 id="Классические-алхимические-ингридиенты"><a class="header" href="#Классические-алхимические-ингридиенты">«Классические» алхимические ингридиенты</a></h2>
+<div two-board-columns style="font-size: smaller;">
+<div>
+<h3 id="Ядовитые"><a class="header" href="#Ядовитые">Ядовитые</a></h3>
+<p>Кроме основного эффекта, нужного в приготовлении ядов, употребление малых доз некоторых представленных здесь ингредиентов может оказать лечебный эффект.</p>
+<ul>
+<li><strong>Кровопийка</strong> — полностью красное кустарниковое растение с мелкими листьями и солёными чёрными ягодами. Произрастает там, где недавно проливалась кровь. Для выращивания в домашних условиях требует того же удобрения.</li>
+<li><strong>Удавник</strong> — узловатое серо-зелёное растение без листьев, произрастающее на берегах рек и озёр, чаще всего в тени и иле.</li>
+<li><strong>Ксатрийская кровь</strong> — колючее растение, цветущее одним крупным красным цветком. Листья тёмно-зелёные, матовые. Встречается в степях.</li>
+<li><strong>Призрачная поганка</strong> — гриб прозрачно-белого цвета с ореховым запахом. Можно найти в любой глубокой пещере или вырастить в тёмном сыром подвале.</li>
+<li><strong>Язык аспида</strong> — высокий побег, раздваивающийся вверху на два острых листа, покрытых жгучими щетинками. Растёт преимущественно в лесу у корней деревьев или в ямах.</li>
+</ul>
+</div>
+<div>
+<h3 id="Лекарственные"><a class="header" href="#Лекарственные">Лекарственные</a></h3>
+<p>Всё, входящее в эту категорию, обладает сильным лечебным эффектом. В больших дозах может привести к отравлению.</p>
+<ul>
+<li><strong>Мироцвет</strong> — бледно-серое растение с салатовыми листьями. Встречается повсеместно с весны по осень.</li>
+<li><strong>Остротёрн</strong> — колючий коричневый кустарник без листьев. Произрастает на границах с пустынями или в засушливых солнечных местах. В избытке встречается в Арвии и Золотом Гребне.</li>
+<li><strong>Морозник</strong> — крохотное синее растение, похожее на грибы без шляпки. Растёт только зимой или в холодных местах там, где нет снега и почва хотя бы немного мягкая. В тепле темнеет и вянет. Сбивает жар.</li>
+<li><strong>Голубой клевер</strong> — растение, растущее целыми коврами. Листья круглые и голубые, соцветия белые, имеют форму шишек. Встречается повсеместно, чаще всего в период между весной и летом.</li>
+<li><strong>Ползучник</strong> — незаметное растение жёлто-коричневого цвета, оплетающее стволы деревьев и большие камни. Грубая поверхность стеблей и шершавая фактура обеспечивают маскировку от травоядных животных и докучливых травников.</li>
+</ul>
+</div>
+<div>
+<h3 id="Седативные"><a class="header" href="#Седативные">Седативные</a></h3>
+<p>Успокоительный эффект этих ингредиентов может помочь избавиться от лёгкого невроза или бессонницы, а может превратить в «овоща» на продолжительное время.</p>
+<ul>
+<li><strong>Сребролист</strong> — кустарниковое растение зелёного цвета с крупными длинными листьями, покрытое белой пыльцой и густыми щетинками. Особенно ценны синие мелкие гроздья ягод, созревающие к концу лета. Встречается в тенистых лесах.</li>
+<li><strong>Алый лотос</strong> — растение-одиночка, предпочитающее берега чистых горных озёр. В радиусе трёх шагов больше ничего не растёт по ещё не выясненным причинам.</li>
+<li><strong>Гром</strong> — мелкий кустарник, похожий на завитки с тёмно-зелёными круглыми листьями размером не больше куриного яйца. Обладает сногсшибательно-резким запахом, из-за чего его не трогают животные.</li>
+<li><strong>Корень Мартара</strong> — подвид свеклы, корнеплод которого представляет собой сплющенный диск и устремляющийся вниз на полметра носик. Ценен перетертым и промытым. После промывания три четверти его массы растворяются, сотавляя только самое «вкусное».</li>
+<li><strong>Гортонна</strong> – гриб, произрастающий на тропических островах в небольших, но плотных чащах. Крупный, округлый и часто весьма многочисленный.</li>
+</ul>
+</div>
+<div>
+<h3 id="Галюциногенные"><a class="header" href="#Галюциногенные">Галюциногенные</a></h3>
+<p>Вызывают галлюцинации или просто искажают нормальное восприятие действительности. В большинстве своём токсичны и при злоупотреблении могут привести к летальному исходу.</p>
+<ul>
+<li><strong>Кручёный корень</strong> — крупное растение со светло-зелёными листьями, похожими на папоротник. В алхимии используют только корни, похожие на обрывки толстых канатов. Встречается в сухих лесах.</li>
+<li><strong>Бледнолист</strong> — сорняк, обожающий свежевспаханную землю. Растёт быстро, достигает за месяц до полутора метров в высоту. Гибкие стебли, листья похожи на кленовые, разлапистые, светлые снизу. Голыми руками трогать не рекомендуется.</li>
+<li><strong>Снолист</strong> — тёмно-зелёное растение с двумя листьями нежного жёлтого цвета. Целиком покрыт мягкими безопасными ворсинками. Встречается крайне редко на холмах и других возвышенностях при умеренном климате.</li>
+<li><strong>Гаспаров ус</strong> — похожее на клок белых волос растение, растущее поблизости от Мест Силы.</li>
+<li><strong>Ползучий живорост</strong> — тёмно-серый мох с редкими светло-серыми жилами, состоящий из множества плотных жил, активно двигающихся при испарении впитанной ими воды. Вся масса обычно собирается в продолговатые колонии верёвочной структуры. Если прокипятить, жилы испаряются, а от растения остаётся только крепкая верёвка. Раствор из порошка создает короткий, но яркий наркотический эффект. Передозировка вызывает мгновенную смерть. Оставшийся на дне осадок эффектов не имеет, как и порошок вне раствора.</li>
+</ul>
+</div>
+<div>
+<h3 id="Горючие"><a class="header" href="#Горючие">Горючие</a></h3>
+<p>Используются для создания взрывоопасных и горючих зелий\порошков. Содержащиеся в них вещества чувствительны к огню и могут воспламениться или даже взорваться. Работа с этими ингредиентами требует максимальной осторожности и внимательности.</p>
+<ul>
+<li><strong>Рыжий мох</strong> — редкое растение, предпочитающие тёплые камни и солнечные поляны.</li>
+<li><strong>Огнецвет</strong> — растение с несколькими красивыми длинными листьями и колокольчиками жёлто-красного цвета. Капризное, предпочитает мягкую почву вкупе с сухим климатом.</li>
+<li><strong>Бледный лишайник</strong> — редкое растение, растущее на стенах сухих пещер. Светится в темноте жёлто-красным цветом, чутко реагирует на прикосновения.</li>
+<li><strong>Огнешляпка</strong> — гриб со светящейся жёлтой шляпкой. Растёт на болотах, но не рядом с открытой водой.</li>
+<li><strong>Роза Триатры</strong> — встречается на песчаной почве близ морской воды. От обычной розы отличается мягким стеблем и отсутствием запаха.</li>
+</ul>
+</div>
+</div>
+<div style="font-size: smaller;">
+<h3 id="Промышленные"><a class="header" href="#Промышленные">Промышленные</a></h3>
+<p>Используются для изготовления клейких, светящихся и прочих веществ.</p>
+<ul>
+<li><strong>Арвийская телогрейка</strong> — корнеплод южных степей, расширяющийся и нагревающийся после оказания на него сильного давления, и скукоживающийся и охлаждающийся при попытке сильного растягивания. Мастера алхимии знают ему цену, глупцы же проходят мимо.</li>
+<li><strong>Слава</strong> — цветок, ставший визитной карточкой сикстиннской парфюмерии и кулинарии. Из экстракты цветков производят «бунтарские» (в противовес ванильным) ароматические масла и духи, а высушенные и толчёные семена ценятся как приправа из-за своего пикантного в меру острого вкуса, добавляется в напитки.</li>
+<li><strong>Злонамерка высотная</strong> — гриб, произрастающий на утесах Риафийского полуострова. Матово-серый налёт скрывает пульсирующее тёмно-зеленое свечение. Осторожно: при сборе одного гриба, другие получают от него «импульс» и разрываются, разнося споры по округе. Реакцию можно предотвратить, аккуратно разрезав все соединяющие грибы каналы. Оставшаяся после разрыва жидкость — долговечный, но очень долго застывающий клей. Перегонка и фильтрация сока злонамерки производит «Злонамерение» — напиток, вызывающий эйфорию и поистине детскую, ужасающую жестокость. Из успешно добытой пульсирующей части, используя ступку и пестик, можно получить «Зло» — наркотик, выщывающий сильное привыкание с соответствующе сильным эффектом эйфории и галлюцинаций.</li>
+<li><strong>Райтарит</strong> — кристаллический минерал, нередко встречающийся на юго-западе. Конденсирует влагу из окружающей среды на своей поверхности и не даёт ей испариться обратно в среду. Используется для осушения инструментов или добычи воды из воздуха.</li>
+<li><strong>Дейрад</strong> — кристалл, изредка встречающийся на островах Риафийского архипелага. Поглощает свет, который испускает затем при применении на него некоторой силы, а разбившись — ярко вспыхивает.</li>
+</ul>
+</div>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../menu/skills/science/artifactory.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../../menu/skills/science/linguistics.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../menu/skills/science/artifactory.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../../menu/skills/science/linguistics.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+
+        <script src="../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+        <!-- Open details to print -->
+        <script>
+            // open closed details elements for printing
+            window.addEventListener('beforeprint',() =>
+            {
+                const allDetails = document.body.querySelectorAll('details');
+                for(let i=0; i<allDetails.length; i++)
+                {
+                    if(allDetails[i].open)
+                    {
+                        allDetails[i].dataset.open = '1';
+                    }
+                    else
+                    {
+                        allDetails[i].setAttribute('open', '');
+                    }
+                }
+            });
+
+            // after printing close details elements not opened before
+            window.addEventListener('afterprint',() =>
+            {
+                const allDetails = document.body.querySelectorAll('details');
+                for(let i=0; i<allDetails.length; i++)
+                {
+                    if(allDetails[i].dataset.open)
+                    {
+                        allDetails[i].dataset.open = '';
+                    }
+                    else
+                    {
+                        allDetails[i].removeAttribute('open');
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

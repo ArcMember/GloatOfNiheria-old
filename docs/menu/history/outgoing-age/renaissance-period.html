@@ -1,0 +1,372 @@
+<!DOCTYPE HTML>
+<html lang="ru" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Веха Возрождения - Злорадство Нихерии</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../custom.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <script src="../../../tools.js"></script>
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Содержание">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../../index.html"><strong aria-hidden="true">1.</strong> Меню</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/manual.html"><strong aria-hidden="true">1.1.</strong> Руководство</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/manual/quick-start.html"><strong aria-hidden="true">1.1.1.</strong> Быстрый старт</a></li><li class="chapter-item "><a href="../../../menu/manual/about.html"><strong aria-hidden="true">1.1.2.</strong> О ролевой</a></li><li class="chapter-item "><a href="../../../menu/manual/rules.html"><strong aria-hidden="true">1.1.3.</strong> Правила</a></li><li class="chapter-item "><a href="../../../menu/manual/templates.html"><strong aria-hidden="true">1.1.4.</strong> Шаблоны</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/manual/templates/quenta.html"><strong aria-hidden="true">1.1.4.1.</strong> Анкета</a></li><li class="chapter-item "><a href="../../../menu/manual/templates/search-coop.html"><strong aria-hidden="true">1.1.4.2.</strong> Поиск игрока</a></li><li class="chapter-item "><a href="../../../menu/manual/templates/create-location.html"><strong aria-hidden="true">1.1.4.3.</strong> Создание локации</a></li></ol></li><li class="chapter-item "><a href="../../../menu/manual/masters.html"><strong aria-hidden="true">1.1.5.</strong> Штаб Мастеров</a></li><li class="chapter-item "><a href="../../../menu/manual/leveling.html"><strong aria-hidden="true">1.1.6.</strong> Прокачка героя</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook.html"><strong aria-hidden="true">1.2.</strong> Путеводитель</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/races.html"><strong aria-hidden="true">1.2.1.</strong> Расы</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/races/besties.html"><strong aria-hidden="true">1.2.1.1.</strong> Бестийцы</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/dwarfs.html"><strong aria-hidden="true">1.2.1.2.</strong> Дворфы</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/kharfirs.html"><strong aria-hidden="true">1.2.1.3.</strong> Кхарфиры</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/lamah.html"><strong aria-hidden="true">1.2.1.4.</strong> Ламах</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/humans.html"><strong aria-hidden="true">1.2.1.5.</strong> Люди</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/meries.html"><strong aria-hidden="true">1.2.1.6.</strong> Мерии</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/redrehan.html"><strong aria-hidden="true">1.2.1.7.</strong> Редрехан</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/vampires.html"><strong aria-hidden="true">1.2.1.8.</strong> Вампиры</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/werewolfs.html"><strong aria-hidden="true">1.2.1.9.</strong> Оборотни</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/guilds.html"><strong aria-hidden="true">1.2.2.</strong> Гильдии</a></li><li class="chapter-item "><a href="../../../menu/guidebook/army.html"><strong aria-hidden="true">1.2.3.</strong> Армии</a></li><li class="chapter-item "><a href="../../../menu/guidebook/education.html"><strong aria-hidden="true">1.2.4.</strong> Образование</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books.html"><strong aria-hidden="true">1.2.5.</strong> Книги</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science.html"><strong aria-hidden="true">1.2.5.1.</strong> Научная литература</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science/bestiary.html"><strong aria-hidden="true">1.2.5.1.1.</strong> Бестиарий</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/diseases.html"><strong aria-hidden="true">1.2.5.1.2.</strong> Болезни</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics.html"><strong aria-hidden="true">1.2.5.1.3.</strong> Инженерия и паромеханика</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/steam-engine.html"><strong aria-hidden="true">1.2.5.1.3.1.</strong> Устройство парового двигателя Фелинварда Синоба</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/digest.html"><strong aria-hidden="true">1.2.5.1.3.2.</strong> Дайджест промышленного комплекса Нихерии</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/map-of-lost.html"><strong aria-hidden="true">1.2.5.1.3.3.</strong> Краткая карта утерянных технологий</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/naat-guns.html"><strong aria-hidden="true">1.2.5.1.3.4.</strong> Алхимические винтовка и пистолет Наат-Тхаес</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/printing-press.html"><strong aria-hidden="true">1.2.5.1.3.5.</strong> Механический типографический станок</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy.html"><strong aria-hidden="true">1.2.5.1.4.</strong> Алхимический Увраж</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/poisons.html"><strong aria-hidden="true">1.2.5.1.4.1.</strong> Ядоварение</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/drugs.html"><strong aria-hidden="true">1.2.5.1.4.2.</strong> Наркотики</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/ingredients.html"><strong aria-hidden="true">1.2.5.1.4.3.</strong> Ингредиенты</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/tinctures.html"><strong aria-hidden="true">1.2.5.1.4.4.</strong> Популярные настойки</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/poultices.html"><strong aria-hidden="true">1.2.5.1.4.5.</strong> Припарки Бромса</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/elixirs.html"><strong aria-hidden="true">1.2.5.1.4.6.</strong> Славные эликсиры</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/weapon.html"><strong aria-hidden="true">1.2.5.1.5.</strong> Вооружен до зубов</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science/weapon/cold.html"><strong aria-hidden="true">1.2.5.1.5.1.</strong> Холодное оружие</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/weapon/fire.html"><strong aria-hidden="true">1.2.5.1.5.2.</strong> Огнестрельное оружие</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/weapon/armor.html"><strong aria-hidden="true">1.2.5.1.5.3.</strong> Броня</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/medical-theurgy.html"><strong aria-hidden="true">1.2.5.1.6.</strong> Медицинская теургия</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/folklore.html"><strong aria-hidden="true">1.2.5.2.</strong> Фольклор</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/folklore/phrases.html"><strong aria-hidden="true">1.2.5.2.1.</strong> Поговорки</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/misc.html"><strong aria-hidden="true">1.2.5.3.</strong> Разные статьи</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/misc/digest.html"><strong aria-hidden="true">1.2.5.3.1.</strong> Именной справочник</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/bestiary.html"><strong aria-hidden="true">1.2.6.</strong> Бестиарий</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.1.</strong> Бестии</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.</strong> Дракониды</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.1.</strong> Гавиары</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.2.</strong> Мутанты</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.3.</strong> Нёхи</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.</strong> Твари</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.1.</strong> Создания</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.2.</strong> Водные</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.2.1.</strong> Хирды</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.3.</strong> Насекомые</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.</strong> Сущности</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.1.</strong> Элементали</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.2.</strong> Нежить</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.3.</strong> Мороки</div></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/contests.html"><strong aria-hidden="true">1.2.7.</strong> Конкурсы</a></li><li class="chapter-item "><a href="../../../menu/guidebook/games.html"><strong aria-hidden="true">1.2.8.</strong> Игры</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/games/windwarf.html"><strong aria-hidden="true">1.2.8.1.</strong> Виндворф</a></li><li class="chapter-item "><a href="../../../menu/guidebook/games/guran-pool.html"><strong aria-hidden="true">1.2.8.2.</strong> Гуранский пул</a></li><li class="chapter-item "><a href="../../../menu/guidebook/games/plates.html"><strong aria-hidden="true">1.2.8.3.</strong> Плашки</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/magic.html"><strong aria-hidden="true">1.3.</strong> Магия</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/magic/basics.html"><strong aria-hidden="true">1.3.1.</strong> Основы магии</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/magic/basics/матчасть.html"><strong aria-hidden="true">1.3.1.1.</strong> Теория магии</a></li></ol></li><li class="chapter-item "><a href="../../../menu/magic/branches.html"><strong aria-hidden="true">1.3.2.</strong> Ветви магии</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/magic/branches/white.html"><strong aria-hidden="true">1.3.2.1.</strong> Белая магия</a></li><li class="chapter-item "><a href="../../../menu/magic/branches/black.html"><strong aria-hidden="true">1.3.2.2.</strong> Чёрная магия</a></li><li class="chapter-item "><a href="../../../menu/magic/branches/creation.html"><strong aria-hidden="true">1.3.2.3.</strong> Магия Созидания</a></li><li class="chapter-item "><a href="../../../menu/magic/branches/influence.html"><strong aria-hidden="true">1.3.2.4.</strong> Магия Влияния</a></li></ol></li><li class="chapter-item "><a href="../../../menu/magic/phenomena.html"><strong aria-hidden="true">1.3.3.</strong> Явления магии</a></li><li class="chapter-item "><a href="../../../menu/magic/influence.html"><strong aria-hidden="true">1.3.4.</strong> Влияние рун</a></li><li class="chapter-item "><a href="../../../menu/magic/places.html"><strong aria-hidden="true">1.3.5.</strong> Места магии</a></li><li class="chapter-item "><a href="../../../menu/magic/artifactory.html"><strong aria-hidden="true">1.3.6.</strong> Артефакторика</a></li></ol></li><li class="chapter-item "><a href="../../../menu/skills.html"><strong aria-hidden="true">1.4.</strong> Навыки</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/skills/military.html"><strong aria-hidden="true">1.4.1.</strong> Воинские дисциплины</a></li><li class="chapter-item "><a href="../../../menu/skills/crafts.html"><strong aria-hidden="true">1.4.2.</strong> Ремесла</a></li><li class="chapter-item "><a href="../../../menu/skills/science.html"><strong aria-hidden="true">1.4.3.</strong> Науки</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/skills/science/artifactory.html"><strong aria-hidden="true">1.4.3.1.</strong> Артефакторика</a></li><li class="chapter-item "><a href="../../../menu/skills/science/alchemy.html"><strong aria-hidden="true">1.4.3.2.</strong> Алхимия</a></li><li class="chapter-item "><a href="../../../menu/skills/science/linguistics.html"><strong aria-hidden="true">1.4.3.3.</strong> Лингвистика</a></li><li class="chapter-item "><a href="../../../menu/skills/science/mechanics.html"><strong aria-hidden="true">1.4.3.4.</strong> Паромеханика</a></li><li class="chapter-item "><a href="../../../menu/skills/science/unlife.html"><strong aria-hidden="true">1.4.3.5.</strong> Нежизнь</a></li><li class="chapter-item "><a href="../../../menu/skills/science/chimerology.html"><strong aria-hidden="true">1.4.3.6.</strong> Химерология</a></li></ol></li><li class="chapter-item "><a href="../../../menu/skills/occultism.html"><strong aria-hidden="true">1.4.4.</strong> Оккультизм</a></li><li class="chapter-item "><a href="../../../menu/skills/druidism.html"><strong aria-hidden="true">1.4.5.</strong> Друидизм</a></li></ol></li><li class="chapter-item expanded "><a href="../../../menu/history.html"><strong aria-hidden="true">1.5.</strong> История</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/history/elder-ages.html"><strong aria-hidden="true">1.5.1.</strong> Ветхие эпохи</a></li><li class="chapter-item "><a href="../../../menu/history/old-time.html"><strong aria-hidden="true">1.5.2.</strong> Старое время</a></li><li class="chapter-item expanded "><a href="../../../menu/history/outgoing-age.html"><strong aria-hidden="true">1.5.3.</strong> Уходящая эпоха</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/history/outgoing-age/stillborn-indict.html"><strong aria-hidden="true">1.5.3.1.</strong> Индикт Мертворождения</a></li><li class="chapter-item "><a href="../../../menu/history/outgoing-age/recovery-period.html"><strong aria-hidden="true">1.5.3.2.</strong> Период Восстановления</a></li><li class="chapter-item expanded "><a href="../../../menu/history/outgoing-age/renaissance-period.html" class="active"><strong aria-hidden="true">1.5.3.3.</strong> Веха Возрождения</a></li><li class="chapter-item "><a href="../../../menu/history/outgoing-age/ruins-haze.html"><strong aria-hidden="true">1.5.3.4.</strong> Туманы Руин</a></li></ol></li><li class="chapter-item "><a href="../../../menu/history/timeline.html"><strong aria-hidden="true">1.5.4.</strong> Таймлайн</a></li><li class="chapter-item "><a href="../../../menu/history/archive.html"><strong aria-hidden="true">1.5.5.</strong> Архив</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/history/archive/epilogue.html"><strong aria-hidden="true">1.5.5.1.</strong> Эпилог 2020</a></li><li class="chapter-item "><a href="../../../menu/history/archive/10yem.html"><strong aria-hidden="true">1.5.5.2.</strong> Сводки за 10 гЭР</a></li><li class="chapter-item "><a href="../../../menu/history/archive/46yne.html"><strong aria-hidden="true">1.5.5.3.</strong> Сводки за 46 гНЭ</a></li><li class="chapter-item "><a href="../../../menu/history/archive/45yne.html"><strong aria-hidden="true">1.5.5.4.</strong> Сводки за 45 гНЭ</a></li><li class="chapter-item "><a href="../../../menu/history/archive/44yne.html"><strong aria-hidden="true">1.5.5.5.</strong> Сводки за 44 гНЭ</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/plot.html"><strong aria-hidden="true">1.6.</strong> Сюжет</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/plot/main/sacral.html"><strong aria-hidden="true">1.6.1.</strong> Сакральный хладагент</a></li><li class="chapter-item "><a href="../../../menu/plot/main/apotheosis.html"><strong aria-hidden="true">1.6.2.</strong> Апофеоз войны</a></li><li class="chapter-item "><a href="../../../menu/plot/main/wanderers.html"><strong aria-hidden="true">1.6.3.</strong> Скитальцы</a></li><li class="chapter-item "><a href="../../../menu/plot/global/emptiness.html"><strong aria-hidden="true">1.6.4.</strong> Блаженство пустоты</a></li><li class="chapter-item "><a href="../../../menu/plot/global/heromantia.html"><strong aria-hidden="true">1.6.5.</strong> Херомантия</a></li><li class="chapter-item "><a href="../../../menu/plot/global/lokomotiv.html"><strong aria-hidden="true">1.6.6.</strong> Локомотив забытых истин</a></li><li class="chapter-item "><a href="../../../menu/plot/local/drama.html"><strong aria-hidden="true">1.6.7.</strong> Раскаты драмы</a></li><li class="chapter-item "><a href="../../../menu/plot/local/song.html"><strong aria-hidden="true">1.6.8.</strong> Тут вообще песня</a></li><li class="chapter-item "><a href="../../../menu/plot/local/shards.html"><strong aria-hidden="true">1.6.9.</strong> Осколки будущего</a></li></ol></li><li class="chapter-item "><a href="../../../menu/navigation.html"><strong aria-hidden="true">1.7.</strong> Навигация</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/navigation/geopolitics.html"><strong aria-hidden="true">1.7.1.</strong> Геополитика</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/languages.html"><strong aria-hidden="true">1.7.1.1.</strong> Языки</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/languages/riat-n-baspaan.html"><strong aria-hidden="true">1.7.1.1.1.</strong> Риат и Баспаа́н</a></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.2.</strong> Риат'Арьярд</div></li><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/languages/hodrtahrot.html"><strong aria-hidden="true">1.7.1.1.3.</strong> Ходртахрот</a></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.4.</strong> Арвийский</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.5.</strong> Ре́дрех</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.6.</strong> Ктаавехт</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.7.</strong> Мордвинский</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.8.</strong> Крат</div></li></ol></li><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/cultures.html"><strong aria-hidden="true">1.7.1.2.</strong> Культуры</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.1.</strong> Редрехан</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.2.</strong> Тейель</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.3.</strong> Кхафра</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.4.</strong> Луат</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.5.</strong> Адмиралтейство</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.6.</strong> Флатрия</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.7.</strong> Сикстинния</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.8.</strong> Ламах</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.9.</strong> Мордвин</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.10.</strong> Арвия</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.11.</strong> Хельгеран</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.12.</strong> Мародеры</div></li></ol></li><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/states.html"><strong aria-hidden="true">1.7.1.3.</strong> Державы</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.1.</strong> Реабор-Тхаес</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.2.</strong> Вече Тейель</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.3.</strong> Великая Афитра</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.4.</strong> Последняя Республика Луат</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.5.</strong> Коркафт</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.6.</strong> Доминион Флатрия</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.7.</strong> Сикстиннский Доминион</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.8.</strong> Доминион Секри</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.9.</strong> Древняя Мордвинская империя</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.10.</strong> Кланы Золотого Гребня</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.11.</strong> Хельгеран</div></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/guilds.html"><strong aria-hidden="true">1.7.1.4.</strong> Гильдии</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.1.</strong> Железнодорожники</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.2.</strong> Искра</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.3.</strong> Бюро Вычищения</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.4.</strong> Ассоциация С'Итш'Тас</div></li><li class="chapter-item "><a href="../../../menu/guidebook/guilds/inferdormis.html"><strong aria-hidden="true">1.7.1.4.5.</strong> Инфердормис</a></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.6.</strong> Девы Победы</div></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/navigation/geography.html"><strong aria-hidden="true">1.7.2.</strong> География</a></li><li class="chapter-item "><a href="../../../menu/navigation/locations.html"><strong aria-hidden="true">1.7.3.</strong> Локации</a></li><li class="chapter-item "><a href="../../../menu/navigation/transport.html"><strong aria-hidden="true">1.7.4.</strong> Транспорт</a></li><li class="chapter-item "><a href="../../../menu/navigation/cosmology.html"><strong aria-hidden="true">1.7.5.</strong> Космология</a></li><li class="chapter-item "><a href="../../../menu/navigation/new-lands.html"><strong aria-hidden="true">1.7.6.</strong> Новые земли</a></li></ol></li><li class="chapter-item "><a href="../../../menu/economy.html"><strong aria-hidden="true">1.8.</strong> Экономика</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/economy/about-money.html"><strong aria-hidden="true">1.8.1.</strong> О деньгах</a></li><li class="chapter-item "><a href="../../../menu/economy/earning.html"><strong aria-hidden="true">1.8.2.</strong> Заработок</a></li><li class="chapter-item "><a href="../../../menu/economy/finances.html"><strong aria-hidden="true">1.8.3.</strong> Финансы</a></li></ol></li><li class="chapter-item "><a href="../../../menu/characters.html"><strong aria-hidden="true">1.9.</strong> Персонажи</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/characters/registered.html"><strong aria-hidden="true">1.9.1.</strong> Зарегистрированные</a></li><li class="chapter-item "><a href="../../../menu/characters/canons.html"><strong aria-hidden="true">1.9.2.</strong> Каноны</a></li><li class="chapter-item "><a href="../../../menu/characters/graveyard.html"><strong aria-hidden="true">1.9.3.</strong> Кладбище</a></li></ol></li><li class="chapter-item "><a href="../../../menu/tools.html"><strong aria-hidden="true">1.10.</strong> Инструменты</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/tools/age.html"><strong aria-hidden="true">1.10.1.</strong> Возраст</a></li><li class="chapter-item "><a href="../../../menu/tools/banking.html"><strong aria-hidden="true">1.10.2.</strong> Банкинг</a></li><li class="chapter-item "><a href="../../../menu/tools/map.html"><strong aria-hidden="true">1.10.3.</strong> Карта</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+        
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Содержание" aria-label="Содержание" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Сменить тему" aria-label="Сменить тему" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Темы" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Светлый</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Темный</button></li>
+                        </ul>
+                        <a onclick="window.location.href = '../../../print.html'" title="Распечатать" aria-label="Распечатать">
+                            <i id="print-button" class="fa fa-print"></i><span style="font-family: 'Open Sans', sans-serif; cursor: default;">книга</span>
+                        </a>
+                        <a onclick="print()" title="Распечатать страницу" aria-label="Распечатать страницу">
+                            <i id="print-button" class="fa fa-print"></i><span style="font-family: 'Open Sans', sans-serif; cursor: default;">статья</span>
+                        </a>
+                    </div>
+
+                    <h1 class="menu-title">Злорадство Нихерии</h1>                    
+
+                    <div class="right-buttons">                        
+                        <span onclick="window.location.href = '../../../menu/tools.html';" style="cursor: default;">Инструменты:</span>
+                        <!-- Age Calculator -->
+                        <a href="../../../menu/tools/age.html" title="Калькулятор возраста" aria-label="Калькулятор возраста">
+                            <i id="age-calc-button" class="fa fa-hourglass-end"></i>
+                        </a>
+                        <!-- Banking Calculator -->
+                        <a href="../../../menu/tools/banking.html" title="Банковский калькулятор" aria-label="Банковский калькулятор">
+                            <i id="bank-calc-button" class="fa fa-university"></i>
+                        </a>
+                        <!-- Map -->
+                        <a href="../../../menu/tools/map.html" title="Карта" aria-label="Карта">
+                            <i id="map-button" class="fa fa-map"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <div class="niheria-nav main-menu-el">
+                            <a class="niheria-nav-btn main-menu-text" href="javascript:history.back()">Назад</a>  
+                            <a class="niheria-nav-btn main-menu-text" href="../../../index.html">Меню</a>  
+                        </div>
+                        <img class="cover" src="renaissance-period/cover.png">
+<div class="art-credits"><a href="https://www.artstation.com/chrisd">Автор арта — Christian Dmitrov</a></div>
+<div class="niheria-audio">
+    <h4 class="niheria-audio">
+        Larry Green - Sing, Sing, Sing
+    </h4>
+    <audio class="niheria-audio" controls loop>
+        <source 
+            src="renaissance-period/Larry Green - Sing, Sing, Sing.mp3" 
+            type="audio/mpeg">
+        Музыка не поддерживается браузером
+    </audio>
+</div>
+<h2 id="Веха-Возрождения"><a class="header" href="#Веха-Возрождения">Веха Возрождения</a></h2>
+<p>Казалось, словно по щелчку пальцев, всё население Нихерии загорелось желанием жить и процветать. Естественно, предпосылки были — годы смятения, отсутствия надежды и стабильности, но подобные моменты будоражат ум всегда.</p>
+<p>Новая эпоха, считающаяся светлой, не остановила войны и жестокость. <del>всего этого было даже близко не меньше</del> Каждый называет свои причины яркому огню этой эпохи в истории, кто-то даже приписывае вспышки звезды и влияние космической энергии на разумных. Но даже в перерывах между танцами в кабаре у людей не было времени думать об этом, а позже тема и вовсе потеряла актуальность.</p>
+<blockquote>
+<p>Эпоха бешеного джаза, подражания паровым технологиям прошлого и бесконечных самоубийственных экспериментов с магией. </p>
+</blockquote>
+<blockquote>
+<p>Эпоха небывалых доселе союзов: тёмных редрехан и света, людей и оборотней, ламах-виден и ламах-ибэ, великой империи Мордвин и преступных ячеек Арвии.</p>
+</blockquote>
+<blockquote>
+<p>Эпоха новых открытий там, где, казалось, всё уже истоптано, и насаждения жизни в тех местах, куда даже путешествовать раньше считалось абсурдом.</p>
+</blockquote>
+<ul>
+<li><a href="#%D0%A0%D0%B5%D0%B0%D0%B1%D0%BE%D1%80%D0%B8%D1%8F">Реабория</a></li>
+<li><a href="#%D0%9D%D0%B0%D0%B0%D1%82-%D0%A2%D1%85%D0%B0%D0%B3%D0%B0%D1%82">Наат-Тхагат</a></li>
+<li><a href="#%D0%A5%D0%BE%D0%B4%D1%80%D1%82%D0%B0%D1%81%D1%82%D0%B0%D0%B4">Ходртастад</a></li>
+<li><a href="#%D0%92%D0%B5%D1%87%D0%B5-%D0%A2%D0%B5%D0%B9%D0%B5%D0%BB%D1%8C">Вече Тейель</a></li>
+<li><a href="#%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F-%D0%9A%D1%85%D0%B0%D1%80%D1%84%D0%B8%D1%80%D0%BE%D0%B2">Империя Кхарфиров</a></li>
+<li><a href="#%D0%9A%D0%BE%D1%80%D0%BA%D0%B0%D1%84%D1%82">Коркафт</a></li>
+<li><a href="#%D0%91%D0%B0%D1%80%D1%81%D0%B5%D0%BB%D1%8C%D0%B8%D1%82-%D0%B8-%D0%9B%D1%83%D0%B0%D1%82">Барсельит и Луат</a></li>
+<li><a href="#%D0%94%D1%80%D0%B5%D0%B2%D0%BD%D1%8F%D1%8F-%D0%9C%D0%BE%D1%80%D0%B4%D0%B2%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F-%D0%B8%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F">Древняя Мордвинская империя</a></li>
+<li><a href="#%D0%9C%D0%B8%D1%80">Мир</a></li>
+</ul>
+<hr class="short">
+<h3 id="Реабория"><a class="header" href="#Реабория">Реабория</a></h3>
+<p>Государство редрехан встретило угрозу, откуда никто не ждал. Обитание оборотней в Фалире не было ни для кого секретом, но проклятые долго не подавали признаков своего существование и тем более сопротивления. Случившаяся в Реаборе <strong>эпидемия ликантропии</strong> дала толчок судьбоносным явлениям.</p>
+<div class="time-sign">
+<div class="sign">93 год УЭ</div>
+<p>Стаи оборотней стали вмешиваться прямо во время битв редрехан с Вольным Тейелем. Вооруженные примитивным оружием, когтями и зубами волколаки драли людей и редрехан, слушая приказы вожаков — <em>снаряженных настоящими ликантроп-френдли доспехами,</em> — которые то и дело повторяли лозунги о какой-то Ходре.</p>
+</div>
+<p>Несмотря на ненастье на востоке, остров Синларин процветал, а город Реабор, в котором зародилась нация, держал натиск вервольфов и справился с эпидемией. Несмотря на то, что город Реабор являлся чуть ли не горячей точкой, именно он был средоточием элиты государства и в него текло всё богатство Синларина. Ковен, в свойственной ему манере, размышлял не о том, как перераспределить ресурсы, провести контратаку и разбить врага; а о том, как побороть проблему ликантропии раз и навсегда наиболее эффективным, но щадящим методом как для редрехан, так и для оборотней. </p>
+<div class="time-sign">
+<div class="sign">115 год УЭ</div>
+<p>К 115 году Вече Тейель окончательно оттесняет Реабор на Синларин, с сохранением лишь столицы у подножия Безымянного кряжа. В этом году Синларин налаживает стабильное дипломатическое общение с Наат-Тхагат. </p>
+<p>Благодаря исторической безграмотности, забытые редрехан открывают торговые пути с тёмными, <em>даже не подозревая, что те — их кровные враги</em>.</p>
+</div>
+<h3 id="Наат-Тхагат"><a class="header" href="#Наат-Тхагат">Наат-Тхагат</a></h3>
+<p>Приняв столицей колониальный город Тхагат, что значит «Дом матерей», <strong>обрела логическое завершение Вторая Кочевая директива</strong>. У человечества отпала бы челюсть от того, что произошло далее: Артха, всемирно известная армия тёмных, сдала полномочия абсолютной и безграничной власти. Покинув наконец военные шатры, в которых жили поколениями, и обратившись к крупнейшим домам Наат, старшие офицеры встретились с тем фактом, что во власти Домов никто не нуждался. Пока армия получала провизию, абсолютная власть была подвержена абсолютной слепоте и не заметила, что государство управляло само собой под страхом собственных мечей. Некогда процветавший <strong>матриархат обратился своей изнаночной стороной</strong>, звеняще пошлой: пока лидеры-женщины управляли населением, мужчины занимались «грязной» бухгалтерией и управляли населением исподтишка. Равноправие, предпосылки которого были видны еще в начале эпохи, пришло, а <em>матриархат сохранился лишь в виде национального фетиша</em>, который не все поддерживали, но все уважали. Когда лидеры стихийных и не шибко организованных, но полных энтузиазма собраний поняли, что слово и дело за ними, был создан исполнительный орган государственной власти — <strong>«Свидание делегатов и прокураторов»</strong>. Делегатами нередко были женщины, прокураторами — мужчины, но отклонения от нормы не порицались. </p>
+<div class="time-sign">
+<div class="sign">97 год УЭ</div>
+<p>Затем, собравшись с мыслями, но не сильно, <del>пожурчав по закромам национальных идей, поскребшись в черепных коробках классового общества, похлопотав по сусекам общественных настроений,</del> в государстве учредили «Собрание домов», на котором решались и законодательные вопросы, и судебные, <del>по настроению</del> по расписанию.</p>
+</div>
+<div class="time-sign">
+<div class="sign">100 год УЭ</div>
+<p>Не многие в армии приняли такое внезапное «размягчение» некогда могучей военной хунты. Военный <strong>переворот закончился не начавшись</strong> — извечная подозрительность тёмных редрехан воссияла во лбу одной из делегатов и вся Артха подверглась доскональному рассмотрению и пересмотрению по всем возможным вопросам сначала на Свидании, затем на Собрании. В ходе этих действий Наат-Тхагат потеряли всякую былую мощь и потеряли все позиции на материке. Но грянувшие затем реформы позволили в будущем защищать колонии с растраченной силой, но с небывалой эффективностью. </p>
+</div>
+<div class="time-sign">
+<blockquote>
+<p>За сотню лет изменилось многое, но нелюбовь к солнечному свету останется, кажется, навечно. Мириады подземных комплексов впускают солнечный свет лишь через несколько световых колодцев. А на поверхности, особенно полярным днём ближе к северу, тёмные используют крашеное стекло — например, <em>затемнённые очки</em>. Самые богатые и самые северные жители без всякого уважения или терпения к холоду носят дорогие <em>шлемы с забралом из тёмного стекла</em> и тёплым мехом внутри.</p>
+</blockquote>
+<div class="sign">132 год УЭ</div>
+<p>К этому времени холодный архипелаг Туманный осваивается тёмными редрехан всё дальше и глубже. В этом году был освоен самый большой за всё время остров сродни острову Синларин. Колонизации способствует активизация дипломатического контакта с Реаборией, активная торговля и неофициальное сотрудничество в вопросе защиты границ от мародёров с континента.</p>
+</div>
+<hr class="short">
+<h3 id="Ходртастад"><a class="header" href="#Ходртастад">Ходртастад</a></h3>
+<p>Совладав над молодняком, вервольфы Ходры — великого города-стаи — не совладали с терпением и решительно настроились <strong>покончить с гнётом чистодушных</strong> (так они называют всех не проклятых). </p>
+<blockquote>
+<p>В лагерях для проклятых, пополнявшихся недобитыми полутрупами с полей битв, они вскармливали грядущее поколение. Выпуская полуверов на «прогулку» они закаляли их звериную форму в реальных условиях. После нескольких прогулок в &quot;общество&quot; интегрировался его новый член.</p>
+</blockquote>
+<p>Миру было тяжело наблюдать отряды вервольфов, одетых в шкуры по последней лесной моде, неуклюже пытающих удержать стаи молодых нагих ликантропов на цепях, еще даже не обретших полноценную животную форму.</p>
+<div class="time-sign">
+<div class="sign">116 год УЭ</div>
+<p>Вольный Тейель добился диалога и резня (её организованная часть) на восточной границе прекратилась. Тейельцы сделали одолжение и признали вервольфов как народ и государство.</p>
+</div>
+<div class="time-sign">
+<h3 id="Вече-Тейель"><a class="header" href="#Вече-Тейель">Вече Тейель</a></h3>
+<p>Когда <em>кхарфиры поглотили все остатки анархичной Тейельщины</em>, огосударствевшим тейельцам пришлось предпринять множество организационных мероприятий, чтобы оказать сопротивление молодому народу. </p>
+<div class="time-sign">
+<div class="sign">93 год УЭ</div>
+<p>Первое вече старост, событие прозванное <strong>«Час Вече»</strong>. Для кого-то праздник, для кого-то траур. День, когда в равных пропорциях тейельецы почувствовали себя свободными, а другие пророчили небывалую прежде на этой земле тиранию. </p>
+</div>
+<div class="time-sign">
+<div class="sign">103 и 116 ггУЭ</div>
+<p>Знаменательные даты, в результате которых наступил <strong>первый в истории Вольного Тейеля мир</strong>. В 103 году были установлены дипломатические отношения с «империей» кхарфиров, а в 116 с Ходртастадом.</p>
+</div>
+<div class="time-sign">
+<div class="sign">134 год УЭ</div>
+<p>Очень стремившиеся к государственности в связи с угрозой свирепой экспании кхарфиров, оборотни Ходртастада не желали строить её с нуля. Идеология и нужды позволили Вече Тейеля с тревогой и надеждой принять племена ликантропов в свои границы, организовав невиданный доселе альянс.</p>
+</div>
+<h3 id="Империя-Кхарфиров"><a class="header" href="#Империя-Кхарфиров">Империя Кхарфиров</a></h3>
+<blockquote>
+<p><em>«Когда бельмо древних на наших глазах стало разрастаться, мы насторожились. Когда силуэт бельма стал принимать форму прошлого — мы достали копья.»</em></p>
+</blockquote>
+<p>Этой цитатой с &quot;назидательного камня&quot; одного из поселений кхарфиров в цивилизованном мире объясняли их внезапную стремительную экспансию. Претерпев множество унижений на стадии зарождения народа, еще в былые эпохи, им наконец-то была дарована судьбой возможность жить свободно от высших цивилизаций. Но вот, спустя сотню лет, спустя полвека после &quot;Единства Кхарфиров&quot;, цилизации прошлого стали возрождаться. Кхарфиры просто не могли допустить былого величия &quot;древних&quot;, подобное унижение для них было бы страшнее смерти.</p>
+<p>Кхарфиры перерыли гектары Безымянного кряжа и добыли множество тонн руды прежде, чем добыли технологию её обработки. Брошеные города древней цивилизации они изменили до неузнаваемости. Пытаясь временами пародировать древних, они сделали руины еще более гротексными.</p>
+<p>Зная, что даже среди древних Тейельщина большинством мнений принимается как преступный сброд, кхарфиры истребили вольный народ. Геноцид дал лесным жителям не мало знаний о древних, дал понимание об их государствах.</p>
+<h3 id="Коркафт"><a class="header" href="#Коркафт">Коркафт</a></h3>
+<p>Дело скончавшегося от лихорадки гранд-адмирала Коркафта перенял адмирал Аллан Викстез, тут же повысивший себя до гранд-адмирала. Зная, что переход власти в руки такого благородного господина из рук другого благородного господина — это счастливый случай для государства, подобные которому случается редко, Викстез занялся изобретением демократии, но не возымел особого успеха.</p>
+<div class="time-sign">
+<div class="sign">92 год УЭ</div>
+<p>Гранд-адмирал Викстез совместно с адмиралами Миритом Ифтиртом и Афетом Виннаазал-Ассафом издают Манифест Диспута Политии Коркафт. </p>
+<blockquote>
+<p>Документ описывает <strong>государственное устройство</strong> состоящее из Диспута (власти), который делится на Экипаж Законтворцев, Экипаж Судей и Офицерство. Офицерство состоит из гранд-адмирала, Палаты Навигаторов: командира торговли и добычи, шкипера производства, шкипера по делам армии и флота и других; Палаты Офицеров, состоящей из всей элиты Коркафта, из числа которых помимо прочего избирается гранд-офицер международного общения и гранд-офицер культуры и искусства. Также манифест возвращает понятие Адмиралтейства, в виде подобия международного форума среди государств и жителей Архипелага.</p>
+</blockquote>
+<p>Только члены Палаты Офицеров обладают привилегией участвовать в выборах гранд-адмирала и чинов Палаты Офицеров.</p>
+</div>
+<div class="attention-box ">
+Закономерно мировым тенденциям Коркафт становится центром торговли всей Нихерии. </div>
+<p>В 124 году можно было бы проследить первый в истории торговый договор между Древней Мордвинской империей и империей Кхарфиров, если опустить всех посредников. Одним лишь хельгеранским варварам был закрыт путь к этому международному рынку, а Последняя Республика Луат делала всё, чтобы они его никогда не обрели.</p>
+<h3 id="Барсельит-и-Луат"><a class="header" href="#Барсельит-и-Луат">Барсельит и Луат</a></h3>
+<div class="time-sign">
+<div class="sign">115 год УЭ</div>
+<p>По итогу встречи адмиралов Вольных Портов и представителей города Гик в горде Барсел образовался новый союз с целью противостоять угрозе кхарфиров на севере и хельгеранской орды на юге. Это давняя традиция ламах-виден — скамить державы на протекцию в обмен на крупицу технологии, которой они обладают.</p>
+</div>
+<div class="time-sign">
+<div class="sign">121 год УЭ</div>
+<p>В связи с угрозой вездесущих кхарфиров Барсельит объединяется в альянс с Последней Республикой Луат. К неудовольствию виден проживающих в Гике, Луат привнёс реорганизацию в управление всего Барсельита, чтобы при оказании военной помощи получить как можно большую военную помощь в ответ.</p>
+</div>
+<blockquote>
+<p>Не терпящие, казалось, тираническое правление людей, многие видены покинули территорию альянса и отправились прямиком в Хельгеран. Нет, они не переметнулись к врагу, но обратились к своим давним соседям — ламах-ибэ. За два с небольшим десятка лет ламах-виден разработали способы, <em>задокументированные системы</em>, для взаимосуществования с дикими племенами. К каждому из них они выработали свой подход и затем успешно воплотили теорию в жизнь.</p>
+</blockquote>
+<h3 id="Древняя-Мордвинская-империя"><a class="header" href="#Древняя-Мордвинская-империя">Древняя Мордвинская империя</a></h3>
+<p>Преступные организации на востоке Арвии с годами были подавлены. Королева Гирндор умело интегрировала присягнувших ей лидеров преступной экономики в легитимную мордвинскую, не менее умело подвергая клятвопреступников интеграции в камеры столицы. </p>
+<div class="time-sign">
+<div class="sign">104 год УЭ</div>
+<p>С десяток лет жандармерия и «люди Гирндор» вели дела и переговоры в восточной Арвии, пока 40-го дня зимы армия Мордвина не пересекла некогда великую державу от Секри до Джинири за неделю. Флот подоспел раньше.</p>
+</div>
+<p>Гирндор Тихолес провозгласила Мордвин имерией, а себя императрицей и вознамерилась отобрать у Сикстинны автономность. Через два десятка лет ей удастся это сделать.</p>
+<div class="time-sign">
+<div class="sign">119 год УЭ</div>
+<p>Аналогично событиям в Барселе были проведены переговоры во Флатрихе, на территории Сикстинны. Амбиции короля Каргаса по созданию флота состыковывались с желаниями адмирала Рейса. Формальным поводом заключения <strong>Флатрийского пакта</strong> была защита от мародёров.</p>
+<p>Но Пакт просуществовал недолго. В <strong>126 году Уходящей Эпохи</strong> по назиданию Брока Семигорского король Каргас Стужеброд присягает на верность императрице Гирндор с сохранением титула.</p>
+</div>
+<div short><hr short-start><hr short-end></div>
+<h3 id="Мир"><a class="header" href="#Мир">Мир</a></h3>
+<div class="time-sign">
+<div class="sign">136 год УЭ</div>
+<p>Торговцы из мародёров стали все как один болтать о том, что в пустыне Золотого Гребня вновь видели драконов. В это же время у скупщиков керамики кхарфиров стали замечать всё больше и больше посуды с сюжетами на основе битв с самыми разнообразными тварями далеко за пределами рамок привычной биологической таксономии.</p>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../menu/history/outgoing-age/recovery-period.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../../menu/history/outgoing-age/ruins-haze.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../menu/history/outgoing-age/recovery-period.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../../menu/history/outgoing-age/ruins-haze.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+
+        <script src="../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+        <!-- Open details to print -->
+        <script>
+            // open closed details elements for printing
+            window.addEventListener('beforeprint',() =>
+            {
+                const allDetails = document.body.querySelectorAll('details');
+                for(let i=0; i<allDetails.length; i++)
+                {
+                    if(allDetails[i].open)
+                    {
+                        allDetails[i].dataset.open = '1';
+                    }
+                    else
+                    {
+                        allDetails[i].setAttribute('open', '');
+                    }
+                }
+            });
+
+            // after printing close details elements not opened before
+            window.addEventListener('afterprint',() =>
+            {
+                const allDetails = document.body.querySelectorAll('details');
+                for(let i=0; i<allDetails.length; i++)
+                {
+                    if(allDetails[i].dataset.open)
+                    {
+                        allDetails[i].dataset.open = '';
+                    }
+                    else
+                    {
+                        allDetails[i].removeAttribute('open');
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

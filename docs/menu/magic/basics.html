@@ -1,0 +1,409 @@
+<!DOCTYPE HTML>
+<html lang="ru" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Основы магии - Злорадство Нихерии</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../custom.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <script src="../../tools.js"></script>
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Содержание">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> Меню</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/manual.html"><strong aria-hidden="true">1.1.</strong> Руководство</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/manual/quick-start.html"><strong aria-hidden="true">1.1.1.</strong> Быстрый старт</a></li><li class="chapter-item "><a href="../../menu/manual/about.html"><strong aria-hidden="true">1.1.2.</strong> О ролевой</a></li><li class="chapter-item "><a href="../../menu/manual/rules.html"><strong aria-hidden="true">1.1.3.</strong> Правила</a></li><li class="chapter-item "><a href="../../menu/manual/templates.html"><strong aria-hidden="true">1.1.4.</strong> Шаблоны</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/manual/templates/quenta.html"><strong aria-hidden="true">1.1.4.1.</strong> Анкета</a></li><li class="chapter-item "><a href="../../menu/manual/templates/search-coop.html"><strong aria-hidden="true">1.1.4.2.</strong> Поиск игрока</a></li><li class="chapter-item "><a href="../../menu/manual/templates/create-location.html"><strong aria-hidden="true">1.1.4.3.</strong> Создание локации</a></li></ol></li><li class="chapter-item "><a href="../../menu/manual/masters.html"><strong aria-hidden="true">1.1.5.</strong> Штаб Мастеров</a></li><li class="chapter-item "><a href="../../menu/manual/leveling.html"><strong aria-hidden="true">1.1.6.</strong> Прокачка героя</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook.html"><strong aria-hidden="true">1.2.</strong> Путеводитель</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/races.html"><strong aria-hidden="true">1.2.1.</strong> Расы</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/races/besties.html"><strong aria-hidden="true">1.2.1.1.</strong> Бестийцы</a></li><li class="chapter-item "><a href="../../menu/guidebook/races/dwarfs.html"><strong aria-hidden="true">1.2.1.2.</strong> Дворфы</a></li><li class="chapter-item "><a href="../../menu/guidebook/races/kharfirs.html"><strong aria-hidden="true">1.2.1.3.</strong> Кхарфиры</a></li><li class="chapter-item "><a href="../../menu/guidebook/races/lamah.html"><strong aria-hidden="true">1.2.1.4.</strong> Ламах</a></li><li class="chapter-item "><a href="../../menu/guidebook/races/humans.html"><strong aria-hidden="true">1.2.1.5.</strong> Люди</a></li><li class="chapter-item "><a href="../../menu/guidebook/races/meries.html"><strong aria-hidden="true">1.2.1.6.</strong> Мерии</a></li><li class="chapter-item "><a href="../../menu/guidebook/races/redrehan.html"><strong aria-hidden="true">1.2.1.7.</strong> Редрехан</a></li><li class="chapter-item "><a href="../../menu/guidebook/races/vampires.html"><strong aria-hidden="true">1.2.1.8.</strong> Вампиры</a></li><li class="chapter-item "><a href="../../menu/guidebook/races/werewolfs.html"><strong aria-hidden="true">1.2.1.9.</strong> Оборотни</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/guilds.html"><strong aria-hidden="true">1.2.2.</strong> Гильдии</a></li><li class="chapter-item "><a href="../../menu/guidebook/army.html"><strong aria-hidden="true">1.2.3.</strong> Армии</a></li><li class="chapter-item "><a href="../../menu/guidebook/education.html"><strong aria-hidden="true">1.2.4.</strong> Образование</a></li><li class="chapter-item "><a href="../../menu/guidebook/books.html"><strong aria-hidden="true">1.2.5.</strong> Книги</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science.html"><strong aria-hidden="true">1.2.5.1.</strong> Научная литература</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary.html"><strong aria-hidden="true">1.2.5.1.1.</strong> Бестиарий</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/diseases.html"><strong aria-hidden="true">1.2.5.1.2.</strong> Болезни</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/mechanics.html"><strong aria-hidden="true">1.2.5.1.3.</strong> Инженерия и паромеханика</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/mechanics/steam-engine.html"><strong aria-hidden="true">1.2.5.1.3.1.</strong> Устройство парового двигателя Фелинварда Синоба</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/mechanics/digest.html"><strong aria-hidden="true">1.2.5.1.3.2.</strong> Дайджест промышленного комплекса Нихерии</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/mechanics/map-of-lost.html"><strong aria-hidden="true">1.2.5.1.3.3.</strong> Краткая карта утерянных технологий</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/mechanics/naat-guns.html"><strong aria-hidden="true">1.2.5.1.3.4.</strong> Алхимические винтовка и пистолет Наат-Тхаес</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/mechanics/printing-press.html"><strong aria-hidden="true">1.2.5.1.3.5.</strong> Механический типографический станок</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/alchemy.html"><strong aria-hidden="true">1.2.5.1.4.</strong> Алхимический Увраж</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/alchemy/poisons.html"><strong aria-hidden="true">1.2.5.1.4.1.</strong> Ядоварение</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/alchemy/drugs.html"><strong aria-hidden="true">1.2.5.1.4.2.</strong> Наркотики</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/alchemy/ingredients.html"><strong aria-hidden="true">1.2.5.1.4.3.</strong> Ингредиенты</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/alchemy/tinctures.html"><strong aria-hidden="true">1.2.5.1.4.4.</strong> Популярные настойки</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/alchemy/poultices.html"><strong aria-hidden="true">1.2.5.1.4.5.</strong> Припарки Бромса</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/alchemy/elixirs.html"><strong aria-hidden="true">1.2.5.1.4.6.</strong> Славные эликсиры</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/weapon.html"><strong aria-hidden="true">1.2.5.1.5.</strong> Вооружен до зубов</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/weapon/cold.html"><strong aria-hidden="true">1.2.5.1.5.1.</strong> Холодное оружие</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/weapon/fire.html"><strong aria-hidden="true">1.2.5.1.5.2.</strong> Огнестрельное оружие</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/weapon/armor.html"><strong aria-hidden="true">1.2.5.1.5.3.</strong> Броня</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/medical-theurgy.html"><strong aria-hidden="true">1.2.5.1.6.</strong> Медицинская теургия</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/folklore.html"><strong aria-hidden="true">1.2.5.2.</strong> Фольклор</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/folklore/phrases.html"><strong aria-hidden="true">1.2.5.2.1.</strong> Поговорки</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/misc.html"><strong aria-hidden="true">1.2.5.3.</strong> Разные статьи</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/misc/digest.html"><strong aria-hidden="true">1.2.5.3.1.</strong> Именной справочник</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary.html"><strong aria-hidden="true">1.2.6.</strong> Бестиарий</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.1.</strong> Бестии</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.</strong> Дракониды</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.1.</strong> Гавиары</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.2.</strong> Мутанты</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.3.</strong> Нёхи</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.</strong> Твари</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.1.</strong> Создания</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.2.</strong> Водные</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.2.1.</strong> Хирды</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.3.</strong> Насекомые</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.</strong> Сущности</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.1.</strong> Элементали</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.2.</strong> Нежить</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.3.</strong> Мороки</div></li></ol></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/contests.html"><strong aria-hidden="true">1.2.7.</strong> Конкурсы</a></li><li class="chapter-item "><a href="../../menu/guidebook/games.html"><strong aria-hidden="true">1.2.8.</strong> Игры</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/games/windwarf.html"><strong aria-hidden="true">1.2.8.1.</strong> Виндворф</a></li><li class="chapter-item "><a href="../../menu/guidebook/games/guran-pool.html"><strong aria-hidden="true">1.2.8.2.</strong> Гуранский пул</a></li><li class="chapter-item "><a href="../../menu/guidebook/games/plates.html"><strong aria-hidden="true">1.2.8.3.</strong> Плашки</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../menu/magic.html"><strong aria-hidden="true">1.3.</strong> Магия</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../menu/magic/basics.html" class="active"><strong aria-hidden="true">1.3.1.</strong> Основы магии</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/magic/basics/матчасть.html"><strong aria-hidden="true">1.3.1.1.</strong> Теория магии</a></li></ol></li><li class="chapter-item "><a href="../../menu/magic/branches.html"><strong aria-hidden="true">1.3.2.</strong> Ветви магии</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/magic/branches/white.html"><strong aria-hidden="true">1.3.2.1.</strong> Белая магия</a></li><li class="chapter-item "><a href="../../menu/magic/branches/black.html"><strong aria-hidden="true">1.3.2.2.</strong> Чёрная магия</a></li><li class="chapter-item "><a href="../../menu/magic/branches/creation.html"><strong aria-hidden="true">1.3.2.3.</strong> Магия Созидания</a></li><li class="chapter-item "><a href="../../menu/magic/branches/influence.html"><strong aria-hidden="true">1.3.2.4.</strong> Магия Влияния</a></li></ol></li><li class="chapter-item "><a href="../../menu/magic/phenomena.html"><strong aria-hidden="true">1.3.3.</strong> Явления магии</a></li><li class="chapter-item "><a href="../../menu/magic/influence.html"><strong aria-hidden="true">1.3.4.</strong> Влияние рун</a></li><li class="chapter-item "><a href="../../menu/magic/places.html"><strong aria-hidden="true">1.3.5.</strong> Места магии</a></li><li class="chapter-item "><a href="../../menu/magic/artifactory.html"><strong aria-hidden="true">1.3.6.</strong> Артефакторика</a></li></ol></li><li class="chapter-item "><a href="../../menu/skills.html"><strong aria-hidden="true">1.4.</strong> Навыки</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/skills/military.html"><strong aria-hidden="true">1.4.1.</strong> Воинские дисциплины</a></li><li class="chapter-item "><a href="../../menu/skills/crafts.html"><strong aria-hidden="true">1.4.2.</strong> Ремесла</a></li><li class="chapter-item "><a href="../../menu/skills/science.html"><strong aria-hidden="true">1.4.3.</strong> Науки</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/skills/science/artifactory.html"><strong aria-hidden="true">1.4.3.1.</strong> Артефакторика</a></li><li class="chapter-item "><a href="../../menu/skills/science/alchemy.html"><strong aria-hidden="true">1.4.3.2.</strong> Алхимия</a></li><li class="chapter-item "><a href="../../menu/skills/science/linguistics.html"><strong aria-hidden="true">1.4.3.3.</strong> Лингвистика</a></li><li class="chapter-item "><a href="../../menu/skills/science/mechanics.html"><strong aria-hidden="true">1.4.3.4.</strong> Паромеханика</a></li><li class="chapter-item "><a href="../../menu/skills/science/unlife.html"><strong aria-hidden="true">1.4.3.5.</strong> Нежизнь</a></li><li class="chapter-item "><a href="../../menu/skills/science/chimerology.html"><strong aria-hidden="true">1.4.3.6.</strong> Химерология</a></li></ol></li><li class="chapter-item "><a href="../../menu/skills/occultism.html"><strong aria-hidden="true">1.4.4.</strong> Оккультизм</a></li><li class="chapter-item "><a href="../../menu/skills/druidism.html"><strong aria-hidden="true">1.4.5.</strong> Друидизм</a></li></ol></li><li class="chapter-item "><a href="../../menu/history.html"><strong aria-hidden="true">1.5.</strong> История</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/history/elder-ages.html"><strong aria-hidden="true">1.5.1.</strong> Ветхие эпохи</a></li><li class="chapter-item "><a href="../../menu/history/old-time.html"><strong aria-hidden="true">1.5.2.</strong> Старое время</a></li><li class="chapter-item "><a href="../../menu/history/outgoing-age.html"><strong aria-hidden="true">1.5.3.</strong> Уходящая эпоха</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/history/outgoing-age/stillborn-indict.html"><strong aria-hidden="true">1.5.3.1.</strong> Индикт Мертворождения</a></li><li class="chapter-item "><a href="../../menu/history/outgoing-age/recovery-period.html"><strong aria-hidden="true">1.5.3.2.</strong> Период Восстановления</a></li><li class="chapter-item "><a href="../../menu/history/outgoing-age/renaissance-period.html"><strong aria-hidden="true">1.5.3.3.</strong> Веха Возрождения</a></li><li class="chapter-item "><a href="../../menu/history/outgoing-age/ruins-haze.html"><strong aria-hidden="true">1.5.3.4.</strong> Туманы Руин</a></li></ol></li><li class="chapter-item "><a href="../../menu/history/timeline.html"><strong aria-hidden="true">1.5.4.</strong> Таймлайн</a></li><li class="chapter-item "><a href="../../menu/history/archive.html"><strong aria-hidden="true">1.5.5.</strong> Архив</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/history/archive/epilogue.html"><strong aria-hidden="true">1.5.5.1.</strong> Эпилог 2020</a></li><li class="chapter-item "><a href="../../menu/history/archive/10yem.html"><strong aria-hidden="true">1.5.5.2.</strong> Сводки за 10 гЭР</a></li><li class="chapter-item "><a href="../../menu/history/archive/46yne.html"><strong aria-hidden="true">1.5.5.3.</strong> Сводки за 46 гНЭ</a></li><li class="chapter-item "><a href="../../menu/history/archive/45yne.html"><strong aria-hidden="true">1.5.5.4.</strong> Сводки за 45 гНЭ</a></li><li class="chapter-item "><a href="../../menu/history/archive/44yne.html"><strong aria-hidden="true">1.5.5.5.</strong> Сводки за 44 гНЭ</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../menu/plot.html"><strong aria-hidden="true">1.6.</strong> Сюжет</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/plot/main/sacral.html"><strong aria-hidden="true">1.6.1.</strong> Сакральный хладагент</a></li><li class="chapter-item "><a href="../../menu/plot/main/apotheosis.html"><strong aria-hidden="true">1.6.2.</strong> Апофеоз войны</a></li><li class="chapter-item "><a href="../../menu/plot/main/wanderers.html"><strong aria-hidden="true">1.6.3.</strong> Скитальцы</a></li><li class="chapter-item "><a href="../../menu/plot/global/emptiness.html"><strong aria-hidden="true">1.6.4.</strong> Блаженство пустоты</a></li><li class="chapter-item "><a href="../../menu/plot/global/heromantia.html"><strong aria-hidden="true">1.6.5.</strong> Херомантия</a></li><li class="chapter-item "><a href="../../menu/plot/global/lokomotiv.html"><strong aria-hidden="true">1.6.6.</strong> Локомотив забытых истин</a></li><li class="chapter-item "><a href="../../menu/plot/local/drama.html"><strong aria-hidden="true">1.6.7.</strong> Раскаты драмы</a></li><li class="chapter-item "><a href="../../menu/plot/local/song.html"><strong aria-hidden="true">1.6.8.</strong> Тут вообще песня</a></li><li class="chapter-item "><a href="../../menu/plot/local/shards.html"><strong aria-hidden="true">1.6.9.</strong> Осколки будущего</a></li></ol></li><li class="chapter-item "><a href="../../menu/navigation.html"><strong aria-hidden="true">1.7.</strong> Навигация</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/navigation/geopolitics.html"><strong aria-hidden="true">1.7.1.</strong> Геополитика</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/navigation/geopolitics/languages.html"><strong aria-hidden="true">1.7.1.1.</strong> Языки</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/navigation/geopolitics/languages/riat-n-baspaan.html"><strong aria-hidden="true">1.7.1.1.1.</strong> Риат и Баспаа́н</a></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.2.</strong> Риат'Арьярд</div></li><li class="chapter-item "><a href="../../menu/navigation/geopolitics/languages/hodrtahrot.html"><strong aria-hidden="true">1.7.1.1.3.</strong> Ходртахрот</a></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.4.</strong> Арвийский</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.5.</strong> Ре́дрех</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.6.</strong> Ктаавехт</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.7.</strong> Мордвинский</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.8.</strong> Крат</div></li></ol></li><li class="chapter-item "><a href="../../menu/navigation/geopolitics/cultures.html"><strong aria-hidden="true">1.7.1.2.</strong> Культуры</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.1.</strong> Редрехан</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.2.</strong> Тейель</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.3.</strong> Кхафра</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.4.</strong> Луат</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.5.</strong> Адмиралтейство</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.6.</strong> Флатрия</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.7.</strong> Сикстинния</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.8.</strong> Ламах</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.9.</strong> Мордвин</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.10.</strong> Арвия</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.11.</strong> Хельгеран</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.12.</strong> Мародеры</div></li></ol></li><li class="chapter-item "><a href="../../menu/navigation/geopolitics/states.html"><strong aria-hidden="true">1.7.1.3.</strong> Державы</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.1.</strong> Реабор-Тхаес</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.2.</strong> Вече Тейель</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.3.</strong> Великая Афитра</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.4.</strong> Последняя Республика Луат</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.5.</strong> Коркафт</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.6.</strong> Доминион Флатрия</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.7.</strong> Сикстиннский Доминион</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.8.</strong> Доминион Секри</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.9.</strong> Древняя Мордвинская империя</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.10.</strong> Кланы Золотого Гребня</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.11.</strong> Хельгеран</div></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/guilds.html"><strong aria-hidden="true">1.7.1.4.</strong> Гильдии</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.1.</strong> Железнодорожники</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.2.</strong> Искра</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.3.</strong> Бюро Вычищения</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.4.</strong> Ассоциация С'Итш'Тас</div></li><li class="chapter-item "><a href="../../menu/guidebook/guilds/inferdormis.html"><strong aria-hidden="true">1.7.1.4.5.</strong> Инфердормис</a></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.6.</strong> Девы Победы</div></li></ol></li></ol></li><li class="chapter-item "><a href="../../menu/navigation/geography.html"><strong aria-hidden="true">1.7.2.</strong> География</a></li><li class="chapter-item "><a href="../../menu/navigation/locations.html"><strong aria-hidden="true">1.7.3.</strong> Локации</a></li><li class="chapter-item "><a href="../../menu/navigation/transport.html"><strong aria-hidden="true">1.7.4.</strong> Транспорт</a></li><li class="chapter-item "><a href="../../menu/navigation/cosmology.html"><strong aria-hidden="true">1.7.5.</strong> Космология</a></li><li class="chapter-item "><a href="../../menu/navigation/new-lands.html"><strong aria-hidden="true">1.7.6.</strong> Новые земли</a></li></ol></li><li class="chapter-item "><a href="../../menu/economy.html"><strong aria-hidden="true">1.8.</strong> Экономика</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/economy/about-money.html"><strong aria-hidden="true">1.8.1.</strong> О деньгах</a></li><li class="chapter-item "><a href="../../menu/economy/earning.html"><strong aria-hidden="true">1.8.2.</strong> Заработок</a></li><li class="chapter-item "><a href="../../menu/economy/finances.html"><strong aria-hidden="true">1.8.3.</strong> Финансы</a></li></ol></li><li class="chapter-item "><a href="../../menu/characters.html"><strong aria-hidden="true">1.9.</strong> Персонажи</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/characters/registered.html"><strong aria-hidden="true">1.9.1.</strong> Зарегистрированные</a></li><li class="chapter-item "><a href="../../menu/characters/canons.html"><strong aria-hidden="true">1.9.2.</strong> Каноны</a></li><li class="chapter-item "><a href="../../menu/characters/graveyard.html"><strong aria-hidden="true">1.9.3.</strong> Кладбище</a></li></ol></li><li class="chapter-item "><a href="../../menu/tools.html"><strong aria-hidden="true">1.10.</strong> Инструменты</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/tools/age.html"><strong aria-hidden="true">1.10.1.</strong> Возраст</a></li><li class="chapter-item "><a href="../../menu/tools/banking.html"><strong aria-hidden="true">1.10.2.</strong> Банкинг</a></li><li class="chapter-item "><a href="../../menu/tools/map.html"><strong aria-hidden="true">1.10.3.</strong> Карта</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+        
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Содержание" aria-label="Содержание" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Сменить тему" aria-label="Сменить тему" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Темы" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Светлый</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Темный</button></li>
+                        </ul>
+                        <a onclick="window.location.href = '../../print.html'" title="Распечатать" aria-label="Распечатать">
+                            <i id="print-button" class="fa fa-print"></i><span style="font-family: 'Open Sans', sans-serif; cursor: default;">книга</span>
+                        </a>
+                        <a onclick="print()" title="Распечатать страницу" aria-label="Распечатать страницу">
+                            <i id="print-button" class="fa fa-print"></i><span style="font-family: 'Open Sans', sans-serif; cursor: default;">статья</span>
+                        </a>
+                    </div>
+
+                    <h1 class="menu-title">Злорадство Нихерии</h1>                    
+
+                    <div class="right-buttons">                        
+                        <span onclick="window.location.href = '../../menu/tools.html';" style="cursor: default;">Инструменты:</span>
+                        <!-- Age Calculator -->
+                        <a href="../../menu/tools/age.html" title="Калькулятор возраста" aria-label="Калькулятор возраста">
+                            <i id="age-calc-button" class="fa fa-hourglass-end"></i>
+                        </a>
+                        <!-- Banking Calculator -->
+                        <a href="../../menu/tools/banking.html" title="Банковский калькулятор" aria-label="Банковский калькулятор">
+                            <i id="bank-calc-button" class="fa fa-university"></i>
+                        </a>
+                        <!-- Map -->
+                        <a href="../../menu/tools/map.html" title="Карта" aria-label="Карта">
+                            <i id="map-button" class="fa fa-map"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <div class="niheria-nav main-menu-el">
+                            <a class="niheria-nav-btn main-menu-text" href="javascript:history.back()">Назад</a>  
+                            <a class="niheria-nav-btn main-menu-text" href="../../index.html">Меню</a>  
+                        </div>
+                        <div class="side-board">
+<div>
+<img class="cover" src="basics/cover.png">
+<div class="art-credits"><a href="https://www.artstation.com/dtmayer">Автор арта — Dominik Mayer</a></div>
+</div>
+<div class="side-block left toc">
+<ul>
+<li><a href="#%D0%9A%D0%B0%D0%BA-%D1%81%D1%82%D0%B0%D1%82%D1%8C-%D0%BC%D0%B0%D0%B3%D0%BE%D0%BC">Как стать магом?</a></li>
+<li><a href="#%D0%9C%D0%B0%D0%B3%D0%B8%D1%8F-%D0%A3%D1%85%D0%BE%D0%B4%D1%8F%D1%89%D0%B5%D0%B9-%D0%AD%D0%BF%D0%BE%D1%85%D0%B8">Магия Уходящей Эпохи</a>
+<ul>
+<li><a href="#%D0%A1-%D0%B4%D0%B2%D1%83%D1%85-%D1%80%D1%83%D0%BA">С двух рук</a></li>
+<li><a href="#%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B8">Ошибки</a></li>
+<li><a href="#%D0%98%D0%B3%D1%80%D0%BE%D0%B2%D0%BE%D0%B9-%D1%85%D0%BE%D0%B4">Игровой ход</a></li>
+<li><a href="#%D0%97%D0%B0%D0%BA%D0%BB%D0%B8%D0%BD%D0%B0%D0%BD%D0%B8%D1%8F">Заклинания</a></li>
+<li><a href="#%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B8%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9">Структура заклинаний</a></li>
+<li><a href="#%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D1%8B-%D0%B8-%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0">Формулы и правила</a></li>
+<li><a href="#%D0%A0%D0%B0%D0%BD%D0%B3%D0%B8-%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%B0">Ранги мастерства</a></li>
+<li><a href="#%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B8%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9-%D0%B8%D0%BB%D0%B8-%D0%B3%D1%80%D0%B8%D0%BC%D1%83%D0%B0%D1%80">Книга заклинаний или гримуар</a></li>
+<li><a href="#%D0%9F%D1%80%D0%BE%D0%BA%D0%B0%D1%87%D0%BA%D0%B0-%D0%B7%D0%B0%D0%BA%D0%BB%D0%B8%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9">Прокачка заклинаний</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<blockquote attention>
+<p>Маг — это контроль, концентрация и точность.</p>
+</blockquote>
+<h2 id="Как-стать-магом"><a class="header" href="#Как-стать-магом">Как стать магом?</a></h2>
+<p>Всем известно, как Красный Рассвет впустил в мир магию. Тогда впервые родились дети с этим даром и люди прознали, <em>что это и с чем это едят</em>. Через полвека с лишним Боги и Великий Исход магию забрали. Но, как закончился Индикт Мертворожденных, она вернулась, чтобы быть исследованной и использованной вновь. </p>
+<p>Статистику мало кто знает, но шансы родить мага очень велики — почти 80%. Однако для того, чтобы магия как следует проявилась, нужна особая проверка, поэтому большинство потенциальных магов так и не узнавали о своем даре. Один из самых явных признаков магического таланта — болезнь души, и чем страшнее тем лучше.</p>
+<p>Сейчас систематические проверки проводят в Сикстинне и Луате. Таким образом, только самая малая часть всех магов планеты доходит до возможности обучаться. В процессе обучения отсеивается две трети поступивших. В итоге получается, что толковых магов в Нихерии всего ничего.</p>
+<p>Дар к магии может проявиться и у тех, кто родился до окончании Индикта. Так же как это было у тех кто родился до Красного Рассвета — придется учиться чувствовать энергию, уметь ее выделять и использовать, соединяя с теоретическими познаниями рунического языка. У остальных магов это чувство есть сразу и им достаточно просто изучить теорию. Сравнимо с тем, как в разговоре себя чувствует носитель языка и человек, который его изучал.</p>
+<p>В прошлом, на западе многие годы взращивали в народе уверенность, что магия — это проклятье. Поэтому местных «одаренных» всячески выживали и считали проклятыми. Этот предрассудок ушёл из Нихерии вместе с богами, но за предрассудком пришло не лучшее, но закономерное благоразумие. На сегодняшний день, маг — зачастую человек нездоровый, больной душой. Больная душа — больное тело, а за недугом тела следует недуг разума. В современном цивилизованном обществе — маг, это тот, за кем лучше приглядывать. Что бы это ни значило.</p>
+<blockquote text>
+<p>Подробнее об обучении магии можно узнать в <a href="">этом разделе</a>. <!-- TODO --></p>
+<p>Очень полезный раздел о природе магии, свойствах энергии и отличиях между начинающими, мастерами и боевыми магами − <a href="basics/%D0%BC%D0%B0%D1%82%D1%87%D0%B0%D1%81%D1%82%D1%8C.html">здесь</a>.</p>
+</blockquote>
+<img src="basics/1.jpg">
+<div class="art-credits"><a href="https://vk.com/ekinveyl_art">Автор арта (и оригинальной ролевой кстати) — Эрен Кинвейл</a></div>
+<div class="niheria-audio">
+    <h4 class="niheria-audio">
+        The White Stripes - Icky Thump
+    </h4>
+    <audio class="niheria-audio" controls loop>
+        <source 
+            src="basics/The White Stripes - Icky Thump.mp3" 
+            type="audio/mpeg">
+        Музыка не поддерживается браузером
+    </audio>
+</div>
+<h2 id="Магия-Уходящей-Эпохи"><a class="header" href="#Магия-Уходящей-Эпохи">Магия Уходящей Эпохи</a></h2>
+<p>Магия современного мира лишь выглядит похоже на ту, что можно было увидеть на страницах учебников Новой Эпохи.</p>
+<p>Как и прежде, как и в былые эпохи, студентов учат, что магические символы — это, в первую очередь, <strong>визуализация</strong>. Маг обязан чётко представлять, какие руны и идеодиаграммы ему нужны и в какой форме, а затем вычерчивать их в воздухе, вливая в это свою магическую энергию. Малейшая ошибка в начертании может привести к плачевным последствиям, поэтому для магов очень важна концентрация.</p>
+<p><strong>У каждого мага свой способ постройки схемы заклинаний</strong>: круговая пентаграмма, лента из рун или обычное последовательное расположение рун. Магическая энергия в чародее — это ограниченный ресурс, который нужно восстанавливать отдыхом. Чтобы рассеять руны, достаточно сконцентрироваться и впитать энергию из них обратно — это позволит «отменить» заклинание и сохранить лимит нетронутым. Если заклинание просто оборвать, то оно сработает непредсказуемым образом и скорее всего навредит в первую очередь самому магу.</p>
+<p>Плести заклинания прямо в гуще битвы или на бегу очень сложно и опасно, поэтому <strong>чародеи предпочитают держаться на расстоянии</strong>, а вблизи колдуют только в крайних случаях.</p>
+<p><strong>Каждая ветвь магии имеет свой цвет</strong>, от которого зависит и цвет нарисованного магом заклинания. </p>
+<ul>
+<li>Белая магия — мягкого золотистого цвета; </li>
+<li>Чёрная магия — красно-оранжевого; </li>
+<li>Магия Влияния — переливающегося зелёного; </li>
+<li>Созидание – сиренево-голубого;
+Сотворение заклинаний — это в некотором роде работа художника, которым в глубине души любой маг и является, хочет он того или нет. Без должного воображения чародей никогда не достигнет успеха в своём ремесле и его умения ограничатся примитивными заклинаниями.</li>
+</ul>
+<h4 id="С-двух-рук"><a class="header" href="#С-двух-рук">С двух рук</a></h4>
+<p>Одновременно можно создавать только одинаковые простые заклинания, состоящие из одной простой руны. Для простоты будем называть такие заклинания одиночными рунами. Создавать одновременно два сложных, состоящих из идеограмм и разных по составу заклинания не получится.</p>
+<p>При выборе двух разных целей одно из заклинаний с 50% вероятностью промахнётся.</p>
+<p>Для достижения успеха в плетении двух одиночных рун одновременно нужно иметь амбидекстрию или специально её в себе развить. На тренировки амбидекстрии потребуется два года и они должны быть регулярными.</p>
+<h4 id="Ошибки"><a class="header" href="#Ошибки">Ошибки</a></h4>
+<p>Самое важное для мага — не ошибиться в рисунке. Но не бойтесь ошибок, в их результате вы можете совершить научный прорыв! Или превратиться в сладкий рулет и погибнуть от рук голодного прохожего.</p>
+<p>Создавая комбинация различных по составу сложных заклинаний экспериментируйте, но не забывайте об осторожности.</p>
+<h4 id="Игровой-ход"><a class="header" href="#Игровой-ход">Игровой ход</a></h4>
+<p>Простое и сложное заклинание создается за один ход, дальше — нюансы. У <strong>Мест Силы</strong> маг может создавать по два заклинания за ход (лимит увеличивается в два раза соответственно).</p>
+<p>При желании, маг может потратить на плетение хоть несколько дней, если сможет столько времени обойтись без сна, еды и отлучек по нужде. Обычно у чародеев на одну одиночную руну уходит одна-две секунды, на одиночную идеограмму — две-четыре секунды, на одно сложное заклинание — от четырех до десяти секунд. </p>
+<p>Правило одного\двух заклинаний за ход относится только к боёвкам. В мирной игре, где за один пост может пройти несколько дней или даже месяцев, допустимо не соблюдать это ограничение.</p>
+<p><strong>Сложное заклинание</strong> — это заклинание, в которое вплетено не более пяти рун и двух идеограмм. Заклинание, где рун и идеограмм больше называется <strong>расширенное заклятие</strong> или <strong>мантра</strong> и на его создание уходит от пяти ходов в бою, и несколько минут в мирной игре. Не забываем, что неаккуратное расходование силы может навредить магу.</p>
+<p><em>В случае локальных квестов с крупными замесами, магам можно использовать одиночные руны без ограничения на ход, но только с разрешения ведущего квест-мастера и с вездесущей поправкой на здравомыслие.</em></p>
+<h4 id="Заклинания"><a class="header" href="#Заклинания">Заклинания</a></h4>
+<p><strong>Одиночная руна</strong> даёт один простой эффект. Его сила воздействия не выше условных 20%, длительность — не больше 10 секунд, дальность — не больше 3-10 метров.</p>
+<p><strong>Сложное заклинание</strong> даёт комбинированный и усиленный эффект. Сила сложного заклинания достигает 50-80%, длительность высчитывается по формуле, которая будет подробнее расписана ниже, а дальность ограничивается 100 метрами.</p>
+<p><strong>Расширенные заклятия</strong> или <strong>мантры</strong> являют собой полный и сложный эффект, равный условным 100% и больше. Длительность высчитывается по формуле, а дальность ограничивается 500 метрами.</p>
+<p>Исключения по дальности, эффективности, области, размеру цели и т.д. указаны в описании рун. Это можно уточнять у анкетолога или квестмастера. </p>
+<p>Помните, что уничтожать врагов по щелчку пальцев, переворачивать горы и т.д. маги с самого старта игры не могут. Для подобных эффектов заклинание нужно прокачивать непосредственно в игре через качественные отыгрыши.</p>
+<h4 id="Структура-заклинаний"><a class="header" href="#Структура-заклинаний">Структура заклинаний</a></h4>
+<p>Маги рангов «ученик» и «умелец» всегда добавляют в сложные заклинания основную идеограмму одной из ветвей. Она служит фундаментом для их сложных заклинаний и отвечает за их длительность. Маги ранга «мастер» могут не использовать основную идеограмму, жертвуя длительностью в угоду мощности действия.</p>
+<h4 id="Формулы-и-правила"><a class="header" href="#Формулы-и-правила">Формулы и правила</a></h4>
+<p>У <strong>одиночной руны</strong> стандартная длительность — 10 секунд.</p>
+<p>Длительность <strong>одиночной идеограммы</strong> — 20 секунд.</p>
+<p>Идеограмма часто имеет связанные с ней руны, из частей записи которых она состоит. Знание рун не требует знания родственной идеограммы, но знание идеограммы требует знания рун.</p>
+<p>В <strong>сложном заклинании</strong> максимум рун — пять; максимум идеограмм — две, каждая по цене двух рун; т.е. при использовании двух идеограмм еще одна руна остается в запасе. Чем больше символов — тем меньше время действия. </p>
+<p>В <strong>расширенном заклятии</strong> количество рун ограничено способностями мага, такую магию категорически сложно использовать в бою.</p>
+<blockquote text>
+<p><strong>Правило усиления</strong></p>
+<p><em>Усиливающий символ</em> — это любой символ из ветви основного символа заклинания. Усиливающий символ увеличивает время вдвое и может быть только один, а время увеличивается только для символов одной с ним ветви. Его наличие не даёт штрафа ко времени.</p>
+</blockquote>
+<blockquote text>
+<p><strong>Репетативное правило</strong></p>
+<p>Два или три одинаковых символа, идущих подряд, отнимают в сложном заклинании столько же времени, сколько один. К четвертому символу и далее отсчёт начинается заново.</p>
+</blockquote>
+<p>Каждыя новая руна отнимает стандатную длительность от общего времени действия, но две и более одинаковых руны идут по цене одной, согласно <strong>Репетативному правилу</strong>, отнимая всё так же 10 или 20 секунд, или же 5 и 10 соответственно при <strong>усилении</strong>.</p>
+<blockquote text>
+<p><strong>Правило идеограмм</strong></p>
+<p>Вторая идеограмма в заклинании — прибавляет свою длительность в комбинации с идеограммой той же ветви и отнимает свою длительность в комбинации с идеограммой другой ветви. </p>
+</blockquote>
+<blockquote text>
+<p><strong>Примеры:</strong></p>
+<ol>
+<li>
+<p>Задействовав идеограмму Чёрной Магии, руну Хаоса и руну Роста, можно инициировать неуправляемый рост опухоли на теле жертвы, состоящей тут же возникающих жира, хрящей и вкраплений зубов. </p>
+<pre><code> Высчитываем время действия:
+
+ ид-ма Чёрной Магии – +20 секунд
+ руна Хаоса (усиливающая) – +20 секунд из ид-мы Чёрной Магии
+ руна Роста – -10 секунд
+
+ Ответ: 30 секунд существования.
+</code></pre>
+</li>
+<li>
+<p>Задействовав идеограмму Белой Магии и трижды руну Исцеления маг получит продолжительное заклинание исцеления. </p>
+<pre><code> Высчитываем время действия:
+
+ ид-ма Белой Магии – +20 секунд
+ руна Исцеления (усиливающая)    – +20 секунд из ид-мы Белой Магии
+ руна Исцеления х2               – -5 секунд (уменьшено вдвое и усилено)
+
+ Ответ: 35 секунд существования.
+</code></pre>
+</li>
+<li>
+<p>Не поленившись использовать идеограмму Единства, идеограмму Внимания, руну Притока и руну Фокуса опытный маг получит <em>расширенное заклятие</em> деликатного (действующее не по области вокруг целей, а строго по их поверхности) сокрытия присутствия магии группы целей.</p>
+<pre><code> Высчитываем время действия:
+
+ ид-ма Единства – +20 секунд
+ ид-ма Внимания – +20 секунд (по правилу идеограмм)
+ руна Притока (усиливающая)  – +40 секунд из двух ид-м одной ветви
+ руна Фокуса                 – -5 секунд (усилено)
+
+ Ответ: 75 секунд существования.
+</code></pre>
+</li>
+<li>
+<p>Сложное заклинание из идеограммы Смерти и идеограммы Силы составить не получится.</p>
+<pre><code> Высчитываем время действия:
+
+ ид-ма Смерти – +20 секунд 
+ ид-ма Силы – -20 секунд (по правилу идеограмм)
+
+ Ответ: 0 секунд существования.
+</code></pre>
+<p>Но, добавив в него одну усиливающую руну Несчастья, можно получить смертоносное заклинание кошмарной, но моментальной гибели.</p>
+<pre><code> Высчитываем время действия:
+
+ ид-ма Смерти – +20 секунд (по правилу идеограмм)
+ руна Несчастья (усиливающая) – +20 секунд из ид-мы Смерти
+ ид-ма Силы – -20 секунд
+
+ Ответ: 20 секунд существования, из которых хватит и одной.
+</code></pre>
+</li>
+</ol>
+</blockquote>
+<h4 id="Ранги-мастерства"><a class="header" href="#Ранги-мастерства">Ранги мастерства</a></h4>
+<p>Переход на новую ступень мастерства увеличивает дневной лимит магического потенциала и даёт возможность использовать больше сложных заклинаний. Новичок может создавать только одиночные руны. У ученика появляется одно сложное заклинание. У умельца – три сложных заклинания и одна мантра. У мастера – пять и две мантры. На любом ранге мастерства в день маг может применить не более 25 одиночных рун.</p>
+<ul>
+<li>Маг-новичок знает 3-5 одиночных рун и 1 идеограмму. </li>
+<li>Ученик — 6-9 рун и 2 идеограммы. </li>
+<li>Умелец — 10 рун и 4 идеограммы. </li>
+<li>Мастер — 15 рун и 5 идеограмм.</li>
+</ul>
+<p>Превышать дневную норму опасно для жизни и здоровья мага, расходуя его жизненные силы. Чем меньше сил осталось у мага, тем менее эффективно он колдует.</p>
+<h4 id="Книга-заклинаний-или-гримуар"><a class="header" href="#Книга-заклинаний-или-гримуар">Книга заклинаний или гримуар</a></h4>
+<p>Многие сложные заклинания изживают себя со временем. В ранге мастера маг может держать в голове до пяти мощных формул одновременно. Их и одиночные руны можно заменять новыми, «откладывая» старые в своеобразную «книгу заклинаний», для этого нужно связаться с администрацией. «Книга заклинаний» игрока вносится в анкету героя.</p>
+<p>Чтобы вернуть в свой арсенал «отложенное» заклинание, нужно провести тренировку-вспоминание, т.е. написать один подробный небоевой пост. Затем сообщить админам, какое заклинание возвращается, а какое уходит в «книгу заклинаний» со ссылкой на тренировочный пост и анкету героя.</p>
+<p>При «откладывании» одиночных рун нужно помнить, что если «отложенная» руна входила в состав сложного заклинания, оно перестанет работать так, как должно, потому что её в нём больше не будет.</p>
+<h4 id="Прокачка-заклинаний"><a class="header" href="#Прокачка-заклинаний">Прокачка заклинаний</a></h4>
+<p>Заклинания можно прокачивать и усиливать. Для этого нужно качественно (т.е. подробно и внятно) отыграть прокачку в игре тренировкой или как часть какого-либо события.</p>
+<p>Обучение может быть непреднамеренным — например, постоянной практикой заклинания при выполнении какой-либо задачи, во время квеста и т.д. </p>
+<p>Новые заклинания изучаются посредством отыгрыша: встречами с героем\нпс-магом, который выступит в роли наставника, чтением книг о магии.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../menu/magic.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../menu/magic/basics/матчасть.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../menu/magic.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../menu/magic/basics/матчасть.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+        <!-- Open details to print -->
+        <script>
+            // open closed details elements for printing
+            window.addEventListener('beforeprint',() =>
+            {
+                const allDetails = document.body.querySelectorAll('details');
+                for(let i=0; i<allDetails.length; i++)
+                {
+                    if(allDetails[i].open)
+                    {
+                        allDetails[i].dataset.open = '1';
+                    }
+                    else
+                    {
+                        allDetails[i].setAttribute('open', '');
+                    }
+                }
+            });
+
+            // after printing close details elements not opened before
+            window.addEventListener('afterprint',() =>
+            {
+                const allDetails = document.body.querySelectorAll('details');
+                for(let i=0; i<allDetails.length; i++)
+                {
+                    if(allDetails[i].dataset.open)
+                    {
+                        allDetails[i].dataset.open = '';
+                    }
+                    else
+                    {
+                        allDetails[i].removeAttribute('open');
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

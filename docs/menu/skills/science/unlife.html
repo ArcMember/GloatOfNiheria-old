@@ -1,0 +1,403 @@
+<!DOCTYPE HTML>
+<html lang="ru" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Нежизнь - Злорадство Нихерии</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../../custom.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <script src="../../../tools.js"></script>
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Содержание">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../../index.html"><strong aria-hidden="true">1.</strong> Меню</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/manual.html"><strong aria-hidden="true">1.1.</strong> Руководство</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/manual/quick-start.html"><strong aria-hidden="true">1.1.1.</strong> Быстрый старт</a></li><li class="chapter-item "><a href="../../../menu/manual/about.html"><strong aria-hidden="true">1.1.2.</strong> О ролевой</a></li><li class="chapter-item "><a href="../../../menu/manual/rules.html"><strong aria-hidden="true">1.1.3.</strong> Правила</a></li><li class="chapter-item "><a href="../../../menu/manual/templates.html"><strong aria-hidden="true">1.1.4.</strong> Шаблоны</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/manual/templates/quenta.html"><strong aria-hidden="true">1.1.4.1.</strong> Анкета</a></li><li class="chapter-item "><a href="../../../menu/manual/templates/search-coop.html"><strong aria-hidden="true">1.1.4.2.</strong> Поиск игрока</a></li><li class="chapter-item "><a href="../../../menu/manual/templates/create-location.html"><strong aria-hidden="true">1.1.4.3.</strong> Создание локации</a></li></ol></li><li class="chapter-item "><a href="../../../menu/manual/masters.html"><strong aria-hidden="true">1.1.5.</strong> Штаб Мастеров</a></li><li class="chapter-item "><a href="../../../menu/manual/leveling.html"><strong aria-hidden="true">1.1.6.</strong> Прокачка героя</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook.html"><strong aria-hidden="true">1.2.</strong> Путеводитель</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/races.html"><strong aria-hidden="true">1.2.1.</strong> Расы</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/races/besties.html"><strong aria-hidden="true">1.2.1.1.</strong> Бестийцы</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/dwarfs.html"><strong aria-hidden="true">1.2.1.2.</strong> Дворфы</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/kharfirs.html"><strong aria-hidden="true">1.2.1.3.</strong> Кхарфиры</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/lamah.html"><strong aria-hidden="true">1.2.1.4.</strong> Ламах</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/humans.html"><strong aria-hidden="true">1.2.1.5.</strong> Люди</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/meries.html"><strong aria-hidden="true">1.2.1.6.</strong> Мерии</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/redrehan.html"><strong aria-hidden="true">1.2.1.7.</strong> Редрехан</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/vampires.html"><strong aria-hidden="true">1.2.1.8.</strong> Вампиры</a></li><li class="chapter-item "><a href="../../../menu/guidebook/races/werewolfs.html"><strong aria-hidden="true">1.2.1.9.</strong> Оборотни</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/guilds.html"><strong aria-hidden="true">1.2.2.</strong> Гильдии</a></li><li class="chapter-item "><a href="../../../menu/guidebook/army.html"><strong aria-hidden="true">1.2.3.</strong> Армии</a></li><li class="chapter-item "><a href="../../../menu/guidebook/education.html"><strong aria-hidden="true">1.2.4.</strong> Образование</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books.html"><strong aria-hidden="true">1.2.5.</strong> Книги</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science.html"><strong aria-hidden="true">1.2.5.1.</strong> Научная литература</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science/bestiary.html"><strong aria-hidden="true">1.2.5.1.1.</strong> Бестиарий</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/diseases.html"><strong aria-hidden="true">1.2.5.1.2.</strong> Болезни</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics.html"><strong aria-hidden="true">1.2.5.1.3.</strong> Инженерия и паромеханика</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/steam-engine.html"><strong aria-hidden="true">1.2.5.1.3.1.</strong> Устройство парового двигателя Фелинварда Синоба</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/digest.html"><strong aria-hidden="true">1.2.5.1.3.2.</strong> Дайджест промышленного комплекса Нихерии</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/map-of-lost.html"><strong aria-hidden="true">1.2.5.1.3.3.</strong> Краткая карта утерянных технологий</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/naat-guns.html"><strong aria-hidden="true">1.2.5.1.3.4.</strong> Алхимические винтовка и пистолет Наат-Тхаес</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/mechanics/printing-press.html"><strong aria-hidden="true">1.2.5.1.3.5.</strong> Механический типографический станок</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy.html"><strong aria-hidden="true">1.2.5.1.4.</strong> Алхимический Увраж</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/poisons.html"><strong aria-hidden="true">1.2.5.1.4.1.</strong> Ядоварение</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/drugs.html"><strong aria-hidden="true">1.2.5.1.4.2.</strong> Наркотики</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/ingredients.html"><strong aria-hidden="true">1.2.5.1.4.3.</strong> Ингредиенты</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/tinctures.html"><strong aria-hidden="true">1.2.5.1.4.4.</strong> Популярные настойки</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/poultices.html"><strong aria-hidden="true">1.2.5.1.4.5.</strong> Припарки Бромса</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/alchemy/elixirs.html"><strong aria-hidden="true">1.2.5.1.4.6.</strong> Славные эликсиры</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/weapon.html"><strong aria-hidden="true">1.2.5.1.5.</strong> Вооружен до зубов</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/science/weapon/cold.html"><strong aria-hidden="true">1.2.5.1.5.1.</strong> Холодное оружие</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/weapon/fire.html"><strong aria-hidden="true">1.2.5.1.5.2.</strong> Огнестрельное оружие</a></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/weapon/armor.html"><strong aria-hidden="true">1.2.5.1.5.3.</strong> Броня</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/medical-theurgy.html"><strong aria-hidden="true">1.2.5.1.6.</strong> Медицинская теургия</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/folklore.html"><strong aria-hidden="true">1.2.5.2.</strong> Фольклор</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/folklore/phrases.html"><strong aria-hidden="true">1.2.5.2.1.</strong> Поговорки</a></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/misc.html"><strong aria-hidden="true">1.2.5.3.</strong> Разные статьи</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/books/misc/digest.html"><strong aria-hidden="true">1.2.5.3.1.</strong> Именной справочник</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/books/science/bestiary.html"><strong aria-hidden="true">1.2.6.</strong> Бестиарий</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.1.</strong> Бестии</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.</strong> Дракониды</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.1.</strong> Гавиары</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.2.</strong> Мутанты</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.2.3.</strong> Нёхи</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.</strong> Твари</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.1.</strong> Создания</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.2.</strong> Водные</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.2.1.</strong> Хирды</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.3.3.</strong> Насекомые</div></li></ol></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.</strong> Сущности</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.1.</strong> Элементали</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.2.</strong> Нежить</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.2.6.4.3.</strong> Мороки</div></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/contests.html"><strong aria-hidden="true">1.2.7.</strong> Конкурсы</a></li><li class="chapter-item "><a href="../../../menu/guidebook/games.html"><strong aria-hidden="true">1.2.8.</strong> Игры</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/guidebook/games/windwarf.html"><strong aria-hidden="true">1.2.8.1.</strong> Виндворф</a></li><li class="chapter-item "><a href="../../../menu/guidebook/games/guran-pool.html"><strong aria-hidden="true">1.2.8.2.</strong> Гуранский пул</a></li><li class="chapter-item "><a href="../../../menu/guidebook/games/plates.html"><strong aria-hidden="true">1.2.8.3.</strong> Плашки</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/magic.html"><strong aria-hidden="true">1.3.</strong> Магия</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/magic/basics.html"><strong aria-hidden="true">1.3.1.</strong> Основы магии</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/magic/basics/матчасть.html"><strong aria-hidden="true">1.3.1.1.</strong> Теория магии</a></li></ol></li><li class="chapter-item "><a href="../../../menu/magic/branches.html"><strong aria-hidden="true">1.3.2.</strong> Ветви магии</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/magic/branches/white.html"><strong aria-hidden="true">1.3.2.1.</strong> Белая магия</a></li><li class="chapter-item "><a href="../../../menu/magic/branches/black.html"><strong aria-hidden="true">1.3.2.2.</strong> Чёрная магия</a></li><li class="chapter-item "><a href="../../../menu/magic/branches/creation.html"><strong aria-hidden="true">1.3.2.3.</strong> Магия Созидания</a></li><li class="chapter-item "><a href="../../../menu/magic/branches/influence.html"><strong aria-hidden="true">1.3.2.4.</strong> Магия Влияния</a></li></ol></li><li class="chapter-item "><a href="../../../menu/magic/phenomena.html"><strong aria-hidden="true">1.3.3.</strong> Явления магии</a></li><li class="chapter-item "><a href="../../../menu/magic/influence.html"><strong aria-hidden="true">1.3.4.</strong> Влияние рун</a></li><li class="chapter-item "><a href="../../../menu/magic/places.html"><strong aria-hidden="true">1.3.5.</strong> Места магии</a></li><li class="chapter-item "><a href="../../../menu/magic/artifactory.html"><strong aria-hidden="true">1.3.6.</strong> Артефакторика</a></li></ol></li><li class="chapter-item expanded "><a href="../../../menu/skills.html"><strong aria-hidden="true">1.4.</strong> Навыки</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/skills/military.html"><strong aria-hidden="true">1.4.1.</strong> Воинские дисциплины</a></li><li class="chapter-item "><a href="../../../menu/skills/crafts.html"><strong aria-hidden="true">1.4.2.</strong> Ремесла</a></li><li class="chapter-item expanded "><a href="../../../menu/skills/science.html"><strong aria-hidden="true">1.4.3.</strong> Науки</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/skills/science/artifactory.html"><strong aria-hidden="true">1.4.3.1.</strong> Артефакторика</a></li><li class="chapter-item "><a href="../../../menu/skills/science/alchemy.html"><strong aria-hidden="true">1.4.3.2.</strong> Алхимия</a></li><li class="chapter-item "><a href="../../../menu/skills/science/linguistics.html"><strong aria-hidden="true">1.4.3.3.</strong> Лингвистика</a></li><li class="chapter-item "><a href="../../../menu/skills/science/mechanics.html"><strong aria-hidden="true">1.4.3.4.</strong> Паромеханика</a></li><li class="chapter-item expanded "><a href="../../../menu/skills/science/unlife.html" class="active"><strong aria-hidden="true">1.4.3.5.</strong> Нежизнь</a></li><li class="chapter-item "><a href="../../../menu/skills/science/chimerology.html"><strong aria-hidden="true">1.4.3.6.</strong> Химерология</a></li></ol></li><li class="chapter-item "><a href="../../../menu/skills/occultism.html"><strong aria-hidden="true">1.4.4.</strong> Оккультизм</a></li><li class="chapter-item "><a href="../../../menu/skills/druidism.html"><strong aria-hidden="true">1.4.5.</strong> Друидизм</a></li></ol></li><li class="chapter-item "><a href="../../../menu/history.html"><strong aria-hidden="true">1.5.</strong> История</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/history/elder-ages.html"><strong aria-hidden="true">1.5.1.</strong> Ветхие эпохи</a></li><li class="chapter-item "><a href="../../../menu/history/old-time.html"><strong aria-hidden="true">1.5.2.</strong> Старое время</a></li><li class="chapter-item "><a href="../../../menu/history/outgoing-age.html"><strong aria-hidden="true">1.5.3.</strong> Уходящая эпоха</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/history/outgoing-age/stillborn-indict.html"><strong aria-hidden="true">1.5.3.1.</strong> Индикт Мертворождения</a></li><li class="chapter-item "><a href="../../../menu/history/outgoing-age/recovery-period.html"><strong aria-hidden="true">1.5.3.2.</strong> Период Восстановления</a></li><li class="chapter-item "><a href="../../../menu/history/outgoing-age/renaissance-period.html"><strong aria-hidden="true">1.5.3.3.</strong> Веха Возрождения</a></li><li class="chapter-item "><a href="../../../menu/history/outgoing-age/ruins-haze.html"><strong aria-hidden="true">1.5.3.4.</strong> Туманы Руин</a></li></ol></li><li class="chapter-item "><a href="../../../menu/history/timeline.html"><strong aria-hidden="true">1.5.4.</strong> Таймлайн</a></li><li class="chapter-item "><a href="../../../menu/history/archive.html"><strong aria-hidden="true">1.5.5.</strong> Архив</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/history/archive/epilogue.html"><strong aria-hidden="true">1.5.5.1.</strong> Эпилог 2020</a></li><li class="chapter-item "><a href="../../../menu/history/archive/10yem.html"><strong aria-hidden="true">1.5.5.2.</strong> Сводки за 10 гЭР</a></li><li class="chapter-item "><a href="../../../menu/history/archive/46yne.html"><strong aria-hidden="true">1.5.5.3.</strong> Сводки за 46 гНЭ</a></li><li class="chapter-item "><a href="../../../menu/history/archive/45yne.html"><strong aria-hidden="true">1.5.5.4.</strong> Сводки за 45 гНЭ</a></li><li class="chapter-item "><a href="../../../menu/history/archive/44yne.html"><strong aria-hidden="true">1.5.5.5.</strong> Сводки за 44 гНЭ</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/plot.html"><strong aria-hidden="true">1.6.</strong> Сюжет</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/plot/main/sacral.html"><strong aria-hidden="true">1.6.1.</strong> Сакральный хладагент</a></li><li class="chapter-item "><a href="../../../menu/plot/main/apotheosis.html"><strong aria-hidden="true">1.6.2.</strong> Апофеоз войны</a></li><li class="chapter-item "><a href="../../../menu/plot/main/wanderers.html"><strong aria-hidden="true">1.6.3.</strong> Скитальцы</a></li><li class="chapter-item "><a href="../../../menu/plot/global/emptiness.html"><strong aria-hidden="true">1.6.4.</strong> Блаженство пустоты</a></li><li class="chapter-item "><a href="../../../menu/plot/global/heromantia.html"><strong aria-hidden="true">1.6.5.</strong> Херомантия</a></li><li class="chapter-item "><a href="../../../menu/plot/global/lokomotiv.html"><strong aria-hidden="true">1.6.6.</strong> Локомотив забытых истин</a></li><li class="chapter-item "><a href="../../../menu/plot/local/drama.html"><strong aria-hidden="true">1.6.7.</strong> Раскаты драмы</a></li><li class="chapter-item "><a href="../../../menu/plot/local/song.html"><strong aria-hidden="true">1.6.8.</strong> Тут вообще песня</a></li><li class="chapter-item "><a href="../../../menu/plot/local/shards.html"><strong aria-hidden="true">1.6.9.</strong> Осколки будущего</a></li></ol></li><li class="chapter-item "><a href="../../../menu/navigation.html"><strong aria-hidden="true">1.7.</strong> Навигация</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/navigation/geopolitics.html"><strong aria-hidden="true">1.7.1.</strong> Геополитика</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/languages.html"><strong aria-hidden="true">1.7.1.1.</strong> Языки</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/languages/riat-n-baspaan.html"><strong aria-hidden="true">1.7.1.1.1.</strong> Риат и Баспаа́н</a></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.2.</strong> Риат'Арьярд</div></li><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/languages/hodrtahrot.html"><strong aria-hidden="true">1.7.1.1.3.</strong> Ходртахрот</a></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.4.</strong> Арвийский</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.5.</strong> Ре́дрех</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.6.</strong> Ктаавехт</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.7.</strong> Мордвинский</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.1.8.</strong> Крат</div></li></ol></li><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/cultures.html"><strong aria-hidden="true">1.7.1.2.</strong> Культуры</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.1.</strong> Редрехан</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.2.</strong> Тейель</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.3.</strong> Кхафра</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.4.</strong> Луат</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.5.</strong> Адмиралтейство</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.6.</strong> Флатрия</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.7.</strong> Сикстинния</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.8.</strong> Ламах</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.9.</strong> Мордвин</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.10.</strong> Арвия</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.11.</strong> Хельгеран</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.2.12.</strong> Мародеры</div></li></ol></li><li class="chapter-item "><a href="../../../menu/navigation/geopolitics/states.html"><strong aria-hidden="true">1.7.1.3.</strong> Державы</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.1.</strong> Реабор-Тхаес</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.2.</strong> Вече Тейель</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.3.</strong> Великая Афитра</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.4.</strong> Последняя Республика Луат</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.5.</strong> Коркафт</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.6.</strong> Доминион Флатрия</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.7.</strong> Сикстиннский Доминион</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.8.</strong> Доминион Секри</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.9.</strong> Древняя Мордвинская империя</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.10.</strong> Кланы Золотого Гребня</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.3.11.</strong> Хельгеран</div></li></ol></li><li class="chapter-item "><a href="../../../menu/guidebook/guilds.html"><strong aria-hidden="true">1.7.1.4.</strong> Гильдии</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.1.</strong> Железнодорожники</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.2.</strong> Искра</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.3.</strong> Бюро Вычищения</div></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.4.</strong> Ассоциация С'Итш'Тас</div></li><li class="chapter-item "><a href="../../../menu/guidebook/guilds/inferdormis.html"><strong aria-hidden="true">1.7.1.4.5.</strong> Инфердормис</a></li><li class="chapter-item "><div><strong aria-hidden="true">1.7.1.4.6.</strong> Девы Победы</div></li></ol></li></ol></li><li class="chapter-item "><a href="../../../menu/navigation/geography.html"><strong aria-hidden="true">1.7.2.</strong> География</a></li><li class="chapter-item "><a href="../../../menu/navigation/locations.html"><strong aria-hidden="true">1.7.3.</strong> Локации</a></li><li class="chapter-item "><a href="../../../menu/navigation/transport.html"><strong aria-hidden="true">1.7.4.</strong> Транспорт</a></li><li class="chapter-item "><a href="../../../menu/navigation/cosmology.html"><strong aria-hidden="true">1.7.5.</strong> Космология</a></li><li class="chapter-item "><a href="../../../menu/navigation/new-lands.html"><strong aria-hidden="true">1.7.6.</strong> Новые земли</a></li></ol></li><li class="chapter-item "><a href="../../../menu/economy.html"><strong aria-hidden="true">1.8.</strong> Экономика</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/economy/about-money.html"><strong aria-hidden="true">1.8.1.</strong> О деньгах</a></li><li class="chapter-item "><a href="../../../menu/economy/earning.html"><strong aria-hidden="true">1.8.2.</strong> Заработок</a></li><li class="chapter-item "><a href="../../../menu/economy/finances.html"><strong aria-hidden="true">1.8.3.</strong> Финансы</a></li></ol></li><li class="chapter-item "><a href="../../../menu/characters.html"><strong aria-hidden="true">1.9.</strong> Персонажи</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/characters/registered.html"><strong aria-hidden="true">1.9.1.</strong> Зарегистрированные</a></li><li class="chapter-item "><a href="../../../menu/characters/canons.html"><strong aria-hidden="true">1.9.2.</strong> Каноны</a></li><li class="chapter-item "><a href="../../../menu/characters/graveyard.html"><strong aria-hidden="true">1.9.3.</strong> Кладбище</a></li></ol></li><li class="chapter-item "><a href="../../../menu/tools.html"><strong aria-hidden="true">1.10.</strong> Инструменты</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../menu/tools/age.html"><strong aria-hidden="true">1.10.1.</strong> Возраст</a></li><li class="chapter-item "><a href="../../../menu/tools/banking.html"><strong aria-hidden="true">1.10.2.</strong> Банкинг</a></li><li class="chapter-item "><a href="../../../menu/tools/map.html"><strong aria-hidden="true">1.10.3.</strong> Карта</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+        
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Содержание" aria-label="Содержание" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Сменить тему" aria-label="Сменить тему" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Темы" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Светлый</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Темный</button></li>
+                        </ul>
+                        <a onclick="window.location.href = '../../../print.html'" title="Распечатать" aria-label="Распечатать">
+                            <i id="print-button" class="fa fa-print"></i><span style="font-family: 'Open Sans', sans-serif; cursor: default;">книга</span>
+                        </a>
+                        <a onclick="print()" title="Распечатать страницу" aria-label="Распечатать страницу">
+                            <i id="print-button" class="fa fa-print"></i><span style="font-family: 'Open Sans', sans-serif; cursor: default;">статья</span>
+                        </a>
+                    </div>
+
+                    <h1 class="menu-title">Злорадство Нихерии</h1>                    
+
+                    <div class="right-buttons">                        
+                        <span onclick="window.location.href = '../../../menu/tools.html';" style="cursor: default;">Инструменты:</span>
+                        <!-- Age Calculator -->
+                        <a href="../../../menu/tools/age.html" title="Калькулятор возраста" aria-label="Калькулятор возраста">
+                            <i id="age-calc-button" class="fa fa-hourglass-end"></i>
+                        </a>
+                        <!-- Banking Calculator -->
+                        <a href="../../../menu/tools/banking.html" title="Банковский калькулятор" aria-label="Банковский калькулятор">
+                            <i id="bank-calc-button" class="fa fa-university"></i>
+                        </a>
+                        <!-- Map -->
+                        <a href="../../../menu/tools/map.html" title="Карта" aria-label="Карта">
+                            <i id="map-button" class="fa fa-map"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <div class="niheria-nav main-menu-el">
+                            <a class="niheria-nav-btn main-menu-text" href="javascript:history.back()">Назад</a>  
+                            <a class="niheria-nav-btn main-menu-text" href="../../../index.html">Меню</a>  
+                        </div>
+                        <div class="side-board">
+<div> 
+<img class="cover" src="unlife/cover.png">
+<div class="art-credits"><a href="https://www.deviantart.com/artdoge">Автор арта — ArtDoge</a></div>
+</div>
+<div class="side-block left toc">
+<ul>
+<li><a href="#%D0%9D%D0%B5%D0%BA%D1%80%D0%BE%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D1%8F">Некромантия</a>
+<ul>
+<li><a href="#%D0%94%D1%83%D1%85%D0%BE%D0%B2%D0%BD%D0%BE-%D1%8F%D0%BA%D0%BE%D1%80%D0%BD%D1%8B%D0%B9-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4">Духовно-якорный метод</a>
+<ul>
+<li><a href="#%D0%A1%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0-%D0%BD%D0%B5%D0%B6%D0%B8%D1%82%D0%B8">Свойства нежити</a></li>
+<li><a href="#%D0%9D%D0%B0%D0%B2%D1%8B%D0%BA%D0%B8-%D0%BD%D0%B5%D0%B6%D0%B8%D1%82%D0%B8">Навыки нежити</a></li>
+</ul>
+</li>
+<li><a href="#%D0%92%D0%B8%D0%B4%D1%8B-%D0%BD%D0%B5%D0%B6%D0%B8%D1%82%D0%B8">Виды нежити</a>
+<ul>
+<li><a href="#%D0%A1%D0%BA%D0%B5%D0%BB%D0%B5%D1%82">Скелет</a></li>
+<li><a href="#%D0%A2%D0%B5%D0%BB%D0%BE">Тело</a></li>
+<li><a href="#%D0%A2%D1%80%D1%83%D0%BF">Труп</a></li>
+<li><a href="#%D0%9A%D0%B0%D0%B4%D0%B0%D0%B2%D1%80">Кадавр</a></li>
+</ul>
+</li>
+<li><a href="#%D0%93%D0%B4%D0%B5-%D0%BD%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%B8%D0%B7%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5">Где начать изучение?</a></li>
+<li><a href="#%D0%A2%D0%B5%D0%BB%D0%B0-%D0%B6%D0%B8%D0%B2%D0%BE%D1%82%D0%BD%D1%8B%D1%85">Тела животных</a></li>
+<li><a href="#%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D1%83%D0%BC">Максимум</a></li>
+</ul>
+</li>
+<li><a href="#%D0%9B%D0%B8%D1%87%D0%B5%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F">Личефикация</a>
+<ul>
+<li><a href="#%D0%A0%D0%B8%D1%82%D1%83%D0%B0%D0%BB">Ритуал</a></li>
+<li><a href="#%D0%A1%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%D0%BD%D0%BE%D1%81%D1%82%D0%B8">Способности</a></li>
+<li><a href="#%D0%A0%D0%B0%D0%BD%D0%B3%D0%B8">Ранги</a></li>
+<li><a href="#%D0%A1%D0%BB%D0%B0%D0%B1%D0%BE%D1%81%D1%82%D0%B8">Слабости</a>
+<ul>
+<li><a href="#%D0%A2%D0%B5%D0%BB%D0%BE-1">Тело</a></li>
+<li><a href="#%D0%A0%D0%B0%D1%81%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5">Расстояние</a></li>
+<li><a href="#%D0%9A%D0%B0%D0%BA-%D0%BF%D0%BE%D0%B1%D0%B5%D0%B4%D0%B8%D1%82%D1%8C-%D0%BB%D0%B8%D1%87%D0%B0">Как победить лича?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<blockquote text>
+<h1 id="Некромантия"><a class="header" href="#Некромантия">Некромантия</a></h1>
+<p>− это богомерзкая наука, черпающая силу из некроэнергии, − под запретом и нигде не приветствуется. Найти некроманта или напороться на такого случайно практически невозможно, а найти наставника − и того сложнее. Такова уж жизнь адептов смерти, что всегда и вовеки веков на них и их творениях висит гриф «УНИЧТОЖИТЬ».</p>
+</blockquote>
+<p><strong>Некроманты</strong> — это учёные, которые оживляют мёртвую плоть для служения или из банальной вредности, желая подпортить веселье близлежащему городу или деревне.
+В одиночку некроманты редко могут добиться успехов на этом поприще. Нужно не только хорошо разбираться в анатомии живых существ, но ещё и где-то добывать более-менее целые тела, к тому же без тёмного шамана оживления не будет. Именно он привязывает души к якорям, а потом вселяет их в мёртвые тела, обработанные некромантом.</p>
+<p><strong>После того, как тело воскрешено, оно обладает по-детски трогательной верностью некроманту.</strong> Последний пользуется этим, распоряжаясь воскрешённым как слугой. Их взаимодействие похоже на то, как налаживают контакт друиды и дикие звери.</p>
+<p>Но не всё так просто! Быт некроманта — не только воскрешение мёртвых и посиделки за травяным чаем с тёмными шаманами. Кроме интересной стороны работы есть и рутинная: уход за нежитью. Будь она хоть скелетом, хоть едва начавшим гнить трупом, без должного ухода срок служения станет весьма коротким.</p>
+<h2 id="Духовно-якорный-метод"><a class="header" href="#Духовно-якорный-метод">Духовно-якорный метод</a></h2>
+<p><strong>Некроэнергия</strong> — это проводник связи между некромантом и его слугой. <strong>Нежить</strong> — это марионетка, а связь посредством некроэнергии — <strong>нить</strong>.</p>
+<p>По сути, некроэнергия — это духовная мощь, изменившаяся под еретическим влиянием.</p>
+<p>Количество затрачиваемой некроэнергии напрямую влияет на качество управления. Некромант-ученик может контролировать только одного слугу, на которого уходят вся его некроэнергия. С опытом затраты уменьшаются и некромант может потратить освободившиеся излишки на подчинение новой нежити. Чем больше энергии затрачивается, тем точнее контроль. Если нежить уничтожить, затраченная некроэнергия не вернётся к некроманту, ему придётся её восстанавливать, поэтому нельзя создать новую нежить сразу после уничтожения старой.</p>
+<h3 id="Свойства-нежити"><a class="header" href="#Свойства-нежити">Свойства нежити</a></h3>
+<p><strong>Нежить может обладать некоторой степенью самостоятельности</strong>. Это зависит от того, какая душа и в какое тело она была помещена. В первую очередь это заметно в том, как нежить выполняет приказы. Чем она умнее, тем больше приказов способна выполнить. Лучше всего, когда душа помещена в своё же мёртвое тело, и чем меньше времени прошло с момента смерти, тем лучше. Опыты показали, что воспоминания мертвеца принадлежат именно душе, а не телу. Соответственно, нежить с «родной» душой получает такое преимущество, как использование мышечной памяти.</p>
+<blockquote attention>
+<p><em>«Свежие»</em> мертвецы способны воспринимать следующие концепции:</p>
+<ul>
+<li>Пространства;</li>
+<li>Перемещения;</li>
+<li>Переноса прижизненного опыта на практику;</li>
+<li>Обучения;</li>
+<li>Выбора. </li>
+</ul>
+</blockquote>
+<p>Тем не менее, даже самая умная нежить неспособна действовать самостоятельно без чётких приказов некроманта. Таким образом, нежить, какой бы сильной она ни была, даже защищаться не будет, если ей не приказать. Можно попробовать отдавать приказы, подразумевающие последовательное выполнение разных действий, однако их выполнение будет полностью зависеть от интеллекта нежити и имеющегося у неё опыта. Это значит, что нежить не будет выполнять приказ, если не может или не знает, как его выполнить. Тем не менее, как показывает практика, некоторая свобода воли у нежити всё же есть. То есть, если приказать нежити «убить», она сама выберет, каким образом это сделать, если способ не был указан.</p>
+<blockquote text>
+<p>Полное управление нежитью подразумевает точное знание строения управляемого тела. У хорошего некроманта слуги — продолжения его собственных рук. Если под контролем одинаковые типы нежити, управление ими проще, чем разными. Сложно также управлять кадаврами, которые собраны из слишком большого количества составных частей, ведь у них нет мышечной памяти. Поэтому если нужна зомби-лошадь, проще взять труп обычной лошади, чем составлять её из частей других существ.</p>
+</blockquote>
+<p>Один из самых частых вопросов начинающих некромантов: «Как работает скелет, если у него нет органов чувств?»</p>
+<p>Ответ кроется в основном принципе духовно-якорного механизма создания нежити. Скелет, как и любая другая нежить, содержит в себе якорь с душой, которая и является источником энергии для его передвижения и обработки информации. Также скелет может получать информацию непосредственно от некроманта. Таким образом, нежить, даже если у неё нет глаз, может видеть то же, что и сам некромант, что, к сожалению, в обратную сторону не работает.</p>
+<blockquote warning>
+<p><strong>Важно знать</strong>: нежить становится безынициативной, если некромант умер или его просто нет рядом. Нельзя отсылать от себя нежить на большие расстояния, максимум — на 50 метров. Более того, чем больше нежити в отряде, тем меньше расстояние, на котором её можно контролировать. </blockquote></p>
+<h3 id="Навыки-нежити"><a class="header" href="#Навыки-нежити">Навыки нежити</a></h3>
+<p><em>Нежить не может быть магом.</em> Использование всех остальных навыков зависит от воспоминаний души и тела, а также физических возможностей — без рук от нежити-плотника никакой пользы не будет.</p>
+<p>Если душа помещена в своё же мёртвое тело, нежить будет обладать 90% навыков, которыми обладала при жизни. Конечно, навыки сильно зависят от свежести тела. Гнилой зомби прыгать не сможет.</p>
+<p>Если поместить в тело чужую душу, нежити понадобится время, чтобы адаптироваться. Кроме того, у неё будет полностью отсутствовать мышечная память и навыки придётся натренировывать заново.</p>
+<p><em>Воспоминания нежити принадлежат помещённой душе, а не телу.</em></p>
+<h2 id="Виды-нежити"><a class="header" href="#Виды-нежити">Виды нежити</a></h2>
+<div two-board-columns>
+<div>
+<h3 id="Скелет"><a class="header" href="#Скелет">Скелет</a></h3>
+<p>Прежде чем пихать в череп будущего слуги якорь с привязанной душой, следует убедиться, что его кости не рассыпятся от первого же движения. Чтобы избежать этого, некроманту нужно перевязывать эластичными лентами самые ненадёжные суставы и надеть на кости тканевые «рукава», чтобы избежать технических повреждений искусственных связок. Это всё весьма трудоёмко и затратно по времени, однако лёгкая доступность рабочего материала (хищение с кладбищ, например) того стоит.</p>
+<p>Скелет не имеет дара речи (по анатомическим причинам), зрения, слуха и обоняния, большой физической силы или ловкости, зато идеально подходит для декора или простой работы по уборке помещений и запугиванию суеверных людей.</p>
+</div>
+<div>
+<h3 id="Тело"><a class="header" href="#Тело">Тело</a></h3>
+<p>Свежеубитый субъект — самая желанная добыча для некромантов. Уход за ним минимален, дурного запаха ещё нет, голосовые связки целы, как и остальные органы. В такого даже якорь с привязанной душой вшивать приятно.</p>
+<p>Из них выходят самые лучшие слуги, которых порой трудно даже от живых отличить. Если, конечно, не наблюдать долгое время, ведь тогда станет ясно, что мертвецу не нужна еда, вода, сон и отдых (а дышать приходится только для разговора). А ещё ему не больно, поэтому от перенапряжения он может не заметить, как порвёт себе мышцы или кожу. В бою это превращается в психологическое оружие: не каждый спокойно перенесёт вид идущего в атаку воина с топором во лбу и десятком стрел в спине.</p>
+</div>
+<div>
+<h3 id="Труп"><a class="header" href="#Труп">Труп</a></h3>
+<p>Здесь всё зависит от того, насколько он разложился. Подгнившая кожа, помутившиеся глаза, залитые трупным ядом уши и лёгкие не способствуют коммуникации. Зато у такого слуги достаточно сил, чтобы поднять оружие или тяжёлую мебель. Труп, с которого уже сползают кожа и мясо, будет менее полезен в бою и быту.</p>
+</div>
+<div>
+<h3 id="Кадавр"><a class="header" href="#Кадавр">Кадавр</a></h3>
+<p>В отличие от воскрешённых скелета, трупа и тела, кадавров необходимо создавать. Это долгое и утомительное занятие. Необходимо несколько тел, которые нужно разобрать, а потом собрать заново, придав им другую форму. Вес кадавра редко бывает ниже 250кг и выше 2,5т, так как более тяжёлые варианты просто не могут сдвинуться с места. Время на создание — от 6 часов до нескольких дней. Чем больше используется деталей, тем дольше он создаётся. Кадавр требует намного больше ресурсов: как алхимических составов от гниения, так и эластичных лент с тканями, чтобы не разваливался.</p>
+</div>
+</div>
+<h2 id="Где-начать-изучение"><a class="header" href="#Где-начать-изучение">Где начать изучение?</a></h2>
+<p>Ламахский полуостров, территория племени ламах-виден. Баспана, Тейель, резервация ламах-виден. Просто так они учить, разумеется, не будут. Во всех остальных землях эту науку не жалуют.</p>
+<h2 id="Тела-животных"><a class="header" href="#Тела-животных">Тела животных</a></h2>
+<p>Применение туш животных возможно, но смысла в этом мало: работу выполнять, имея только лапы или копыта, трудно. Чаще всего в такие тела некроманты вселяют душу тех же зверей и получают злое, тупое пушечное мясо, которое обычно охраняет их логова.</p>
+<h2 id="Максимум"><a class="header" href="#Максимум">Максимум</a></h2>
+<ul>
+<li><strong>Новичок</strong> искусств нежизни позволить себе мёртвого слугу не может.</li>
+<li><strong>Ученик</strong> — один воскрешённый, но создание кадавров ещё недоступно.</li>
+<li><strong>Умелец</strong> — два воскрешённых или один кадавр.</li>
+<li><strong>Мастер</strong> — четыре воскрешённых, среди которых может быть один кадавр.</li>
+</ul>
+<p>Чтобы управлять большим количеством, нужен нечеловеческий опыт и сила, но решение есть!</p>
+<h1 id="Личефикация"><a class="header" href="#Личефикация">Личефикация</a></h1>
+<img class="cover" src="unlife/cover1.png">
+<div class="art-credits"><a href="https://www.artstation.com/mr_motsak">Автор арта — Yevhen Motsak</a></div>
+<p><strong>Лич — это живой мертвец</strong>, когда-то бывший некромантом и тёмным шаманом, а теперь получивший возможность управлять ордами нежити. Он верен тёмным искусствам и лишён простых человеческих нужд. Он презирает и ненавидит живых, они кажутся ему мошками-одноднёвками. </p>
+<p><strong>Лич отличается сильной склонностью к преувеличению своих реакций.</strong> Если пафос, то даже бестийцы нервно курят в сторонке. Если ненависть, то испепеляющая. Если хандра, то с полным отторжением от реальности.</p>
+<p>Внешность у лича специфическая. После личефикации его тело усыхает, кожа сереет, кости и сухожилия сильно выпирают. Лич предпочитает скрывать свои мощи одеждой и пафосными до безобразия украшениями. В ход идёт всё, начиная от обычных невзрачных балахонов и заканчивая тяжелыми доспехами странной формы и сомнительной практичности. Иногда носит маску, чтобы скрыть лицо, а иногда для большего устрашения оставляет обтянутый кожей череп на виду. </p>
+<p><strong>Со временем нужда как-то укреплять своё тело становится необходимостью, ведь чем больше у лича нежити, тем слабее его тело.</strong></p>
+<p>В ритуале личефикации используется ядро какого-нибудь стихийного элементаля, поэтому лич в итоге получает некоторую власть над одной из стихий.</p>
+<ul>
+<li>Ядро огненного элементаля даёт личу красно-оранжевые магические оттенки и «огненные» свойства: «горят» глаза, слегка дымится тело, щелчком пальцев поджигаются свечи и волосы жертв, а созданная нежить тоже несёт в себе элемент огня. Следы такого лича всегда тлеют и обугливают растения и землю, а снег растапливают.</li>
+<li>Воздух — лич парит над землей не выше нескольких метров, способен взмахом руки спровоцировать волну воздуха, сбивающую с ног или гасящую открытые источники огня. Также в ограниченном количестве может разбрасывать несмертельные молнии, его глаза светятся, благодаря наэлектризованности он может стать опасным противником в ближнем бою. Другое дело, что личи обычно в рукопашную не ходят. Его нежить необычайно прыгучая и лёгкая, что позволяет создавать летающих тварей.</li>
+<li>Земляной лич способен по щелчку пальцев наращивать на орды своей нежити плотный слой песка и камней, который сложно пробить холодным оружием и в котором застревают стрелы. Внешний вид такого лича обманчиво безобиден: из всех спецэффектов его выделяет только зеленоватое свечение глаз и буквально сыплющийся изо всех щелей песок.</li>
+<li>Вода – покрытый инеем и источающий могильный холод лич, от его прикосновения всё покрывается коркой льда. Синее или голубое сияние сочится из всего его тела, ярче всего — из глаз. Стандартные способности: создание ледяных стрел и ледяных стен. Последних хватает, чтобы закупорить небольшой проход. Нежить также приобретает стихийный элемент холода.</li>
+</ul>
+<h2 id="Ритуал"><a class="header" href="#Ритуал">Ритуал</a></h2>
+<p>Главные требования к будущему личу – мастерство в некромантии и тёмном шаманизме, а также базовые знания алхимии. Это налагает ограничения на возраст будущего лича, а также на уровень его социализированности: юноша не может быть мастером в нужных дисциплинах, а некроманты — это изгои, которые мало понимают в социальных нормах и не крутятся в обществе. В гильдии «Инфердормис» могут помочь начать ритуал.</p>
+<p><strong>Необходимые ингредиенты для ритуала:</strong></p>
+<ul>
+<li>Кровь, еретически оскверненная (добывается в местах жертвоприношений тёмным богам, где ритуал успешно завершился созданием связи). Желательна кровь той же расы, к которой относится и будущий лич.</li>
+<li><strong>Ядро элементаля</strong>. Является основополагающим элементом, влияет на доступную после личефикации стихию.</li>
+<li>Расщеплённые души. Чем больше, тем лучше. Идеальным выбором станет Место Силы.</li>
+<li>Алхимический раствор «некробульон». Необходим для преобразования живого тела в мёртвое.</li>
+<li>Ассистент. Идеально подойдёт прислуга-нежить, способная выполнять задачи средней интеллектуальной сложности. Живой помощник крайне не рекомендуется из-за общей опасности личефикации для живых.</li>
+</ul>
+<blockquote text>
+<p>Осквернённая кровь смешивается с раздробленным ядром элементаля и огромным количеством некробульона, затем пропитывается расщеплёнными душами (чем их больше, тем быстрее лич потом «промаринуется»). Во всём этом важна точность, последовательность и профессионализм. После того, как всё готово, лич погружается в смертельную ванну, где проводит несколько недель, пока его тело не пропитается и не избавится от склонности к гниению. В процессе будущий лич умирает, поэтому, чтобы избежать агонии и лишнего бултыхания, настоятельно рекомендуется принять крепкое снотворное. После этого подключается ассистент (внимание, если ассистент — нежить, то стоит подыскать живого ему на замену!), который и проводит все манипуляции с погружением, терпеливым выжиданием и вытягиванием тела свежеиспечённого лича. После промакивания излишков смеси и сокрытия тела лича одеждой ассистенту остаётся только подождать, когда тот пробудится. </blockquote></p>
+<h2 id="Способности"><a class="header" href="#Способности">Способности</a></h2>
+<p>Некроэнергия — теперь основа силы лича, вместо духовной мощи или магической энергии. Некроэнергия — это то, что даёт личу возможность контролировать мертвых, пользоваться примитивной стихийной магией и существовать.</p>
+<blockquote warning>
+<p>Руническая магия у лича атрофируется полностью, если он был ей обучен. Арсенал известных заклинаний теперь вне доступа, вместо него — не самый гибкий и разнообразный стихийный элемент. </blockquote></p>
+<p>Связь с нежитью, которую лич создал при жизни, сохраняется. Навык шаманизма теряется. Остальные навыки (воинские, ремесленные, научные) сохраняются, так как память лич не теряет.</p>
+<p>Лич управляет нежитью на несколько порядков круче обычного некроманта, однако большой размах требует больших жертв и ритуал личефикации — лишь мизерная доля испытаний.
+<strong>Тело лича — это один сплошной якорь, который можно дробить.</strong> Оторвав от себя кусочек плоти или кости, лич помещает его как обычный якорь в мёртвое тело или может нащипать от себя ошмётков и оставить муторную работу на своих слуг.</p>
+<p><strong>От куска зависит размер, сила и расстояние контроля нежити</strong>. Крошка размером с ноготь поднимет только мелкую нежить, которая не сможет отойти от лича дальше, чем на пару десятков метров и будет тупа, как пробка. Крупная часть позволит отправить крупную нежить на многие сотни миль и не терять с ней связи. Если же нежити пожертвовать кусок своего мозга или сердце, то связь сохранится даже на другом краю мира. Архиличу можно всё, кроме головы, пожертвовать мёртвому или костяному дракону, но это будет жуткое расточительство с его стороны, потому что оторванные куски не отрастают, а тело у него не бесконечное.</p>
+<blockquote text>
+<p>Лич может полностью себя оскоблить, раздать все ненужные кости, сохранив только то, что позволят ему более-менее двигаться и общаться. Также он может собрать себя по кускам обратно, но не обойдётся без клея или ниток, а выглядеть он потом будет, как кривое лоскутное одеяло. Таким образом, щедрый лич может управлять сотнями мёртвых и обновлять свою армию при необходимости. </blockquote></p>
+<p><strong>Контроль нежити</strong> – способность направлять её действия, отдавать ментальные приказы и даже общаться с ней на расстоянии, если у принимающей «сигнал» нежити сохранились голосовые связки. Некоторые личи могут видеть глазами своей нежити. Для этого они вставляют в неё свой глаз или сразу оба.</p>
+<p><strong>Лич бессмертен.</strong> Он не может умереть, но может быть уничтожен. Если лича разорвать на куски, оставить на века в урне в богами забытом склепе, а потом собрать – он тут же начнёт как ни в чём не бывало собирать на коленке нежить. Даже прах лича можно использовать как основу для лепки и получить мини-лича, злобного, писклявого и по-прежнему способного на примитивную магию и управление мёртвыми.</p>
+<h2 id="Ранги"><a class="header" href="#Ранги">Ранги</a></h2>
+<p>У личей есть возможность повышать своё могущество. Для этого нужно повторять ритуальное маринование в уже знакомом составе. Ввиду сложности добычи ингредиентов, слишком часто такое вытворять не получится. У всех трёх рангов есть пассивная особенность: рядом с ними живые испытывают сильный необъяснимый страх. Ранг определяет также количество некроэнергии.</p>
+<ul>
+<li><strong>Младший лич.</strong> Способен управлять мертвецами гуманоидной формы и размеров. Не более, чем пятьюдесятью за раз и на расстоянии в несколько десятков километров. Нежить покрупнее будет в геометрической дисперсии уменьшаться в количестве и расстоянии. Некроэнергия на низком уровне, после ритуала обращения повторной процедуры не было.</li>
+<li><strong>Лич.</strong> Количество подконтрольной нежити переваливает за пару сотен. Дальность достигает сотни километров. Сохраняется закон дисперсии. Некроэнергия на среднем уровне, был проведён повторный ритуал после обращения.</li>
+<li><strong>Архилич.</strong> Управляет несколькими тысячами мертвых. Контролирует нежить на расстоянии до тысячи километров. Некроэнергия на высоком уровне, ритуал проводился в сумме уже трижды. Ритуалы больше не увеличивают мощь.</li>
+</ul>
+<h2 id="Слабости"><a class="header" href="#Слабости">Слабости</a></h2>
+<p><strong>Главная слабость лича – уязвимость перед разрушающими заклинаниями и взрывами.</strong> Сожжённый до золы, разрушенный заклинаниями, разорванный на мелкие кусочки лич уже не представляет опасности.</p>
+<p><strong>Противоположная стихия также принесёт личу много неприятностей.</strong> Если огненного облить водой или закатать в сугроб, то стоит опасаться только его нежити, но не его «заклинаний».</p>
+<p><strong>Но самое уязвимое место лича — это его тщеславие.</strong> Лича проще просто взять на понт, оскорбить или вынудить доказывать своё могущество. Довольно неудобный изъян, которым любят пользоваться разные недобитые герои.</p>
+<h3 id="Тело-1"><a class="header" href="#Тело-1">Тело</a></h3>
+<p><em>Если лич при жизни был здоровым жирдяем, он может брать под контроль больше нежити? А если тощим был?</em></p>
+<p>Лич неизбежно усыхает во время ритуала, так что разница между жирным и тощим будет невелика. Вопрос в росте и общей комплекции. Например, дворф стал личом или ибэ. Чем больше у лича его тела, тем больше нежити.</p>
+<h3 id="Расстояние"><a class="header" href="#Расстояние">Расстояние</a></h3>
+<p><em>Как эффективно управлять нежитью на большом расстоянии?</em></p>
+<p>Для этого нужно знать местность и чётко представлять, что там происходит. Лич может отсидеться в безопасном укрытии, но так он рискует потерять всю подконтрольную нежить, а с ней и части своего тела. Лич обычно держится поблизости, чтобы контролировать движение своих слуг и видеть место действий.</p>
+<h3 id="Как-победить-лича"><a class="header" href="#Как-победить-лича">Как победить лича?</a></h3>
+<p>Для начала, ликвидировать его нежить. Если под рукой нет гранат или сильной магии, то помогут обычные факелы — нежить инстинктивно остерегается огня. Приказы лича на минимальном расстоянии в 10км могут быть не эффективны. Достаточно забежать за забор, в который нежить будет тыкаться, потому что лич о заборе не знает, а затем прочесать местность в поисках самого костлявого злодея и размозжить ему голову.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../menu/skills/science/mechanics.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../../menu/skills/science/chimerology.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../menu/skills/science/mechanics.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../../menu/skills/science/chimerology.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+
+        <script src="../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+        <!-- Open details to print -->
+        <script>
+            // open closed details elements for printing
+            window.addEventListener('beforeprint',() =>
+            {
+                const allDetails = document.body.querySelectorAll('details');
+                for(let i=0; i<allDetails.length; i++)
+                {
+                    if(allDetails[i].open)
+                    {
+                        allDetails[i].dataset.open = '1';
+                    }
+                    else
+                    {
+                        allDetails[i].setAttribute('open', '');
+                    }
+                }
+            });
+
+            // after printing close details elements not opened before
+            window.addEventListener('afterprint',() =>
+            {
+                const allDetails = document.body.querySelectorAll('details');
+                for(let i=0; i<allDetails.length; i++)
+                {
+                    if(allDetails[i].dataset.open)
+                    {
+                        allDetails[i].dataset.open = '';
+                    }
+                    else
+                    {
+                        allDetails[i].removeAttribute('open');
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

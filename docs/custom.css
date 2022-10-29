@@ -1,0 +1,1510 @@
+@import 'css/variables.css';
+
+@font-face {
+    font-family: bookAntiqua;
+    src: url(assets/fonts/BKANT.TTF);
+}
+@font-face {
+    font-family: bookAntiquaBlack;
+    src: url(assets/fonts/ANTQUAB.TTF);
+}
+@font-face {
+    font-family: bookAntiquaBlackItalic;
+    src: url(assets/fonts/ANTQUABI.TTF);
+}
+@font-face {
+    font-family: bookAntiquaItalic;
+    src: url(assets/fonts/ANTQUAI.TTF);
+}
+
+.print-title {
+    display: none;
+}
+
+@media print {
+    .remark-slide-scaler {
+        width: 100% !important;
+        height: 100% !important;
+        transform: scale(1) !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
+    .print-title {
+        font-family: bookAntiqua;
+        text-align: center;
+        display: block;
+        margin: 50% auto 0 auto;
+        padding: 0;
+        font-size: 72px;
+        transition: 0.1s;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgb(212, 142, 84);
+        background: var(--gold-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .print-title.end {
+        margin: 0 auto auto auto;
+        page-break-after: always;
+    }
+}
+
+:root {
+    --niheria-gold: rgb(231, 158, 99);
+    --niheria-light-gold: rgb(255, 201, 157);
+    --niheria-black: rgba(2,0,36,1);
+
+    --niheria-red: rgb(206, 58, 58);
+
+    --gold-gradient: -webkit-linear-gradient(var(--niheria-gold) 50%, var(--niheria-black));
+    --gold-gradient-desc: -webkit-linear-gradient(var(--niheria-gold) 40%, var(--niheria-black));
+    --light-gold-gradient:  -webkit-linear-gradient(var(--niheria-light-gold) 50%, var(--niheria-black));
+}
+
+/*.BBBBBBBBBBBBBB..............................siiii................
+//.BBBBBBBBBBBBBBB.............................siiii................
+//.BBBBBBBBBBBBBBB.............................siiii................
+//.BBBBB....BBBBBB..................................................
+//.BBBBB.....BBBBB....aaaaaaaa.....ssssssss....siiii....cccccccc....
+//.BBBBB.....BBBBB...aaaaaaaaaa...ssssssssss...siiii...cccccccccc...
+//.BBBBB....BBBBBB..Baaaaaaaaaaa.asssssssssss..siiii..cccccccccccc..
+//.BBBBBBBBBBBBBB...Baaaa..aaaaa.assss..sssss..siiii.icccccccccccc..
+//.BBBBBBBBBBBBBB.........aaaaaa.assssssss.....siiii.icccc...ccccc..
+//.BBBBBBBBBBBBBBB....aaaaaaaaaa.assssssssss...siiii.icccc..........
+//.BBBBB....BBBBBBB.Baaaaaaaaaaa..sssssssssss..siiii.icccc..........
+//.BBBBB......BBBBB.Baaaaaaaaaaa...sssssssssss.siiii.icccc..........
+//.BBBBB......BBBBBBBaaaa..aaaaa......ssssssss.siiii.icccc...ccccc..
+//.BBBBB....BBBBBBBBBaaa..aaaaaa.assss...sssss.siiii.icccccccccccc..
+//.BBBBBBBBBBBBBBBBBBaaaaaaaaaaa.asssss.ssssss.siiii..cccccccccccc..
+//.BBBBBBBBBBBBBBB..Baaaaaaaaaaa..sssssssssss..siiii...cccccccccc...
+//.BBBBBBBBBBBBBB....aaaaaaaaaaa...sssssssss...siiii....cccccccc..*/
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 0.5em;
+}
+h2, h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+h4 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+h5 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 0.86em;
+}
+[center] {
+    text-align: center;
+}
+[bordered] {
+    border: 1px solid var(--niheria-fg-a);
+    padding: 15px;
+    margin: 10px;
+}
+[bordered-dashed] {
+    padding: 15px;
+    margin: 10px;
+    border: 1px dashed var(--niheria-fg);
+    transition: .5s;
+    display: inline-block; /* change the default display type to inline-block */
+    overflow: hidden; 
+}
+@media only screen and (max-width: 600px) {
+    [bordered-dashed] {
+        margin: 0 !important;
+        width: auto !important;
+        padding: 5px;
+    }
+}
+
+[bordered-dashed]:hover {
+    transition: .2s;    
+}
+
+[hover-zoom] {
+    transition: .2s;
+
+}
+[hover-zoom]:hover {
+    transition: .2s;
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+[bold] {
+    font-weight: bold;
+}
+[italic] {
+    font-style: italic;
+}
+
+p {
+    margin-top: 5px;
+}
+
+sup {
+    position: absolute;
+    transform: translateY(-5px);
+}
+sup.footnote-definition-label {
+    transform: translateX(-10px);
+}
+
+hr {
+    border-color: var(--niheria-fg);
+    border-top: none;
+    margin: 25px auto 25px auto;
+}
+
+b.big {
+    font-size: 24px;
+}
+
+details {
+    margin-top: 10px;
+    border: 1px solid var(--niheria-fg);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+/* unvisited link */
+a:link, a:visited  {
+    transition: 0.1s;
+    text-decoration: none;
+    color: var(--sidebar-active) !important;
+}
+/* mouse over link */
+a:hover {
+    transition: 0.07s;
+    text-decoration: none;
+    color: var(--niheria-fg) !important;
+}
+/* selected link */
+a:active {
+    text-decoration: none;
+    color: var(--niheria-bg) !important;
+}
+
+.toc a:link, a:visited {
+    transition: 0.07s;
+    margin-left: 0px;
+}
+
+.toc a:hover {
+    transition: 0.07s;
+    margin-left: 5px;
+}
+
+li::marker {
+    color: var(--niheria-fg) !important;
+}
+ol, ul {
+    padding: 0 0 5px 25px;
+}
+/* mdbook table of content section */
+ol.section {
+    padding: 0 auto 0 20px !important;
+}
+
+/* TODO to remove
+li, ul {
+    list-style-type: disc;
+}
+*/
+
+/* Elder Ages side pics are causing overflowing */
+#content {
+    overflow: hidden;
+}
+
+/* Fix for unclickable toc in races */
+#sidebar {
+    z-index: 10;
+}
+
+/*.....CCCCCCCCCC..................................ttt.....................................................
+//....CCCCCCCCCCCC................................tttt.....................................................
+//...CCCCCCCCCCCCCC...............................tttt.....................................................
+//..CCCCCCCCCCCCCCCC..............................tttt.....................................................
+//..CCCCCC....CCCCC..uuuuu...uuuuu...sssssssss..stttttttt..ooooooooo....mmmmmmmmmm.mmmmmmm....sssssssss....
+//..CCCCC............uuuuu...uuuuu..sssssssssss.stttttttt.ooooooooooo...mmmmmmmmmmmmmmmmmmm..sssssssssss...
+//.CCCCCC............uuuuu...uuuuu.ssssssssssss.stttttttt.oooooooooooo..mmmmmmmmmmmmmmmmmmm..sssss.sssss...
+//.CCCCC.............uuuuu...uuuuu.sssss..sssss...tttt...ooooooooooooo..mmmmmmmmmmmmmmmmmmm..sssss..sssss..
+//.CCCCC.............uuuuu...uuuuu.sssssssss......tttt...ooooo...oooooo.mmmmm..mmmmm..mmmmm..ssssssss......
+//.CCCCC.............uuuuu...uuuuu.sssssssssss....tttt...ooooo....ooooo.mmmmm..mmmmm..mmmmm..sssssssssss...
+//.CCCCCC............uuuuu...uuuuu..sssssssssss...tttt...oooo.....ooooo.mmmm...mmmmm..mmmmm..ssssssssssss..
+//..CCCCC............uuuuu...uuuuu....ssssssssss..tttt...ooooo....ooooo.mmmm...mmmmm..mmmmm....ssssssssss..
+//..CCCCCC....CCCCCC.uuuuu...uuuuu.......sssssss..tttt...ooooo...oooooo.mmmm...mmmmm..mmmmm.......sssssss..
+//..CCCCCCCCCCCCCCCC.uuuuuuuuuuuuu.sssss...sssss..tttttttooooooooooooo..mmmm...mmmmm..mmmmm.mssss...sssss..
+//...CCCCCCCCCCCCCC..uuuuuuuuuuuuu.ssssss.ssssss..tttttttooooooooooooo..mmmm...mmmmm..mmmmm..ssssssssssss..
+//....CCCCCCCCCCCCC...uuuuuuuuuuuu..sssssssssss...ttttttt.ooooooooooo...mmmm...mmmmm..mmmmm..sssssssssss...
+//.....CCCCCCCCCC......uuuuuuuuuuu...sssssssss....ttttttt..ooooooooo....mmmm...mmmmm..mmmmm...sssssssss..*/
+
+[wiggly-text] {
+    animation: .8s shake infinite alternate;
+    display: inline-block;
+}
+
+@keyframes shake {
+    0% { transform: skewX(-15deg);  scale: 1; }
+    5% { transform: skewX(15deg);   scale: 1.02; }
+    10% { transform: skewX(-15deg); scale: 1; }
+    15% { transform: skewX(15deg);  scale: 1.04; }
+    20% { transform: skewX(0deg);   scale: 1.01; }
+    100% { transform: skewX(0deg);  scale: 0.98; }  
+}
+
+[glitchy-parent] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+}
+
+[glitchy-container] {
+    text-align: center;
+}
+
+[glitchy] {
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #2c0685,
+      0.025em 0.04em 0 #3ce6bb;
+    animation: glitch 725ms infinite;
+    animation: .8s shake infinite alternate;
+  }
+  
+  [glitchy] span {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  [glitchy] span:first-child {
+    animation: glitch 500ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+    transform: translate(-0.04em, -0.03em);
+    opacity: 0.75;
+  }
+  
+  [glitchy] span:last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+    transform: translate(0.04em, 0.03em);
+    opacity: 0.75;
+  }
+@keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #2c0685,
+        0.025em 0.04em 0 #3ce6bb;
+    }
+    15% {
+      text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #2c0685,
+        0.025em 0.04em 0 #3ce6bb;
+    }
+    16% {
+      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #2c0685,
+        -0.05em -0.05em 0 #3ce6bb;
+    }
+    49% {
+      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #2c0685,
+        -0.05em -0.05em 0 #3ce6bb;
+    }
+    50% {
+      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #2c0685,
+        0 -0.04em 0 #3ce6bb;
+    }
+    99% {
+      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #2c0685,
+        0 -0.04em 0 #3ce6bb;
+    }
+    100% {
+      text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #2c0685,
+        -0.04em -0.025em 0 #3ce6bb;
+    }
+  }
+
+[opacity-glitch] {
+    animation: .2s opacity-glitch infinite alternate;
+    display: inline-block;
+}
+
+@keyframes opacity-glitch {
+    0% { opacity: 0.7; }
+    2% { opacity: 0.7; }
+    5% { opacity: 1; }
+    7% { opacity: 1; }
+    10% { opacity: 0.8; }
+    15% { opacity: 0.8; }
+    20% { opacity: 1; }
+    25% { opacity: 0.8; }
+    90% { opacity: 0.9; }
+    100% { opacity: 1; }
+}
+
+/*...SSSSSSS..........................iiii.llll........................ttt.......................ttt...
+//..SSSSSSSSS.........................iiii.llll.......................tttt......................tttt...
+//..SSSSSSSSSS.............................llll.......................tttt......................tttt...
+//.SSSSS..SSSS.Spppppppp.....oooooo...iiii.llll..eeeeee..errrrrrr... tttttt.eeeeee..exxx..xxxxxttttt..
+//.SSSSS.......Sppppppppp..ooooooooo..iiii.llll.eeeeeeee.errrrrrr... tttttteeeeeeee..xxxxxxxxxxttttt..
+//..SSSSSSS....Spppp.ppppp.oooo.ooooo.iiii.lllleeee.eeee.errrr........tttt.teee.eeee..xxxxxxxx..tttt...
+//...SSSSSSSSS.Sppp...pppppooo...oooo.iiii.lllleeee..eeeeerrr.........tttt.teee..eeee..xxxxxx...tttt...
+//.....SSSSSSS.Sppp...pppppooo...oooo.iiii.lllleeeeeeeeeeerrr.........tttt.teeeeeeeee...xxxx....tttt...
+//........SSSSSSppp...pppppooo...oooo.iiii.lllleeeeeeeeeeerrr.........tttt.teeeeeeeee..xxxxxx...tttt...
+//.SSSS....SSSSSppp...pppppooo...oooo.iiii.lllleeee......errr.........tttt.teee........xxxxxx...tttt...
+//.SSSSSSSSSSSSSpppp.ppppp.oooo.ooooo.iiii.lllleeee..eeeeerrr.........tttt.teee..eeee.xxxxxxxx..tttt...
+//..SSSSSSSSSS.Sppppppppp..ooooooooo..iiii.llll.eeeeeeee.errr.........tttttteeeeeeee.exxxxxxxxx.ttttt..
+//...SSSSSSSS..Spppppppp.....oooooo...iiii.llll..eeeeee..errr.........tttttt.eeeeee..exxx..xxxx.ttttt..
+//.............Sppp....................................................................................
+//.............Sppp..................................................................................*/
+
+/* DEPRECATED */
+/* TODO Remove */
+.spoiler {
+    background-color: var(--niheria-fg);
+    display: inline;
+    color: transparent;
+    user-select: none;
+    display: inline;
+}
+    
+.spoiler:hover {
+    background-color: inherit;
+    color: inherit;
+}
+
+/* New spoiler text */
+
+[spoiler] {
+    background-color: var(--niheria-fg);
+    color: transparent;
+    user-select: none;
+    display: inline;
+}
+[spoiler]:hover {
+    background-color: inherit;
+    color: inherit;
+}
+
+/*.NNNN...NNNN......................viii.......................ttt..tiii........................
+//.NNNNN..NNNN......................viii......................attt..tiii........................
+//.NNNNN..NNNN................................................attt..............................
+//.NNNNNN.NNNN...aaaaaa..aavv..vvvv.viii..ggggggggg..aaaaaa.aaattttttiii...oooooo...onnnnnnn....
+//.NNNNNN.NNNN..aaaaaaaa.aavv..vvvv.viii.iggggggggg.gaaaaaaaaaattttttiii.ioooooooo..onnnnnnnn...
+//.NNNNNNNNNNN.Naaa.aaaaaaavv.vvvv..viiiiiggg.gggggggaa.aaaaa.attt..tiii.iooo.ooooo.onnn.nnnnn..
+//.NNNNNNNNNNN.....aaaaaa.avvvvvvv..viiiiigg...gggg....aaaaaa.attt..tiiiiioo...oooo.onnn..nnnn..
+//.NNNNNNNNNNN..aaaaaaaaa.avvvvvvv..viiiiigg...gggg.gaaaaaaaa.attt..tiiiiioo...oooo.onnn..nnnn..
+//.NNNNNNNNNNN.Naaaaaaaaa.avvvvvv...viiiiigg...ggggggaaaaaaaa.attt..tiiiiioo...oooo.onnn..nnnn..
+//.NNNN.NNNNNN.Naaa.aaaaa..vvvvvv...viiiiigg...ggggggaa.aaaaa.attt..tiiiiioo...oooo.onnn..nnnn..
+//.NNNN..NNNNN.Naaa.aaaaa..vvvvvv...viiiiiggg.gggggggaa.aaaaa.attt..tiii.iooo.ooooo.onnn..nnnn..
+//.NNNN..NNNNN.Naaaaaaaaa..vvvvv....viii.igggggggggggaaaaaaaa.attttttiii.ioooooooo..onnn..nnnn..
+//.NNNN...NNNN..aaaaaaaaa...vvvv....viii..ggggggggg.gaaaaaaaa.attttttiii...oooooo...onnn..nnnn..
+//.............................................gggg.............................................
+//......................................iiggg.gggg..............................................
+//.......................................igggggggg............................................*/
+
+.niheria-nav {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    border-bottom: 2px solid var(--niheria-gold);
+    background: linear-gradient(var(--bg-a) 70%, var(--niheria-fg-a));
+}
+@media only screen and (max-width: 600px) {
+    .niheria-nav {
+        width: 100%;
+    }
+}
+
+.niheria-nav-btn {
+    margin: auto;
+    font-size: 32px !important;
+    text-align: center;
+}
+
+/*.MMMMMM...MMMMMM...........iiii................ MMMMM...MMMMMM.................................
+//.MMMMMM...MMMMMM...........iiii................ MMMMM...MMMMMM.................................
+//.MMMMMM...MMMMMM............................... MMMMM...MMMMMM.................................
+//.MMMMMMM.MMMMMMM..aaaaaa...iiii.nnnnnnnn....... MMMMMM.MMMMMMM..eeeeee...nnnnnnnn..nuuu..uuuu..
+//.MMMMMMM.MMMMMMM.aaaaaaaa..iiii.nnnnnnnnn...... MMMMMM.MMMMMMM.eeeeeeee..nnnnnnnnn.nuuu..uuuu..
+//.MMMMMMM.MMMMMMMaaaa.aaaaa.iiii.nnnn.nnnnn..... MMMMMM.MMMMMMMeeee.eeee..nnnn.nnnnnnuuu..uuuu..
+//.MMMMMMMMMMMMMMM....aaaaaa.iiii.nnnn..nnnn..... MMMMMMMMMMMMMMeeee..eeee.nnnn..nnnnnuuu..uuuu..
+//.MMMMMMMMMMMMMMM.aaaaaaaaa.iiii.nnnn..nnnn..... MMMMMMMMMMMMMMeeeeeeeeee.nnnn..nnnnnuuu..uuuu..
+//.MMMMMMMMMMMMMMMaaaaaaaaaa.iiii.nnnn..nnnn..... MMMMMMMMMMMMMMeeeeeeeeee.nnnn..nnnnnuuu..uuuu..
+//.MMMM.MMMMM.MMMMaaaa.aaaaa.iiii.nnnn..nnnn..... MMM.MMMMM.MMMMeeee.......nnnn..nnnnnuuu..uuuu..
+//.MMMM.MMMMM.MMMMaaaa.aaaaa.iiii.nnnn..nnnn..... MMM.MMMMM.MMMMeeee..eeee.nnnn..nnnnnuuuu.uuuu..
+//.MMMM.MMMMM.MMMMaaaaaaaaaa.iiii.nnnn..nnnn..... MMM.MMMMM.MMMM.eeeeeeee..nnnn..nnnn.uuuuuuuuu..
+//.MMMM.MMMMM.MMMM.aaaaaaaaa.iiii.nnnn..nnnn..... MMM.MMMMM.MMMM..eeeeee...nnnn..nnnn..uuuuuuuu*/
+
+.main-menu-el {
+    font-family: bookAntiqua;
+}
+
+@media print {
+    .main-menu-el {
+        display: none;
+    }
+}
+
+.main-menu-text {
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    transition: 0.1s;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #000;
+}
+.main-menu-text:link {
+    color: rgb(212, 142, 84);
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main-menu-text:hover {
+    color: rgb(212, 142, 84);
+    background: var(--light-gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}  
+
+.main-menu-desc {
+    color: rgb(199, 148, 107);
+    background: var(--gold-gradient-desc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (max-width: 600px) {
+    .main-menu-text {
+        font-size: 32px;
+    }
+    .main-menu-desc {
+        font-size: 18px;
+    }
+}
+.main-menu-desc.quenta {
+    margin: -10px;
+}
+
+/*....CCCCCCC...........................ttt............iiii........................................
+//...CCCCCCCCC.........................tttt............iiii........................................
+//..CCCCCCCCCCC........................tttt........................................................
+//..CCCC...CCCCC...oooooo...nnnnnnnn.ntttttta.aaaaaa...iiii.nnnnnnnn....eeeeee..errrrrrrsssssss....
+//.CCCC.....CCC..ooooooooo..nnnnnnnnnnttttttaaaaaaaaa..iiii.nnnnnnnnn..eeeeeeee.errrrrrrssssssss...
+//.CCCC..........oooo.ooooo.nnnn.nnnnn.tttt.aaaa.aaaaa.iiii.nnnn.nnnnneeee.eeee.errrr..rsss.ssss...
+//.CCCC.........oooo...oooo.nnnn..nnnn.tttt.....aaaaaa.iiii.nnnn..nnnneeee..eeeeerrr...rssss.......
+//.CCCC.........oooo...oooo.nnnn..nnnn.tttt..aaaaaaaaa.iiii.nnnn..nnnneeeeeeeeeeerrr....ssssss.....
+//.CCCC.....CCC.oooo...oooo.nnnn..nnnn.tttt.aaaaaaaaaa.iiii.nnnn..nnnneeeeeeeeeeerrr.....sssssss...
+//..CCCC...CCCCCoooo...oooo.nnnn..nnnn.tttt.aaaa.aaaaa.iiii.nnnn..nnnneeee......errr.........ssss..
+//..CCCCCCCCCCC..oooo.ooooo.nnnn..nnnn.tttt.aaaa.aaaaa.iiii.nnnn..nnnneeee..eeeeerrr...rsss..ssss..
+//...CCCCCCCCCC..ooooooooo..nnnn..nnnn.tttttaaaaaaaaaa.iiii.nnnn..nnnn.eeeeeeee.errr...rssssssss...
+//....CCCCCCC......oooooo...nnnn..nnnn.tttttaaaaaaaaaa.iiii.nnnn..nnnn..eeeeee..errr.....ssssss..*/
+
+.cover {
+    margin: auto auto -5px auto;
+}
+/* TODO remove */
+.art-credits {
+    font-size: smaller;
+    text-align: right;
+    font-style: italic;
+}
+.art-credits.left {
+    text-align: left;
+}
+[credits] {
+    font-size: smaller;
+    text-align: right;
+    font-style: italic;
+}
+[credits][left] {
+    text-align: left;
+}
+
+.three-board {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto auto -5px auto;
+}
+.two-board {
+    display: flex;
+}
+.two-board > [text] {
+    padding: 15px 15px 0 0;
+    width: 100%;
+}
+
+[two-board] {
+    display: flex;
+}
+[two-board] > [text] {
+    padding: 15px 15px 0 0;
+    width: 100%;
+}
+
+[two-board-columns] {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+[two-board-columns] > *:nth-child(uneven) {
+    padding-right: 10px;
+}
+[two-board-columns] > *:nth-child(even) {
+    padding-left: 10px;
+}
+[column] {
+    align-items: center;
+}
+[column]:not(:last-child) {
+    border-right: 2px solid var(--niheria-fg);
+}
+[column-img] {
+    object-fit: cover; 
+    min-width: 100%; 
+    max-height: 450px; 
+    min-height: 450px;
+}
+[column-text] {
+    margin: 5px;
+}
+[column]:last-child > [column-text] {
+    text-align: right;
+    margin: 5px;
+}
+@media only screen and (max-width: 600px) {
+    [two-board-columns] {
+        display: block;
+    }
+    [column]:not(:last-child) {
+        border-right: none;
+    }
+    [column-text] {
+        margin-bottom: 15px;
+    }
+}
+
+[flex] {
+    display: flex;
+}
+[flex] > [text] {
+    padding: 15px 15px 0 0;
+    width: 100%;
+}
+
+/* Description for a title */
+.title-desc {
+    margin-top: -25px;
+    margin-bottom: 15px;
+    padding-top: 5px;
+}
+
+/* Text to the side of an element */
+.side-text {
+    margin: auto 0 auto 15px;
+    vertical-align: middle;
+    text-align: left;
+    min-width: max-content;
+}
+
+.pic-sides {
+    position: relative;
+    display: flex;
+    overflow:inherit;
+
+    --pic-size: 500px;
+    --pic-padding: 25px;
+}
+
+#left-pic, #right-pic {
+    padding: 0;
+    position: absolute;
+    height: 100%;    
+}
+#left-pic {  
+    transform: translateX(calc(-1 * 100% - (1 * var(--pic-padding))));
+}
+#right-pic {
+    transform: translateX(calc(0.5*var(--pic-padding)));
+}
+@media only screen and (max-width: 600px) {
+    .pic-sides {
+        display: block;
+    }
+    #left-pic {
+        display: none;
+        transform: none;        
+    }
+    #right-pic {
+        transform: none;
+        left: auto;
+        right: auto;
+        position: relative;
+        max-width: none;
+        min-width: 0;
+        width: 100%;
+        padding: 0;
+    }
+    .hide {
+        display: none;
+    }
+}
+
+.side-board {
+    display: flex;
+}
+.side-block {
+    --side-block-pos: 200px;
+    width: var(--side-block-pos);    
+    transform: translateX(calc(-1 * var(--side-block-pos)));
+    overflow: hidden;
+}
+.left {
+    position: absolute;
+    transform: translateX(calc(-1 * var(--side-block-pos)));
+}
+.right {
+    position: absolute;
+    transform: translateX(calc( 300% + var(--side-block-pos)));
+}
+@media only screen and (max-width: 600px) {
+    .side-board {
+        display: inline-block !important;
+    }
+    .left, .right {
+        position: relative !important;
+        transform: none !important;
+        display: inline-block !important;
+    }
+}
+
+[rune-container] {
+    --rune-size: 100px;
+    --glyph-size: 80px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;    
+}
+[rune-container]:not(:last-child) {
+    border-bottom: var(--niheria-fg) 0.5px solid;
+}
+[rune-container] > [rune], [rune-container] > [glyph] {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 10px 0 10px 0;
+}
+[rune-container] > [rune] > [text] {
+    margin-left: 15px;
+    font-size: 18px;
+}
+[rune-container] > [glyph] > [text] {
+    margin-left: 15px;
+    font-size: 16px;
+}
+[rune-container] > [rune] > img {
+    max-width: var(--rune-size);
+    max-height: var(--rune-size);
+    min-width: var(--rune-size);
+    min-height: var(--rune-size);
+    display: inline-block;
+}
+[rune-container] > [glyph] {
+    margin-left: calc(var(--rune-size)/2 - (var(--glyph-size)/2));    
+}
+[rune-container] > [glyph] > img {
+    max-height: var(--glyph-size);
+    max-width: var(--glyph-size);
+    display: inline-block;
+    padding-right: calc(var(--rune-size)/2 - (var(--glyph-size)/2));
+}
+
+/*.IIIII...........................................................
+//.IIIII...........................................................
+//.IIIII...........................................................
+//.IIIIIImmmmmmmmmmmmm....aaaaaa....ggggggggg..eeeeee...sssssss....
+//.IIIIIImmmmmmmmmmmmmm..aaaaaaaa..gggggggggg.eeeeeeee.essssssss...
+//.IIIIIImmmm.mmmmmmmmm.maaa.aaaaaagggg.ggggggeee.eeee.esss.ssss...
+//.IIIIIImmm..mmmm..mmmm....aaaaaaaggg...gggggeee..eeeeessss.......
+//.IIIIIImmm..mmmm..mmmm.aaaaaaaaaaggg...gggggeeeeeeeee.ssssss.....
+//.IIIIIImmm..mmmm..mmmmmaaaaaaaaaaggg...gggggeeeeeeeee..sssssss...
+//.IIIIIImmm..mmmm..mmmmmaaa.aaaaaaggg...gggggeee............ssss..
+//.IIIIIImmm..mmmm..mmmmmaaa.aaaaaagggg.ggggggeee..eeeeesss..ssss..
+//.IIIIIImmm..mmmm..mmmmmaaaaaaaaa.gggggggggg.eeeeeeee.essssssss...
+//.IIIIIImmm..mmmm..mmmm.aaaaaaaaa..ggggggggg..eeeeee....ssssss....
+//.......................................gggg......................
+//................................agggg.gggg.......................
+//.................................ggggggggg.....................*/
+
+[art-container] {
+    float: left;
+    width: 300px;    
+    margin: 5px 15px 15px 5px;
+}
+[art-container][left] {
+    float: left;
+    margin: 10px 15px 15px 5px;
+}
+[art-container][right] {
+    float: right;
+    margin: 5px 15px 15px 10px;
+}
+@media only screen and (max-width: 600px) {
+    [art-container] {
+        float: none !important;
+        margin: 5px 15px 15px 5px;
+        width: 100%;
+    }
+}
+
+
+[art-credits] {
+    font-size: smaller;
+    text-align: right;
+    font-style: italic;
+}
+[art-credits][left] {
+    text-align: left;
+}
+[art-credits][right] {
+    float: right;
+}
+@media only screen and (max-width: 600px) {
+    [art-credits][right] {
+        margin-right: 15px;
+    }
+}
+
+/*.....AAAAA......................dddd.iiii............
+//.....AAAAA......................dddd.iiii............
+//....AAAAAA......................dddd.................
+//....AAAAAAA...uuuu..uuuuu..ddddddddd.iiii...oooooo...
+//...AAAAAAAA...uuuu..uuuuu.dddddddddd.iiii.ooooooooo..
+//...AAAAAAAA...uuuu..uuuuuddddd.ddddd.iiii.oooo.oooo..
+//...AAAA.AAAA..uuuu..uuuuudddd...dddd.iiiioooo...ooo..
+//..AAAAAAAAAA..uuuu..uuuuudddd...dddd.iiiioooo...ooo..
+//..AAAAAAAAAAA.uuuu..uuuuudddd...dddd.iiiioooo...ooo..
+//..AAAAAAAAAAA.uuuu..uuuuudddd...dddd.iiiioooo...ooo..
+//.AAAA....AAAA.uuuuu.uuuuuddddd.ddddd.iiii.oooo.oooo..
+//.AAAA.....AAAA.uuuuuuuuuu.dddddddddd.iiii.ooooooooo..
+//.AAAA.....AAAA..uuuuuuuuu..ddddddddd.iiii...oooooo.*/
+
+audio.niheria-audio {
+    width: 100%;
+}
+h4.niheria-audio {
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/*.PPPPPPPPP.........................ttt....... TTTTTTTTTT..............................
+//.PPPPPPPPPP.......................sttt....... TTTTTTTTTT..............................
+//.PPPPPPPPPPP......................sttt....... TTTTTTTTTT..............................
+//.PPPP...PPPP...oooooo...ossssss.sssttttt........TTTT....Taaaaa....agggggggg.ggsssss...
+//.PPPP...PPPP.Poooooooo.oossssssssssttttt........TTTT...TTaaaaaa..aagggggggggggssssss..
+//.PPPPPPPPPPP.Pooo.oooooooss.ssss..sttt..........TTTT..TTTa.aaaa.aaagg.ggggggggs.ssss..
+//.PPPPPPPPPP.PPoo...oooooosss......sttt..........TTTT......aaaaa.aaag..ggggggggss......
+//.PPPPPPPPP..PPoo...oooo.osssss....sttt..........TTTT...TTaaaaaa.aaag...gggggggssss....
+//.PPPP.......PPoo...oooo..sssssss..sttt..........TTTT..TTTaaaaaa.aaag...gggg..gssssss..
+//.PPPP.......PPoo...oooo......ssss.sttt..........TTTT..TTTa.aaaa.aaag..ggggg.....ssss..
+//.PPPP........Pooo.oooooooss..ssss.sttt..........TTTT..TTTa.aaaa.aaagg.ggggggggs..sss..
+//.PPPP........Poooooooo.oosssssss..sttttt........TTTT..TTTaaaaaa..aagggggggggggssssss..
+//.PPPP..........oooooo....ssssss...sttttt........TTTT...TTaaaaaaa..agggggggg..gsssss...
+//.......................................................................gggg...........
+//................................................................aaagg.gggg............
+//................................................................aaaggggggg............
+//..................................................................agggggg...........*/
+.quest-tags {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+}
+.quest-tag {
+    cursor: default;
+    font-family: bookAntiqua;
+    font-size: 32px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    border-right: 1px solid var(--scrollbar);
+}
+@media only screen and (max-width: 600px) {
+    .quest-tag {
+        font-size: 18px;
+    }
+}
+.quest-tag:last-child {
+    border-right: none;
+}
+
+/*.....QQQQQQQ...........................ttt............
+//...QQQQQQQQQQ.........................tttt............
+//..QQQQQQQQQQQQ........................tttt............
+//..QQQQQ..QQQQQ.Quuu..uuuuu...oooooo.otttttte.eeeeee...
+//.QQQQQ.....QQQQQuuu..uuuuu.ooooooooootttttteeeeeeeee..
+//.QQQQ......QQQQQuuu..uuuuu.oooo.ooooo.tttt.eeee.eeee..
+//.QQQQ......QQQQQuuu..uuuuuoooo...oooo.tttt.eeee..eee..
+//.QQQQ..QQQ.QQQQQuuu..uuuuuoooo...oooo.tttt.eeeeeeeee..
+//.QQQQQ.QQQQQQQQQuuu..uuuuuoooo...oooo.tttt.eeeeeeeee..
+//..QQQQQ.QQQQQQ.Quuu..uuuuuoooo...oooo.tttt.eeee.......
+//..QQQQQQQQQQQQ.Quuuu.uuuuu.oooo.ooooo.tttt.eeee..eee..
+//...QQQQQQQQQQQ..uuuuuuuuuu.ooooooooo..ttttteeeeeeeee..
+//.....QQQQQQQQQQ..uuuuuuuuu...oooooo...ttttte.eeeeee...
+//............QQQ.....................................*/
+
+/* DEPRECATED */
+/* TODO remove */
+.niheria-quote {
+    width: 100%;
+    padding: 10px;
+    background: var(--bg);
+    filter: invert(10%);
+}
+.niheria-quote.left {
+    margin: 10px 10px 10px -12px;
+    border-left: 5px solid var(--scrollbar);
+    text-align: left;
+}
+.niheria-quote.center {
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+}
+.niheria-quote.right {
+    margin: 10px -12px 10px 10px;
+    border-right: 4px solid var(--scrollbar);
+}
+.niheria-quote > .author {
+    font-style: italic;
+}
+.niheria-quote.right > .author {
+    text-align: right;
+}
+
+/* DEPRECATED */
+/* TODO remove */
+.warning-box {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 20px auto 20px auto;
+    width: 100%;
+    background: var(--bg);
+    filter: invert(10%);
+    border-top: 2px solid var(--niheria-red);
+    border-left: 20px solid var(--niheria-red);
+}
+.warning-box.on-top {
+    margin: 20px auto 0 auto;
+}
+.attention-box {
+    box-sizing: border-box;
+    padding: 10px 30px 10px 30px;
+    margin: 20px auto 20px auto;
+    width: 100%;
+    background: var(--bg);
+    filter: invert(10%);
+    border-top: 2px solid var(--niheria-fg);
+    border-left: 20px solid var(--niheria-fg);
+    border-bottom-left-radius: 50px;
+}
+.attention-box.under {
+    margin: 0 auto 20px auto;
+}
+.seamless {
+    margin: 0 auto 0 auto;
+}
+
+/* New attention boxes */
+blockquote {
+    background: var(--fg-a);
+    padding: 10px 30px 10px 30px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-style: italic;
+}
+
+blockquote[text] {
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 10px 30px 10px 30px;
+    margin: 20px auto 20px auto;
+    width: 100%;
+}
+blockquote[overflow] {
+    overflow: auto;
+}
+@media only screen and (max-width: 600px) {
+    blockquote[overflow] {
+        overflow: hidden;
+    }
+}
+blockquote[attention] {
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 10px 30px 10px 30px;
+    margin: 20px auto 20px auto;
+    width: 100%;
+    /* left by default */
+    border-top: 2px solid var(--niheria-fg);
+    border-left: 20px solid var(--niheria-fg);
+    border-bottom-left-radius: 50px;    
+}
+blockquote[attention][right] {   
+    border-left: none;
+    border-bottom-left-radius: 0;  
+
+    border-right: 20px solid var(--niheria-fg);
+    border-bottom-right-radius: 50px;
+}
+
+blockquote[warning] {
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 20px auto 20px auto;
+    width: 100%;
+    border-top: 2px solid var(--niheria-red);
+    border-left: 20px solid var(--niheria-red);
+}
+
+/* New quotes */
+blockquote {
+    font-style: normal;
+}
+blockquote[niheria] {
+    width: 100%;
+    padding: 15px 20px 15px 20px;
+}
+blockquote[center] {
+    /* center behaviour */
+    margin: 10px 10px 10px 10px;
+    border-top: 1px solid var(--scrollbar);    
+    border-bottom: 1px solid var(--scrollbar);    
+    text-align: center;
+}
+blockquote[left] {
+    margin: 10px 10px 10px -12px;
+    border-left: 5px solid var(--scrollbar);
+    text-align: left !important;
+}
+blockquote[right] {
+    margin: 10px -12px 10px 10px;
+    border-right: 4px solid var(--scrollbar);    
+}
+blockquote[niheria] > [author] {
+    margin-top: 15px;
+    font-style: italic;
+    text-align: right;
+}
+
+blockquote > [author] {
+    text-align: right;
+}
+blockquote > [author]::before {
+    content: "— ";
+}
+
+blockquote[center] > [author] {
+    text-align: center;
+}
+blockquote[center] > [author]::before {
+    content: "— ";
+}
+blockquote[center] > [author]::after {
+    content: " —";
+}
+
+blockquote[on-top] {
+    margin: 20px auto 0 auto;
+}
+blockquote[under] {
+    margin: 0 auto 20px auto;
+}
+blockquote[seamless] {
+    margin: 0 auto 0 auto;
+}
+
+blockquote > p {
+    margin: 5px 0 5px 0;
+}
+
+/*.TTTTTTTTTTTiii..........................................ssii........................
+//.TTTTTTTTTTTiii..........................................ssii........................
+//.TTTTTTTTTTT.........................................................................
+//....TTTT...Tiii.immmmmmmmmmmmm....eeeeee........ ssssss..ssii...gggggggggggnnnnnnn...
+//....TTTT...Tiii.immmmmmmmmmmmmm..meeeeeee...... sssssss.ssii..igggggggggggnnnnnnnn..
+//....TTTT...Tiii.immmmmmmmm.mmmm.mmee.eeee...... ss.ssss.ssii.iiggg.gggggggnnn.nnnn..
+//....TTTT...Tiii.immm..mmmm.mmmm.mmee..eeee..... sss.....ssii.iigg...ggggggnnn..nnn..
+//....TTTT...Tiii.immm..mmmm.mmmm.mmeeeeeeee..... sssss...ssii.iigg....gggggnn...nnn..
+//....TTTT...Tiii.immm..mmmm.mmmm.mmeeeeeeee.......sssssssssii.iigg....gggggnn...nnn..
+//....TTTT...Tiii.immm..mmmm.mmmm.mmee................ssssssii.iigg....gggggnn...nnn..
+//....TTTT...Tiii.immm..mmmm.mmmm.mmee.eeee...... ss..ssssssii.iiggg..ggggggnn...nnn..
+//....TTTT...Tiii.immm..mmmm.mmmm..meeeeeee...... sssssss.ssii..igggggggggggnn...nnn..
+//....TTTT...Tiii.immm..mmmm.mmmm...eeeeee.........ssssss..ssii...ggggggggggnn...nnn..
+//.....................................................................gggg............
+//..............................................................iiggg.gggg.............
+//..............................................................iigggggggg.............
+//................................................................ggggggg............*/
+
+.time-sign {
+    position: relative;
+}
+.time-sign > .sign {
+    position: absolute;
+    width: 20%;
+    transform: translateX(-105%);
+    text-align: right;
+    overflow-wrap: break-word;
+    border-bottom: 1px solid var(--niheria-fg);
+    background: linear-gradient(var(--bg-a) 50%, var(--niheria-fg-a));;
+}
+@media only screen and (max-width: 1000px) {
+    .time-sign > .sign {
+        position: relative;
+        width: 100%;
+        transform: none;
+        text-align: left;
+        margin: 0;
+        border-bottom: 1px solid var(--niheria-fg);
+    }
+}
+/* UNSUSED */
+.time-sign > .sign.h {
+    width: 25%;
+    font-size: 24px;
+    color: var(--niheria-fg);
+}
+
+/*.HHHH...HHHH..RRRRRRRRRR...
+//.HHHH...HHHH..RRRRRRRRRRR..
+//.HHHH...HHHH..RRRRRRRRRRR..
+//.HHHH...HHHH..RRRR...RRRR..
+//.HHHH...HHHH..RRRR...RRRR..
+//.HHHHHHHHHHH..RRRRRRRRRRR..
+//.HHHHHHHHHHH..RRRRRRRRRRR..
+//.HHHHHHHHHHH..RRRRRRRR.....
+//.HHHH...HHHH..RRRR.RRRR....
+//.HHHH...HHHH..RRRR..RRRR...
+//.HHHH...HHHH..RRRR..RRRRR..
+//.HHHH...HHHH..RRRR...RRRR..
+//.HHHH...HHHH..RRRR....RRR*/
+
+hr.short {
+    width: 50%;
+}
+div[short] {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 5px auto 30px auto;
+}
+hr[short-start] {
+    width: 50%;
+    margin: auto 0 auto auto;
+}
+hr[short-start]::before {
+    color: var(--niheria-fg);
+    position:absolute;
+    transform: translate(-1.5em, -0.8em);
+    font-size: 28px;
+    content: "«";
+}
+hr[short-end] {
+    width: 50%;
+    margin: auto auto auto 0;
+    text-align: right;
+}
+hr[short-end]::after {
+    color: var(--niheria-fg);
+    position:absolute;
+    transform: translate(1.5em, -0.8em);
+    font-size: 28px;
+    content: "»";
+}
+
+/*.MMMMMMM....MMMMMMM...............................
+//.MMMMMMM....MMMMMMM...............................
+//.MMMMMMM....MMMMMMM...............................
+//.MMMMMMMM...MMMMMMM...............................
+//.MMMMMMMM..MMMMMMMM...aaaaaaaaa...apppppppppp.....
+//.MMMMMMMM..MMMMMMMM..aaaaaaaaaaa..appppppppppp....
+//.MMMMMMMM..MMMMMMMM..aaaaaaaaaaa..apppppppppppp...
+//.MMMMMMMMMMMMMMMMMM.Maaaa..aaaaa..apppppppppppp...
+//.MMMMMMMMMMMMMMMMMM........aaaaa..appppp..pppppp..
+//.MMMMMMMMMMMMMMMMMM....aaaaaaaaa..apppp....ppppp..
+//.MMMMMMMMMMMMMMMMMM..aaaaaaaaaaa..apppp....ppppp..
+//.MMMMMMMMMMMMMMMMMM.Maaaaaaaaaaa..apppp....ppppp..
+//.MMMMM.MMMMMMMMMMMM.Maaaaa.aaaaa..appppp..pppppp..
+//.MMMMM.MMMMMM.MMMMM.Maaaa..aaaaa..apppppppppppp...
+//.MMMMM.MMMMMM.MMMMM.Maaaaaaaaaaa..apppppppppppp...
+//.MMMMM.MMMMMM.MMMMM.Maaaaaaaaaaaa.appppppppppp....
+//.MMMMM..MMMMM..MMMM..aaaaaaaaaaaa.apppppppppp.....
+//..................................apppp...........
+//..................................apppp...........
+//..................................apppp...........
+//..................................apppp.........*/
+
+/* @import url(../../../custom.css); */
+
+.map-object {
+    box-sizing: border-box;
+    padding: 20px 0 20px 0;
+    width: 100%;
+    height: 100%;
+}
+
+polygon {
+    transition: fill 0.1s ease;
+}
+
+#overlay {
+    opacity: 25%;
+}
+
+#water {
+    fill: rgb(139, 185, 238);
+}
+
+#north-isles > polygon {
+    fill: red;
+}
+#north-isles:hover > polygon {
+    fill: white;
+}
+
+.map-filter-circle {
+    z-index: 10;
+    background: radial-gradient(circle at 65% 15%, white 1px, aqua 3%, darkblue 60%, aqua 100%);  
+    opacity: 0.5;
+    pointer-events:none;
+    height: 100%;
+    clip-path: ellipse(50% 50%);
+}
+
+/*.IIIII..DDDDDDDDDDDD...................
+//.IIIII..DDDDDDDDDDDDDD.................
+//.IIIII..DDDDDDDDDDDDDD.................
+//.IIIII..DDDDD..DDDDDDDD................
+//.IIIII..DDDDD.....DDDDD...sssssssss....
+//.IIIII..DDDDD.....DDDDDD.sssssssssss...
+//.IIIII..DDDDD......DDDDDDsssssssssss...
+//.IIIII..DDDDD......DDDDDDssss..sssss...
+//.IIIII..DDDDD......DDDDDDssssssss......
+//.IIIII..DDDDD......DDDDDDssssssssss....
+//.IIIII..DDDDD......DDDDD.sssssssssss...
+//.IIIII..DDDDD.....DDDDDD...ssssssssss..
+//.IIIII..DDDDD.....DDDDD.......sssssss..
+//.IIIII..DDDDD...DDDDDDD.Dssss...sssss..
+//.IIIII..DDDDDDDDDDDDDD..Dsssss.ssssss..
+//.IIIII..DDDDDDDDDDDDDD...sssssssssss...
+//.IIIII..DDDDDDDDDDDD......sssssssss..*/
+
+#sarastis-dwarf {
+    width: 400px;
+}
+@media only screen and (max-width: 1000px) {
+    #sarastis-dwarf {
+        width: 100%;
+    }
+}
+
+/*.....GGGGGGG....llll.iiii..ttt............hhhh........
+//...GGGGGGGGGG...llll.iiii.tttt............hhhh........
+//..GGGGGGGGGGGG..llll......tttt............hhhh........
+//..GGGGG..GGGGG..llll.iiiiitttttc.cccccc...hhhhhhhh....
+//.GGGGG....GGG...llll.iiiiitttttccccccccc..hhhhhhhhh...
+//.GGGG...........llll.iiii.tttt.ccccc.cccc.hhhh.hhhhh..
+//.GGGG..GGGGGGGG.llll.iiii.tttt.cccc..ccc..hhhh..hhhh..
+//.GGGG..GGGGGGGG.llll.iiii.tttt.cccc.......hhhh..hhhh..
+//.GGGGG.GGGGGGGG.llll.iiii.tttt.cccc.......hhhh..hhhh..
+//..GGGGG....GGGG.llll.iiii.tttt.cccc..ccc..hhhh..hhhh..
+//..GGGGGGGGGGGG..llll.iiii.tttt.ccccc.cccc.hhhh..hhhh..
+//...GGGGGGGGGG...llll.iiii.tttttcccccccccc.hhhh..hhhh..
+//.....GGGGGGG....llll.iiii.tttttc.cccccc...hhhh..hhhh*/
+
+[glitch] {
+    color: var(--fg);
+    position: relative;
+    margin: 100px auto;
+    display: inline;
+}
+  
+@keyframes noise-anim {
+    0% {
+        clip: rect(80px, 9999px, 55px, 0);
+    }
+    5% {
+        clip: rect(97px, 9999px, 62px, 0);
+    }
+    10% {
+        clip: rect(83px, 9999px, 80px, 0);
+    }
+    15% {
+        clip: rect(65px, 9999px, 38px, 0);
+    }
+    20% {
+        clip: rect(40px, 9999px, 91px, 0);
+    }
+    25% {
+        clip: rect(74px, 9999px, 53px, 0);
+    }
+    30% {
+        clip: rect(69px, 9999px, 54px, 0);
+    }
+    35% {
+        clip: rect(73px, 9999px, 78px, 0);
+    }
+    40% {
+        clip: rect(13px, 9999px, 50px, 0);
+    }
+    45% {
+        clip: rect(89px, 9999px, 97px, 0);
+    }
+    50% {
+        clip: rect(81px, 9999px, 11px, 0);
+    }
+    55% {
+        clip: rect(64px, 9999px, 94px, 0);
+    }
+    60% {
+        clip: rect(19px, 9999px, 54px, 0);
+    }
+    65% {
+        clip: rect(67px, 9999px, 19px, 0);
+    }
+    70% {
+        clip: rect(25px, 9999px, 11px, 0);
+    }
+    75% {
+        clip: rect(10px, 9999px, 79px, 0);
+    }
+    80% {
+        clip: rect(18px, 9999px, 18px, 0);
+    }
+    85% {
+        clip: rect(33px, 9999px, 86px, 0);
+    }
+    90% {
+        clip: rect(65px, 9999px, 2px, 0);
+    }
+    95% {
+        clip: rect(50px, 9999px, 6px, 0);
+    }
+    100% {
+        clip: rect(28px, 9999px, 32px, 0);
+    }
+}
+[glitch]:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    text-shadow: -1px 0 red;
+    top: 0;
+    color: var(--fg);
+    background: var(--bg);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim 2s infinite linear alternate-reverse;
+}
+  
+@keyframes noise-anim-2 {
+    0% {
+      clip: rect(13px, 9999px, 37px, 0);
+    }
+    5% {
+      clip: rect(69px, 9999px, 13px, 0);
+    }
+    10% {
+      clip: rect(54px, 9999px, 40px, 0);
+    }
+    15% {
+      clip: rect(89px, 9999px, 54px, 0);
+    }
+    20% {
+      clip: rect(78px, 9999px, 41px, 0);
+    }
+    25% {
+      clip: rect(100px, 9999px, 1px, 0);
+    }
+    30% {
+      clip: rect(12px, 9999px, 5px, 0);
+    }
+    35% {
+      clip: rect(78px, 9999px, 67px, 0);
+    }
+    40% {
+      clip: rect(3px, 9999px, 44px, 0);
+    }
+    45% {
+      clip: rect(58px, 9999px, 58px, 0);
+    }
+    50% {
+      clip: rect(2px, 9999px, 9px, 0);
+    }
+    55% {
+      clip: rect(26px, 9999px, 83px, 0);
+    }
+    60% {
+      clip: rect(64px, 9999px, 8px, 0);
+    }
+    65% {
+      clip: rect(18px, 9999px, 1px, 0);
+    }
+    70% {
+      clip: rect(10px, 9999px, 26px, 0);
+    }
+    75% {
+      clip: rect(35px, 9999px, 82px, 0);
+    }
+    80% {
+      clip: rect(60px, 9999px, 62px, 0);
+    }
+    85% {
+      clip: rect(45px, 9999px, 70px, 0);
+    }
+    90% {
+      clip: rect(59px, 9999px, 37px, 0);
+    }
+    95% {
+      clip: rect(99px, 9999px, 2px, 0);
+    }
+    100% {
+      clip: rect(36px, 9999px, 57px, 0);
+    }
+}
+
+[glitch]:before {
+    content: attr(data-text);
+    position: absolute;
+    left: -2px;
+    text-shadow: 1px 0 blue;
+    top: 0;
+    color: var(--fg);
+    background: var(--bg);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+@keyframes noise-text-anim {
+    0% {
+        content: "%";
+    }
+    5% {
+        content: "$";
+    }
+    10% {
+        content: "&";
+    }
+    15% {
+        content: "^";
+    }
+    20% {
+        content: ":";
+    }
+    25% {
+        content: "»";
+    }
+    30% {
+        content: "*(";
+    }
+    35% {
+        content: "{";
+    }
+    40% {
+        content: "#";
+    }
+    45% {
+        content: "+";
+    }
+    50% {
+        content: "№";
+    }
+    55% {
+        content: "!";
+    }
+    60% {
+        content: "/";
+    }
+    65% {
+        content: "˘";
+    }
+    70% {
+        content: "<";
+    }
+    75% {
+        content: "•";
+    }
+    80% {
+        content: "Ѳ";
+    }
+    85% {
+        content: "(";
+    }
+    90% {
+        content: "¢";
+    }
+    95% {
+        content: "ẞ";
+    }
+    100% {
+        content: "₽";
+    }
+}
+
+[glitch-text] {
+    display: inline;
+    color: var(--fg);
+    background: var(--bg);
+    animation: noise-text-anim 3s infinite linear alternate-reverse;
+}
+
+
+[glitch-text]:after {
+    display: inline;
+    color: var(--fg);
+    background: var(--bg);
+    content: "^";
+    animation: noise-text-anim 1s infinite linear alternate-reverse;
+}
+
+[glitch-text][t1]:after {
+    animation: noise-text-anim 0.8s infinite linear alternate-reverse;
+}
+
+[glitch-text][t2]:after {
+    animation: noise-text-anim 0.7s infinite linear alternate-reverse;
+}
+
+[glitch-text][t3]:after {
+    animation: noise-text-anim 1.1s infinite linear alternate-reverse;
+}
+
+[glitch-text][t4]:after {
+    animation: noise-text-anim 0.9s infinite linear alternate-reverse;
+}
+
+[glitch-text][t5]:after {
+    animation: noise-text-anim 0.85s infinite linear alternate-reverse;
+}
+
+[glitch-text][t6]:after {
+    animation: noise-text-anim 1.05s infinite linear alternate-reverse;
+}
