@@ -501,6 +501,40 @@ li, ul {
     margin: -10px;
 }
 
+[main-text] {
+    font-family: bookAntiqua;
+    font-size: 48px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(212, 142, 84);
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+[mobile] {
+    display: none;
+}
+/* Move to modifiers */
+[bigger] {
+    font-size: 72px;    
+}
+
+@media only screen and (max-width: 700px) {
+    [mobile] {
+        display: block;
+    }
+    [desktop] {
+        display: none;
+    }
+}
+/* Move to modifiers */
+[paragraphs] {
+    text-indent: 15px;
+}
+video {
+    width: 100%;
+}
+
 /*....CCCCCCC...........................ttt............iiii........................................
 //...CCCCCCCCC.........................tttt............iiii........................................
 //..CCCCCCCCCCC........................tttt........................................................
@@ -567,6 +601,13 @@ li, ul {
 }
 [two-board-columns] > *:nth-child(even) {
     padding-left: 10px;
+}
+[two-board-columns] > [element] {
+    padding: 0 !important;
+}
+[two-board-columns] > [element] > * {
+    width: 100%;
+    height: 100%;
 }
 [column] {
     align-items: center;
@@ -675,21 +716,25 @@ li, ul {
     overflow: hidden;
 }
 .left {
-    position: absolute;
+    position: fixed;
     transform: translateX(calc(-1 * var(--side-block-pos)));
 }
 .right {
-    position: absolute;
+    position: fixed;
     transform: translateX(calc( 300% + var(--side-block-pos)));
+    overflow: visible;
 }
 @media only screen and (max-width: 600px) {
     .side-board {
         display: inline-block !important;
     }
+    .side-block {
+        transform: none !important;
+    }
     .left, .right {
         position: relative !important;
         transform: none !important;
-        display: inline-block !important;
+        display: contents !important;
     }
 }
 
@@ -806,7 +851,8 @@ li, ul {
 //.AAAA.....AAAA..uuuuuuuuu..ddddddddd.iiii...oooooo.*/
 
 audio.niheria-audio {
-    width: 100%;
+    overflow: visible;
+    min-width: 150px;
 }
 h4.niheria-audio {
     margin: auto;
@@ -996,18 +1042,18 @@ blockquote[niheria] {
 blockquote[center] {
     /* center behaviour */
     margin: 10px 10px 10px 10px;
-    border-top: 1px solid var(--scrollbar);    
-    border-bottom: 1px solid var(--scrollbar);    
+    border-top: 1px solid var(--niheria-fg);    
+    border-bottom: 1px solid var(--niheria-fg);    
     text-align: center;
 }
 blockquote[left] {
     margin: 10px 10px 10px -12px;
-    border-left: 5px solid var(--scrollbar);
+    border-left: 5px solid var(--niheria-fg);
     text-align: left !important;
 }
 blockquote[right] {
     margin: 10px -12px 10px 10px;
-    border-right: 4px solid var(--scrollbar);    
+    border-right: 4px solid var(--niheria-fg);    
 }
 blockquote[niheria] > [author] {
     margin-top: 15px;
@@ -1093,6 +1139,14 @@ blockquote > p {
     color: var(--niheria-fg);
 }
 
+[years-span] {
+    font-size: smaller;
+    text-align: center;
+    font-style: oblique;
+    margin-top: -25px;
+    margin-bottom: 10px;
+}
+
 /*.HHHH...HHHH..RRRRRRRRRR...
 //.HHHH...HHHH..RRRRRRRRRRR..
 //.HHHH...HHHH..RRRRRRRRRRR..
@@ -1138,6 +1192,7 @@ hr[short-end]::after {
     font-size: 28px;
     content: "»";
 }
+
 
 /*.MMMMMMM....MMMMMMM...............................
 //.MMMMMMM....MMMMMMM...............................
