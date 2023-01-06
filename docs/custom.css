@@ -349,6 +349,20 @@ li, ul {
     100% { opacity: 1; }
 }
 
+[toc-element] {
+    display: block;
+    background-color: var(--bg);
+    border-bottom: 2px var(--niheria-gold) dashed;
+
+    padding-left: 0px;
+    transition: 0ms;    
+}
+[toc-element]:hover {
+    transition: 80ms;
+    padding-left: 5px;
+    border-bottom: 2px var(--niheria-gold) solid;
+}
+
 /*...SSSSSSS..........................iiii.llll........................ttt.......................ttt...
 //..SSSSSSSSS.........................iiii.llll.......................tttt......................tttt...
 //..SSSSSSSSSS.............................llll.......................tttt......................tttt...
@@ -497,9 +511,6 @@ li, ul {
         font-size: 18px;
     }
 }
-.main-menu-desc.quenta {
-    margin: -10px;
-}
 
 [main-text] {
     font-family: bookAntiqua;
@@ -511,12 +522,22 @@ li, ul {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+[main-text][onclick]:hover {
+    cursor: pointer;
+}
+[button] {
+    border-bottom: 2px dashed rgb(212, 142, 84);
+    padding: 0 3px 1px 3px;
+}
 [mobile] {
     display: none;
 }
 /* Move to modifiers */
 [bigger] {
     font-size: 72px;    
+}
+[smaller] {
+    font-size: 32px;    
 }
 
 @media only screen and (max-width: 700px) {
@@ -637,6 +658,9 @@ video {
     }
     [column-text] {
         margin-bottom: 15px;
+    }
+    [two-board-columns] > [text] {
+        padding: 0;
     }
 }
 
@@ -802,6 +826,9 @@ video {
     width: 300px;    
     margin: 5px 15px 15px 5px;
 }
+[art-container][no-float] {
+    float: none !important;
+}
 [art-container][left] {
     float: left;
     margin: 10px 15px 15px 5px;
@@ -861,6 +888,10 @@ h4.niheria-audio {
     text-align: center;
 }
 
+audio {
+    margin-top: 5px;
+    width: 100%;
+}
 /*.PPPPPPPPP.........................ttt....... TTTTTTTTTT..............................
 //.PPPPPPPPPP.......................sttt....... TTTTTTTTTT..............................
 //.PPPPPPPPPPP......................sttt....... TTTTTTTTTT..............................
@@ -1110,6 +1141,8 @@ blockquote > p {
 //..............................................................iigggggggg.............
 //................................................................ggggggg............*/
 
+/* //TODO DERPECATED */
+
 .time-sign {
     position: relative;
 }
@@ -1137,6 +1170,29 @@ blockquote > p {
     width: 25%;
     font-size: 24px;
     color: var(--niheria-fg);
+}
+
+[time-sign] {
+    position: relative;
+}
+[time-sign] > [sign] {
+    position: absolute;
+    width: 20%;
+    transform: translateX(-105%);
+    text-align: right;
+    overflow-wrap: break-word;
+    border-bottom: 1px solid var(--niheria-fg);
+    background: linear-gradient(var(--bg-a) 50%, var(--niheria-fg-a));;
+}
+@media only screen and (max-width: 1000px) {
+    [time-sign] > [sign] {
+        position: relative;
+        width: 100%;
+        transform: none;
+        text-align: left;
+        margin: 0;
+        border-bottom: 1px solid var(--niheria-fg);
+    }
 }
 
 [years-span] {
@@ -1216,41 +1272,14 @@ hr[short-end]::after {
 //..................................apppp...........
 //..................................apppp.........*/
 
-/* @import url(../../../custom.css); */
-
-.map-object {
-    box-sizing: border-box;
-    padding: 20px 0 20px 0;
+[map-canvas] {
     width: 100%;
     height: 100%;
 }
 
-polygon {
-    transition: fill 0.1s ease;
-}
-
-#overlay {
-    opacity: 25%;
-}
-
-#water {
-    fill: rgb(139, 185, 238);
-}
-
-#north-isles > polygon {
-    fill: red;
-}
-#north-isles:hover > polygon {
-    fill: white;
-}
-
-.map-filter-circle {
-    z-index: 10;
-    background: radial-gradient(circle at 65% 15%, white 1px, aqua 3%, darkblue 60%, aqua 100%);  
-    opacity: 0.5;
-    pointer-events:none;
+[map-image] {
+    width: 100%;
     height: 100%;
-    clip-path: ellipse(50% 50%);
 }
 
 /*.IIIII..DDDDDDDDDDDD...................
