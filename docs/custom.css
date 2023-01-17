@@ -97,6 +97,7 @@ h5 {
     margin-bottom: 5px;
     font-size: 0.86em;
 }
+
 [center] {
     text-align: center;
 }
@@ -521,6 +522,7 @@ li, ul {
     background: var(--gold-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: var(--fg) 1px;
 }
 [main-text][onclick]:hover {
     cursor: pointer;
@@ -538,6 +540,12 @@ li, ul {
 }
 [smaller] {
     font-size: 32px;    
+}
+[smallest] {
+    font-size: 24px;    
+}
+[smallest-fr] {
+    font-size: 14px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -591,6 +599,7 @@ video {
     text-align: left;
 }
 
+/* TODO remove */
 .three-board {
     width: 100%;
     display: grid;
@@ -661,6 +670,27 @@ video {
     }
     [two-board-columns] > [text] {
         padding: 0;
+    }
+}
+
+[three-board] {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto auto auto auto;
+}
+[three-board] > * {
+    margin: 0 5px 0 5px !important;
+    width: auto !important;
+}
+@media only screen and (max-width: 600px) {
+    [three-board] {
+        display: block;
+        grid-template-columns: none;
+    }
+    [three-board] > * {
+        margin: 5px 0 5px 0 !important;
+        width: auto !important;
     }
 }
 
@@ -804,6 +834,101 @@ video {
     padding-right: calc(var(--rune-size)/2 - (var(--glyph-size)/2));
 }
 
+[npc-container] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+[npc] {
+    max-width: 200px;
+    margin: 25px;
+}
+[npc-pic] {
+    min-width: 100px;
+}
+[npc-name] {
+    font-family: bookAntiqua;
+    font-size: larger;
+}
+[npc-desc] {
+    font-style: italic;
+    float: right;
+    text-align: right;
+}
+[state-emblem] {
+    float: right;
+    max-width: 150px !important;
+    padding: 20px;
+}
+
+/* Army block */
+
+
+[states5] {
+    grid-template-columns: repeat(5, 1fr);
+    display: grid;
+    border-bottom: var(--niheria-fg) 1px solid;
+}
+[states1] {
+    display: block;
+    border-bottom: var(--niheria-fg) 1px solid;
+}
+[states1] > button {
+    width: 100%;
+}
+[states2] {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    background-color: var(--sidebar-bg);
+}
+[states] > *:not(:last-child) {
+    border-right: var(--niheria-fg) 1px solid;
+}
+@media only screen and (max-width: 600px) {
+    [states] {
+        display: block;
+        border: none !important;
+    }
+    button.tabbutton {
+        width: 100%;
+        display: block;
+        border: none !important;
+        border-bottom: var(--niheria-fg-a) 1px solid !important;
+    }
+    button.tabbutton.active {
+        background-color: var(--niheria-fg-light-a);
+        border-bottom: var(--niheria-fg) 1px solid !important;
+    }
+}
+
+button.tabbutton {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: bookAntique;
+    font-size: larger;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+button.tabbutton:nth-child(odd) {
+    background-color: var(--sidebar-bg);
+}
+button.tabbutton:hover {
+    transition: .05s;
+    background-color: var(--niheria-fg-a);
+}
+button.tabbutton.active {
+    background-color: var(--niheria-fg-light-a);
+}
+
+div.tabcontent {
+    display: none;
+}
+div.tabcontent.active {
+    display: block !important;
+}
 /*.IIIII...........................................................
 //.IIIII...........................................................
 //.IIIII...........................................................
@@ -1072,7 +1197,7 @@ blockquote[niheria] {
 }
 blockquote[center] {
     /* center behaviour */
-    margin: 10px 10px 10px 10px;
+    margin: 10px 0 10px 0;
     border-top: 1px solid var(--niheria-fg);    
     border-bottom: 1px solid var(--niheria-fg);    
     text-align: center;
@@ -1220,6 +1345,9 @@ blockquote > p {
 hr.short {
     width: 50%;
 }
+hr[short] {
+    width: 50%;
+}
 div[short] {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -1272,15 +1400,13 @@ hr[short-end]::after {
 //..................................apppp...........
 //..................................apppp.........*/
 
-[map-canvas] {
-    width: 100%;
-    height: 100%;
+#map {
+    height: 600px;
+    background-color: var(--bg);
+    border: var(--fg) solid 1px;
+    border-radius: 5px;
 }
 
-[map-image] {
-    width: 100%;
-    height: 100%;
-}
 
 /*.IIIII..DDDDDDDDDDDD...................
 //.IIIII..DDDDDDDDDDDDDD.................
@@ -1591,4 +1717,134 @@ hr[short-end]::after {
 
 [glitch-text][t6]:after {
     animation: noise-text-anim 1.05s infinite linear alternate-reverse;
+}
+
+@keyframes noise-text-anim-arcane {
+    0% {
+        content: "🜁";
+    }
+    5% {
+        content: "🜋";
+    }
+    10% {
+        content: "🜎";
+    }
+    15% {
+        content: "🜖";
+    }
+    20% {
+        content: "🜚";
+    }
+    25% {
+        content: "🜹";
+    }
+    30% {
+        content: "🜃";
+    }
+    35% {
+        content: "🝕";
+    }
+    40% {
+        content: "🜛";
+    }
+    45% {
+        content: "•";
+    }
+    50% {
+        content: "🜺";
+    }
+    55% {
+        content: "🝍";
+    }
+    60% {
+        content: "🝎";
+    }
+    65% {
+        content: "🜳";
+    }
+    70% {
+        content: "🜩";
+    }
+    75% {
+        content: "🝰";
+    }
+    80% {
+        content: "Ѳ";
+    }
+    85% {
+        content: "🜕";
+    }
+    90% {
+        content: "¢";
+    }
+    95% {
+        content: "🜌";
+    }
+    100% {
+        content: "🜊";
+    }
+}
+
+[glitch-text-arcane] {
+    display: inline;
+    color: var(--fg);
+    background: var(--bg);
+    animation: noise-text-anim-arcane 3s infinite linear alternate-reverse;
+}
+
+
+[glitch-text-arcane]:after {
+    display: inline;
+    color: var(--fg);
+    background: var(--bg);
+    content: "^";
+    animation: noise-text-anim-arcane 1s infinite linear alternate-reverse;
+}
+
+[glitch-text-arcane][t1]:after {
+    animation: noise-text-anim-arcane 0.8s infinite linear alternate-reverse;
+}
+
+[glitch-text-arcane][t2]:after {
+    animation: noise-text-anim-arcane 0.7s infinite linear alternate-reverse;
+}
+
+[glitch-text-arcane][t3]:after {
+    animation: noise-text-anim-arcane 1.1s infinite linear alternate-reverse;
+}
+
+[glitch-text-arcane][t4]:after {
+    animation: noise-text-anim-arcane 0.9s infinite linear alternate-reverse;
+}
+
+[glitch-text-arcane][t5]:after {
+    animation: noise-text-anim-arcane 0.85s infinite linear alternate-reverse;
+}
+
+[glitch-text-arcane][t6]:after {
+    animation: noise-text-anim-arcane 1.05s infinite linear alternate-reverse;
+}
+
+/* Special Modifiers */
+
+.old-god {
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+blockquote[god] {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 15px 10px 15px;
+}
+blockquote[god] > div[justify] {
+    height: 150%;
+}
+
+[justify] {
+    text-align: left;
+}
+[no-background] {
+    background: none !important;
 }
