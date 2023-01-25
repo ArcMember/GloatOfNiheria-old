@@ -1,3 +1,15 @@
+*.expanded {
+    --content-max-width: 1200px;
+}
+*.condensed {
+    --content-max-width: 750px;
+}
+
+*::selection {
+    background-color: var(--niheria-gold);
+    color: var(--niheria-black);
+}
+
 @import 'css/variables.css';
 
 @font-face {
@@ -767,7 +779,7 @@ video {
     display: flex;
 }
 .side-block {
-    --side-block-pos: 200px;
+    --side-block-pos: 250px;
     width: var(--side-block-pos);    
     transform: translateX(calc(-1 * var(--side-block-pos)));
     overflow: hidden;
@@ -866,8 +878,6 @@ video {
 }
 
 /* Army block */
-
-
 [states5] {
     grid-template-columns: repeat(5, 1fr);
     display: grid;
@@ -932,6 +942,8 @@ div.tabcontent {
 div.tabcontent.active {
     display: block !important;
 }
+
+
 /*.IIIII...........................................................
 //.IIIII...........................................................
 //.IIIII...........................................................
@@ -991,6 +1003,30 @@ div.tabcontent.active {
     }
 }
 
+/*.FFFFFFFFFF........................ttt...................
+//.FFFFFFFFFF.......................tttt...................
+//.FFFFFFFFFF.......................tttt...................
+//.FFFF.........oooooo.....oooooo.ootttttt.eeeeee..errrrr..
+//.FFFF.......ooooooooo..oooooooooootttttteeeeeeee.errrrr..
+//.FFFFFFFFF..oooo.ooooo.oooo.ooooo.tttt.teee.eeee.errrr...
+//.FFFFFFFFF.Fooo...oooooooo...oooo.tttt.teee..eeeeerrr....
+//.FFFFFFFFF.Fooo...oooooooo...oooo.tttt.teeeeeeeeeerrr....
+//.FFFF......Fooo...oooooooo...oooo.tttt.teeeeeeeeeerrr....
+//.FFFF......Fooo...oooooooo...oooo.tttt.teee......errr....
+//.FFFF.......oooo.ooooo.oooo.ooooo.tttt.teee..eeeeerrr....
+//.FFFF.......ooooooooo..ooooooooo..tttttteeeeeeee.errr....
+//.FFFF.........oooooo.....oooooo...tttttt.eeeeee..errr..*/
+
+[footer] {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--bg);
+    color: var(--fg);
+    text-align: center;
+}
+
 /*.....AAAAA......................dddd.iiii............
 //.....AAAAA......................dddd.iiii............
 //....AAAAAA......................dddd.................
@@ -1005,21 +1041,55 @@ div.tabcontent.active {
 //.AAAA.....AAAA.uuuuuuuuuu.dddddddddd.iiii.ooooooooo..
 //.AAAA.....AAAA..uuuuuuuuu..ddddddddd.iiii...oooooo.*/
 
-audio.niheria-audio {
-    overflow: visible;
-    min-width: 150px;
+[niheria-player], [niheria-player-embedded] {
+    cursor: default;
+    max-width: var(--content-max-width);
+    min-height: 30px;
+    margin: 0 auto 0 auto;
+    padding: auto 0 auto 0;
 }
-h4.niheria-audio {
-    margin: auto;
-    margin-top: 20px;
-    width: 100%;
-    text-align: center;
+[niheria-player-embedded] {
+    background-color: var(--fg-a);
+    padding: 5px 0 5px 15px;
+    margin: 5px 0 5px 0;
+    border-left: 5px solid var(--niheria-fg);    
 }
 
-audio {
-    margin-top: 5px;
-    width: 100%;
+[niheria-player] > #player-play-button, .player-play-button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+    width: 15px;
+    margin: 0 15px 0 15px;
 }
+.paused {
+    background-color: var(--niheria-fg);
+    color: var(--niheria-bg);
+    transition: 0.1s;
+}
+.playing {
+    background-color: var(--bg);
+    color: var(--niheria-fg);
+    transition: 0.1s;
+}
+.paused > button > i {
+    color: var(--niheria-bg);
+    transition: 0.1s;
+}
+.playing > button > i {
+    color: var(--niheria-fg);
+    transition: 0.1s;
+} 
+
+[niheria-player] > #player-track-name, .player-track-name {
+    font-size: 18px;
+}
+
+audio[niheria-player] {
+    display: none;
+}
+
 /*.PPPPPPPPP.........................ttt....... TTTTTTTTTT..............................
 //.PPPPPPPPPP.......................sttt....... TTTTTTTTTT..............................
 //.PPPPPPPPPPP......................sttt....... TTTTTTTTTT..............................
@@ -1850,4 +1920,51 @@ blockquote[god] > div[justify] {
 }
 [no-background] {
     background: none !important;
+}
+
+/*....OOOOOOO....................................llll..ttt..iiii............................
+//...OOOOOOOOOO..................................llll.tttt..iiii............................
+//..OOOOOOOOOOOO.................................llll.tttt..................................
+//..OOOOO..OOOOO...cccccc....cccccc..cuuu..uuuuu.lllllttttttiiii.sssssss..smmmmmmmmmmmmm....
+//.OOOOO....OOOOO.cccccccc..cccccccc.cuuu..uuuuu.lllllttttttiiiiissssssss.smmmmmmmmmmmmmm...
+//.OOOO......OOOOOcccc.ccccccccc.cccccuuu..uuuuu.llll.tttt..iiiiisss.ssss.smmmm.mmmmmmmmm...
+//.OOOO......OOOOOccc..ccc.cccc..ccc.cuuu..uuuuu.llll.tttt..iiiiissss.....smmm..mmmm..mmmm..
+//.OOOO......OOOOOccc......cccc......cuuu..uuuuu.llll.tttt..iiii.ssssss...smmm..mmmm..mmmm..
+//.OOOOO....OOOOOOccc......cccc......cuuu..uuuuu.llll.tttt..iiii..sssssss.smmm..mmmm..mmmm..
+//..OOOOO..OOOOO.Occc..ccc.cccc..ccc.cuuu..uuuuu.llll.tttt..iiii......sssssmmm..mmmm..mmmm..
+//..OOOOOOOOOOOO.Occcc.ccccccccc.cccccuuuu.uuuuu.llll.tttt..iiiiisss..sssssmmm..mmmm..mmmm..
+//...OOOOOOOOOO...ccccccccc.ccccccccc.uuuuuuuuuu.llll.ttttttiiiiissssssss.smmm..mmmm..mmmm..
+//.....OOOOOO......cccccc....cccccc....uuuuuuuuu.llll.ttttttiiii..ssssss..smmm..mmmm..mmmm*/
+
+blockquote.drugs-disclaimer {
+    margin-bottom: 0 !important;
+}
+div.drugs-disclaimer {
+    padding: 5px 0 5px 0;
+    background-color: var(--niheria-red);
+    color: var(--bg);
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 1px solid var(--niheria-fg); 
+}
+.hidden {
+    display: none !important;
+}
+[path] {
+    background-color: var(--bg);
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid var(--niheria-fg);
+    border-bottom: 5px solid var(--niheria-fg);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+[path] > * > h4 {
+    margin-top: 5px !important;
+}
+[path]:hover {
+    transition: 0.1s;
+    background-color: var(--fg-a);
+    scale: 1.01;
+    border-bottom: 10px solid var(--niheria-fg);
 }
