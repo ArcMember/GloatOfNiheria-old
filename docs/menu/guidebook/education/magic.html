@@ -454,7 +454,7 @@
             }
             window.addEventListener('keydown', function (e) {
                 var evtobj = window.event? event : e
-                if (event.keyCode == 65 && evtobj.ctrlKey && evtobj.shiftKey && evtobj.altKey) 
+                if (evtobj.keyCode == 65 && evtobj.ctrlKey && evtobj.shiftKey && evtobj.altKey) 
                     if (window.localStorage.getItem("admin") === "false")
                         window.localStorage.setItem("admin", true)
                     else 

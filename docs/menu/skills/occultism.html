@@ -189,11 +189,6 @@
 <p>Оккультист-энигмат — это верный слуга Энигмы, человек который ей живёт, <strong>а иногда буквально живёт в ней</strong>.</p>
 </div>
 </div>
-<ul>
-<li>Оккультисты-<strong>эзотеры</strong> уделяют машинам и магическим артефактам особенное внимание. Они совершают работу и <strong>оставляют след того же оттенка, что на них оставил создатель</strong>. Оккультист с обширными познаниями паромеханики способен определить, где машина испытывает наибольшее напряжение, где её слабость и насколько широкий простор для ее мощностей еще остался в запасе. </li>
-<li>Оккультисты-<strong>синкреты</strong> способны <strong>подменять субъективную реальность</strong>, заставить творца забыт о своём творении, в то время как проходимец не может объяснить себе, как он когда-то это создал.</li>
-<li>Оккультисты-<strong>энигматы</strong> общаются с Энигмой, как со старым другом. Эзотерики теряют связь с материальной реальностью, но безропотно <strong>живут в субъективных материях мира разумов</strong>.</li>
-</ul>
 <h2 id="Энигма"><a class="header" href="#Энигма">Энигма</a></h2>
 <img class="cover" src="occultism/cover1.png"> 
 <div class="art-credits"><a href="https://www.artstation.com/freetime">Автор арта — Vladimir Matyukhin</a></div>
@@ -581,7 +576,7 @@
             }
             window.addEventListener('keydown', function (e) {
                 var evtobj = window.event? event : e
-                if (event.keyCode == 65 && evtobj.ctrlKey && evtobj.shiftKey && evtobj.altKey) 
+                if (evtobj.keyCode == 65 && evtobj.ctrlKey && evtobj.shiftKey && evtobj.altKey) 
                     if (window.localStorage.getItem("admin") === "false")
                         window.localStorage.setItem("admin", true)
                     else 
