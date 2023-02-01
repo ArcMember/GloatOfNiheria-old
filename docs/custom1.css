@@ -185,6 +185,9 @@ details {
     border-radius: 4px;
     padding: 10px;
 }
+summary {
+    cursor: pointer;
+}
 
 /* unvisited link */
 a:link, a:visited  {
@@ -223,6 +226,11 @@ ol, ul {
 /* mdbook table of content section */
 ol.section {
     padding: 0 auto 0 20px !important;
+}
+
+th {
+    background-color: var(--niheria-fg);
+    color: var(--niheria-bg)
 }
 
 /* TODO to remove
@@ -596,6 +604,9 @@ video {
 .cover {
     margin: auto auto -5px auto;
 }
+[cover] {
+    margin: auto auto -5px auto;
+}
 /* TODO remove */
 .art-credits {
     font-size: smaller;
@@ -692,20 +703,16 @@ video {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: auto auto auto auto;
+    margin: auto auto -5px auto;
 }
 [three-board] > * {
-    margin: 0 5px 0 5px !important;
+    margin: 0 0 0 0 !important;
     width: auto !important;
 }
 @media only screen and (max-width: 600px) {
     [three-board] {
         display: block;
         grid-template-columns: none;
-    }
-    [three-board] > * {
-        margin: 5px 0 5px 0 !important;
-        width: auto !important;
     }
 }
 
@@ -1263,6 +1270,8 @@ blockquote[warning] {
 /* New quotes */
 blockquote {
     font-style: normal;
+    border-top: 1px solid var(--niheria-fg);    
+    border-bottom: 1px solid var(--niheria-fg);    
 }
 blockquote[niheria] {
     width: 100%;
@@ -1308,7 +1317,7 @@ blockquote[center] > [author]::after {
 }
 
 blockquote[on-top] {
-    margin: 20px auto 0 auto;
+    margin: 20px auto -1px auto;
 }
 blockquote[under] {
     margin: 0 auto 20px auto;
@@ -1950,21 +1959,50 @@ div.drugs-disclaimer {
 .hidden {
     display: none !important;
 }
-[path] {
+
+[path-box] {
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    padding: 10px;
+}
+@media only screen and (max-width: 600px) {
+    [path-box] {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+a[path] {
+    all: unset !important;
+}
+a[path]:hover {
+    all: unset !important;
+}
+a[path]:active {
+    all: unset !important;
+}
+
+[path-div] {
+    display: block;
     background-color: var(--bg);
     cursor: pointer;
     padding: 5px;
+    margin: 5px;
+    width: 100%;
+    height: 100%;
     border: 1px solid var(--niheria-fg);
     border-bottom: 5px solid var(--niheria-fg);
-    box-sizing: border-box;
-    overflow: hidden;
+    margin-bottom: -1px;
 }
-[path] > * > h4 {
-    margin-top: 5px !important;
-}
-[path]:hover {
+[path-div]:hover {
     transition: 0.1s;
     background-color: var(--fg-a);
-    scale: 1.01;
-    border-bottom: 10px solid var(--niheria-fg);
+    border-bottom-width: 10px;
+}
+[path-header] {
+    color: var(--niheria-fg);
+    margin-top: 5px;
+    font-weight: bold;
+    font-size:larger;
 }
