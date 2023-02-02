@@ -887,7 +887,7 @@ video {
 }
 [state-emblem] {
     float: right;
-    max-width: 150px !important;
+    max-width: 200px !important;
     padding: 20px;
 }
 
