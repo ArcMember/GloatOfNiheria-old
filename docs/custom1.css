@@ -92,6 +92,13 @@
 //.BBBBBBBBBBBBBBB..Baaaaaaaaaaa..sssssssssss..siiii...cccccccccc...
 //.BBBBBBBBBBBBBB....aaaaaaaaaaa...sssssssss...siiii....cccccccc..*/
 
+::-webkit-scrollbar-thumb {
+    background: var(--niheria-fg);
+}
+::-webkit-scrollbar {
+    background: var(--bg);
+}
+
 h1 {
     margin-top: 10px;
     margin-bottom: 0.5em;
