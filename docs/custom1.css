@@ -204,6 +204,7 @@ details {
 }
 summary {
     cursor: pointer;
+    padding-bottom: 5px;
 }
 
 /* unvisited link */
@@ -567,6 +568,9 @@ li, ul {
 [button] {
     border-bottom: 2px dashed rgb(212, 142, 84);
     padding: 0 3px 1px 3px;
+}
+[button]:hover {
+    border-bottom: 2px dashed var(--niheria-light-gold);
 }
 [mobile] {
     display: none;
@@ -1517,6 +1521,10 @@ hr[short-end]::after {
     border-radius: 5px;
 }
 
+[map-popup] {
+    font-size: 16px;
+}
+
 
 /*.IIIII..DDDDDDDDDDDD...................
 //.IIIII..DDDDDDDDDDDDDD.................
@@ -1935,7 +1943,19 @@ hr[short-end]::after {
     animation: noise-text-anim-arcane 1.05s infinite linear alternate-reverse;
 }
 
-/* Special Modifiers */
+/*.MMMMMM...MMMMMM..................dddd...........
+//.MMMMMM...MMMMMM..................dddd...........
+//.MMMMMM...MMMMMM..................dddd...........
+//.MMMMMMM.MMMMMMM...oooooo....ddddddddd.sssssss...
+//.MMMMMMM.MMMMMMM.ooooooooo..ddddddddddsssssssss..
+//.MMMMMMM.MMMMMMM.oooo.oooooddddd.dddddssss.ssss..
+//.MMMMMMMMMMMMMMMoooo...oooodddd...ddddsssss......
+//.MMMMMMMMMMMMMMMoooo...oooodddd...dddd.ssssss....
+//.MMMMMMMMMMMMMMMoooo...oooodddd...dddd..sssssss..
+//.MMMM.MMMMM.MMMMoooo...oooodddd...dddd......sss..
+//.MMMM.MMMMM.MMMM.oooo.oooooddddd.dddddssss..sss..
+//.MMMM.MMMMM.MMMM.ooooooooo..ddddddddddsssssssss..
+//.MMMM.MMMMM.MMMM...oooooo....ddddddddd..ssssss.*/
 
 .old-god {
     margin-top: 10px;
@@ -1957,6 +1977,9 @@ blockquote[god] > div[justify] {
 }
 [no-background] {
     background: none !important;
+}
+[right] {
+    text-align: right;
 }
 
 /*....OOOOOOO....................................llll..ttt..iiii............................
@@ -2106,12 +2129,26 @@ a[path]:active {
     display: block;
     left: 0;
     color: var(--niheria-gold) !important;
+    z-index: auto;    
+}
+[book] > img {
+    
 }
 [book]:hover {
-    scale: 1.01;
-    left: 5px;
     transition: 0.1s;
+    left: 5px;    
     color: var(--niheria-gold) !important;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    scale: 1.02;
+}
+[book]:hover > [book-spine] {
+    transition: 0.1s;
+    padding-left: 15px;
+}
+[book]:hover > img {
+    transition: 0.1s;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.7);
 }
 
 [book-chapter], [book-chapter]:link, [book-chapter]:visited {
@@ -2356,7 +2393,7 @@ a[path]:active {
     font-family: 'bookAntiquaBlack';
 
     color: rgb(199, 148, 107);
-    background: var(--gold-gradient-desc);
+    background: var(--light-gold-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -2420,7 +2457,7 @@ i[lvl3] {
 }
 
 [catalogue-cover] > [title-div] {
-    pointer-events: none;
+    /* pointer-events: none; */
     position: absolute;
     right: 0; left: 0; bottom: 0;
     margin: 25px auto 25px auto;
@@ -2433,7 +2470,7 @@ i[lvl3] {
 }
 
 [catalogue-cover] > [title-div] > [title] {
-    pointer-events: none;
+    /* pointer-events: none; */
     display: block;
     width: 100%;
     height: 100%;
@@ -2468,4 +2505,27 @@ i[lvl3] {
     position: absolute;
     top: 0;
     filter: blur(15px) opacity(0.7);
+}
+
+#crimthunder:hover {
+    filter: hue-rotate(-48deg) saturate(1.5);
+}
+
+[month-niheria], [month-real] {
+    text-align: center;
+    cursor: default;
+}
+[month-niheria] {
+    padding-top: 10px;
+    color: var(--niheria-gold);
+    font-size: 20px;
+}
+[month-real] {
+    padding-bottom: 10px;
+}
+[cosmology] > [four-board]:not(:last-child) {
+    border-bottom: 1px solid var(--niheria-gold);
+}
+[cosmology] > [four-board] > div:not(:last-child) {
+    border-right: 1px solid var(--niheria-gold);
 }
