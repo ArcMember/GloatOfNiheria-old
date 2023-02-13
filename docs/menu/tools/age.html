@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html lang="ru" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Возраст - Злорадство Нихерии</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../custom1.css">
+
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Содержание">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html">Меню</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/manual.html">Руководство</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/manual/quick-start.html">Быстрый старт</a></li><li class="chapter-item "><a href="../../menu/manual/about.html">О ролевой</a></li><li class="chapter-item "><a href="../../menu/manual/rules.html">Правила</a></li><li class="chapter-item "><a href="../../menu/manual/templates.html">Шаблоны</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/manual/templates/quenta.html">Анкета</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/manual/templates/quenta/fears.html">Страхи</a></li></ol></li><li class="chapter-item "><a href="../../menu/manual/templates/search-coop.html">Поиск игрока</a></li><li class="chapter-item "><a href="../../menu/manual/templates/create-location.html">Создание локации</a></li><li class="chapter-item "><a href="../../menu/manual/templates/beast.html">Существо в бестиарий</a></li><li class="chapter-item "><a href="../../menu/manual/templates/plant.html">Растение в гербарий</a></li></ol></li><li class="chapter-item "><a href="../../menu/manual/masters.html">Штаб Мастеров</a></li><li class="chapter-item "><a href="../../menu/manual/leveling.html">Прокачка героя</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook.html">Путеводитель</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/races.html">Расы</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/races/besties.html">Бестийцы</a></li><li class="chapter-item "><a href="../../menu/guidebook/races/dwarfs.html">Дворфы</a></li><li class="chapter-item "><a href="../../menu/guidebook/races/kharfirs.html">Кхарфиры</a></li><li class="chapter-item "><a href="../../menu/guidebook/races/lamah.html">Ламах</a></li><li class="chapter-item "><a href="../../menu/guidebook/races/humans.html">Люди</a></li><li class="chapter-item "><a href="../../menu/guidebook/races/meries.html">Мерии</a></li><li class="chapter-item "><a href="../../menu/guidebook/races/redrehan.html">Редрехан</a></li><li class="chapter-item "><a href="../../menu/guidebook/races/vampires.html">Вампиры</a></li><li class="chapter-item "><a href="../../menu/guidebook/races/werewolfs.html">Оборотни</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/guilds.html">Гильдии</a></li><li class="chapter-item "><a href="../../menu/guidebook/army.html">Армии</a></li><li class="chapter-item "><a href="../../menu/guidebook/education.html">Образование</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/education/military.html">Военное</a></li><li class="chapter-item "><a href="../../menu/guidebook/education/magic.html">Магическое</a></li><li class="chapter-item "><a href="../../menu/guidebook/education/general.html">Общее</a></li><li class="chapter-item "><a href="../../menu/guidebook/education/masters.html">Мастера</a></li><li class="chapter-item "><a href="../../menu/guidebook/education/theology.html">Теология</a></li><li class="chapter-item "><a href="../../menu/guidebook/education/self-taught.html">Самоучки</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books.html">Книги</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science.html">Научная литература</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary.html">Бестиарий</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/monsters.html">Монстры</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/monsters/draconides.html">Дракониды</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/monsters/draconides/gviar.html">Гвиар</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/monsters/draconides/dragonfly.html">Дракоза</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/monsters/mutants.html">Мутанты</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/monsters/things.html">Нёхи</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/monsters/things/wraugr.html">Враугр</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/beasts.html">Твари</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/beasts/creatures.html">Создания</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/beasts/creatures/ezo.html">Эзо</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/beasts/creatures/threeye.html">Триглаз</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/beasts/creatures/skinnot.html">Скиннот</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/beasts/aquatic.html">Водные</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/beasts/aquatic/jaskont.html">Ясконтний</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/beasts/aquatic/jaskont-glacial.html">Ясконтний Хладный</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/beasts/aquatic/bitenia.html">Битения</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/beasts/aquatic/khirda.html">Хирда</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/beasts/insects.html">Роевые</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/beasts/insects/scorpus.html">Скорпус</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/beasts/insects/jwarkullah.html">Жваркулла</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/essentials.html">Сущности</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/essentials/elementals.html">Элементали</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/essentials/elementals/mountain.html">Дух гор</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/essentials/elementals/fire.html">Дух пламени</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/essentials/elementals/sea.html">Дух моря</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/essentials/elementals/wind.html">Дух ветров</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/essentials/undead.html">Нежить</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/essentials/undead/necrodragon.html">Некродракон</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/essentials/moroks.html">Мороки</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/essentials/moroks/mglin.html">Мглиномес</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary/essentials/moroks/bannik.html">Банник</a></li></ol></li></ol></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium.html">Гербарий</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs.html">Растения</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/jumping-parsnip.html">Прыгучий Борщевик</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/bloodrink.html">Кровопийка</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/strangler.html">Удавник</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/aspid-tongue.html">Язык Аспида</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/sharpthorn.html">Остротёрн</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/glace.html">Морозник</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/mirflower.html">Мироцвет</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/crawlherb.html">Ползучник</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/twarocvet.html">Твароцвет</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/silverleaf.html">Сребролист</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/crimthunder.html">Алый Гром</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/paleleaf.html">Бледнолист</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/haspar.html">Гаспаров Ус</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/lifegrowherb.html">Ползучий Живорост</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/martar-root.html">Корень Мартара</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/kreptophere.html">Крептофера</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/vortexflower.html">Вихрецвет</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/actor.html">Драмакуст</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/arvian-warmer.html">Арвийская Телогрейка</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/herbs/glory.html">Слава</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/mushrooms.html">Грибы</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/mushrooms/bloody-tooth.html">Кровавый Зуб</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/mushrooms/ghostool.html">Призрачная Поганка</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/mushrooms/gortonna.html">Гортонна</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/mushrooms/malica.html">Злонамерка Высотная</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/algae.html">Водоросли</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/minerals.html">Минералы</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/minerals/raitarit.html">Райтарит</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/herbarium/minerals/dairad.html">Дайрад</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/diseases.html">Болезни</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/diseases/dragon-skin.html">Драконья кожа</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/diseases/snaketongue.html">Змееуст</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/diseases/dahma.html">Глаз Дахмы</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/diseases/soul-illness.html">Болезни духа</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/mechanics.html">Инженерия и паромеханика</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/mechanics/steam-engine.html">Устройство парового двигателя Фелинварда Синоба</a></li><li class="chapter-item "><div>Дайджест промышленного комплекса Нихерии</div></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/mechanics/map-of-lost.html">Краткая карта утерянных технологий</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/mechanics/naat-guns.html">Алхимические винтовка и пистолет Наат-Тхаес</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/mechanics/printing-press.html">Механический типографический станок</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/alchemy.html">Алхимический Увраж</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/method.html">Алхимический Метод</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/weapon.html">Вооружен до зубов</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/weapon/cold.html">Холодное оружие</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/weapon/fire.html">Огнестрельное оружие</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/weapon/armor.html">Броня</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/magic.html">Магия и Теургия</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/science/magic/medical-theurgy.html">Медицинская теургия</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/folklore.html">Фольклор</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/folklore/phrases.html">Поговорки</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/folklore/drinks.html">Напитки</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/folklore/spiders-night.html">Ночь Пауков</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/folklore/garden.html">Сад Бархади</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/folklore/forest-nightmare.html">Кошмар Леса</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/folklore/flies.html">Племена Мух</a></li><li class="chapter-item "><a href="../../menu/guidebook/books/folklore/pyramids.html">Пирамиды</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/misc.html">Разные статьи</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/books/misc/digest.html">Именной справочник</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/books/science/bestiary.html">Бестиарий</a></li><li class="chapter-item "><a href="../../menu/guidebook/contests.html">Конкурсы</a></li><li class="chapter-item "><div>Игры</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div>Виндворф</div></li><li class="chapter-item "><div>Гуранский пул</div></li><li class="chapter-item "><div>Плашки</div></li></ol></li></ol></li><li class="chapter-item "><a href="../../menu/magic.html">Магия</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/magic/basics.html">Основы магии</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/magic/basics/матчасть.html">Теория магии</a></li></ol></li><li class="chapter-item "><a href="../../menu/magic/branches.html">Ветви магии</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/magic/branches/white.html">Белая магия</a></li><li class="chapter-item "><a href="../../menu/magic/branches/black.html">Чёрная магия</a></li><li class="chapter-item "><a href="../../menu/magic/branches/creation.html">Магия Созидания</a></li><li class="chapter-item "><a href="../../menu/magic/branches/influence.html">Магия Влияния</a></li></ol></li><li class="chapter-item "><a href="../../menu/magic/phenomena.html">Явления магии</a></li><li class="chapter-item "><a href="../../menu/magic/influence.html">Влияние рун</a></li><li class="chapter-item "><a href="../../menu/magic/places.html">Места магии</a></li><li class="chapter-item "><a href="../../menu/magic/artifactory.html">Артефакторика</a></li></ol></li><li class="chapter-item "><a href="../../menu/skills.html">Навыки</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/skills/military.html">Воинские дисциплины</a></li><li class="chapter-item "><a href="../../menu/skills/crafts.html">Ремесла</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/skills/crafts/trade.html">Торговля</a></li><li class="chapter-item "><a href="../../menu/skills/crafts/theft.html">Воровство</a></li><li class="chapter-item "><a href="../../menu/skills/crafts/medicine.html">Медицина</a></li><li class="chapter-item "><a href="../../menu/skills/crafts/hunting.html">Охота</a></li><li class="chapter-item "><a href="../../menu/skills/crafts/cooking.html">Кулинария</a></li><li class="chapter-item "><a href="../../menu/skills/crafts/winemaking.html">Виноделие и пивоварение</a></li><li class="chapter-item "><a href="../../menu/skills/crafts/tailoring.html">Портное дело</a></li><li class="chapter-item "><a href="../../menu/skills/crafts/jewelry.html">Ювелирное дело</a></li><li class="chapter-item "><a href="../../menu/skills/crafts/smithing.html">Кузнечное дело</a></li><li class="chapter-item "><a href="../../menu/skills/crafts/architectory.html">Зодчество</a></li><li class="chapter-item "><a href="../../menu/skills/crafts/shipbuilding.html">Кораблестроение</a></li><li class="chapter-item "><a href="../../menu/skills/crafts/art.html">Искусство</a></li><li class="chapter-item "><a href="../../menu/skills/crafts/warfare.html">Военное дело</a></li><li class="chapter-item "><a href="../../menu/skills/crafts/management.html">Управление</a></li><li class="chapter-item "><a href="../../menu/skills/crafts/rhetoric.html">Риторика</a></li></ol></li><li class="chapter-item "><a href="../../menu/skills/science.html">Науки</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/magic/artifactory.html">Артефакторика</a></li><li class="chapter-item "><a href="../../menu/skills/science/alchemy.html">Алхимия</a></li><li class="chapter-item "><a href="../../menu/skills/science/linguistics.html">Лингвистика</a></li><li class="chapter-item "><a href="../../menu/skills/science/mechanics.html">Паромеханика</a></li><li class="chapter-item "><a href="../../menu/skills/science/unlife.html">Нежизнь</a></li><li class="chapter-item "><a href="../../menu/skills/science/chimerology.html">Химерология</a></li></ol></li><li class="chapter-item "><a href="../../menu/skills/druidism.html">Друидизм</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/skills/druidism/light.html">Светлый друидизм</a></li><li class="chapter-item "><a href="../../menu/skills/druidism/dark.html">Тёмный друидизм</a></li><li class="chapter-item "><a href="../../menu/skills/druidism/gray.html">Серый друидизм</a></li><li class="chapter-item "><a href="../../menu/skills/druidism/transformation.html">Обращение</a></li></ol></li><li class="chapter-item "><a href="../../menu/skills/occultism.html">Оккультизм</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/skills/occultism/enigma.html">Энигма</a></li><li class="chapter-item "><a href="../../menu/skills/occultism/mark.html">Метка</a></li><li class="chapter-item "><a href="../../menu/skills/occultism/tarot.html">Таро</a></li><li class="chapter-item "><a href="../../menu/skills/occultism/esoter.html">Эзотеры</a></li><li class="chapter-item "><a href="../../menu/skills/occultism/syncret.html">Синкреты</a></li><li class="chapter-item "><a href="../../menu/skills/occultism/enigmat.html">Энигматы</a></li></ol></li><li class="chapter-item "><a href="../../menu/skills/shamanism.html">Шаманизм</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/skills/shamanism/light.html">Светлый шаманизм</a></li><li class="chapter-item "><a href="../../menu/skills/shamanism/dark.html">Тёмный шаманизм</a></li><li class="chapter-item "><a href="../../menu/skills/shamanism/ghosts.html">Призраки</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../menu/history.html">История</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/history/outgoing-age.html">Уходящая эпоха</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/history/outgoing-age/stillborn-indict.html">Индикт Мертворождения</a></li><li class="chapter-item "><a href="../../menu/history/outgoing-age/recovery-period.html">Период Восстановления</a></li><li class="chapter-item "><a href="../../menu/history/outgoing-age/renaissance-period.html">Веха Возрождения</a></li><li class="chapter-item "><a href="../../menu/history/outgoing-age/ruins-haze.html">Туманы Руин</a></li><li class="chapter-item "><a href="../../menu/history/outgoing-age/resistentia.html">Резистенция</a></li></ol></li><li class="chapter-item "><a href="../../menu/history/old-time.html">Старое время</a></li><li class="chapter-item "><a href="../../menu/history/elder-ages.html">Ветхие эпохи</a></li><li class="chapter-item "><a href="../../menu/history/timeline.html">Таймлайн</a></li><li class="chapter-item "><a href="../../menu/history/news.html">Свежие Новости</a></li><li class="chapter-item "><a href="../../menu/history/archive.html">Архив</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/history/archive/epilogue.html">Эпилог 2020</a></li><li class="chapter-item "><a href="../../menu/history/archive/10yem.html">Сводки за 10 гЭР</a></li><li class="chapter-item "><a href="../../menu/history/archive/46yne.html">Сводки за 46 гНЭ</a></li><li class="chapter-item "><a href="../../menu/history/archive/45yne.html">Сводки за 45 гНЭ</a></li><li class="chapter-item "><a href="../../menu/history/archive/44yne.html">Сводки за 44 гНЭ</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../menu/plot.html">Сюжет</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/plot/main/apotheosis.html">Апофеоз войны</a></li><li class="chapter-item "><a href="../../menu/plot/main/wanderers.html">Скитальцы</a></li><li class="chapter-item "><a href="../../menu/plot/main/sacral.html">Сакральный хладагент</a></li><li class="chapter-item "><a href="../../menu/plot/global/emptiness.html">Блаженство пустоты</a></li><li class="chapter-item "><a href="../../menu/plot/global/heromantia.html">Херомантия</a></li><li class="chapter-item "><a href="../../menu/plot/global/lokomotiv.html">Локомотив забытых истин</a></li><li class="chapter-item "><a href="../../menu/plot/local/drama.html">Раскаты драмы</a></li><li class="chapter-item "><a href="../../menu/plot/local/song.html">Тут вообще песня</a></li><li class="chapter-item "><a href="../../menu/plot/local/shards.html">Осколки будущего</a></li></ol></li><li class="chapter-item "><a href="../../menu/navigation.html">Навигация</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/navigation/geopolitics.html">Геополитика</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/skills/science/linguistics.html">Языки</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div>Риат и Баспаа́н</div></li><li class="chapter-item "><div>Риат'Арьярд</div></li><li class="chapter-item "><div>Ходртахрот</div></li><li class="chapter-item "><div>Арвийский</div></li><li class="chapter-item "><div>Ре́дрех</div></li><li class="chapter-item "><div>Ктаавехт</div></li><li class="chapter-item "><div>Мордвинский</div></li><li class="chapter-item "><div>Крат</div></li></ol></li><li class="chapter-item "><div>Культуры</div><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><div>Редрехан</div></li><li class="chapter-item "><div>Тейель</div></li><li class="chapter-item "><div>Кхафра</div></li><li class="chapter-item "><div>Луат</div></li><li class="chapter-item "><div>Адмиралтейство</div></li><li class="chapter-item "><div>Доминионы</div></li><li class="chapter-item "><div>Ламах и Хельгеран</div></li><li class="chapter-item "><div>Мародеры</div></li></ol></li><li class="chapter-item "><a href="../../menu/navigation/geopolitics/states.html">Державы</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/navigation/geopolitics/states/reabor-thaes.html">Реабор-Тхаес</a></li><li class="chapter-item "><a href="../../menu/navigation/geopolitics/states/teyel.html">Вече Тейель</a></li><li class="chapter-item "><a href="../../menu/navigation/geopolitics/states/afitra.html">Великая Афитра</a></li><li class="chapter-item "><a href="../../menu/navigation/geopolitics/states/luat.html">Последняя Республика Луат</a></li><li class="chapter-item "><a href="../../menu/navigation/geopolitics/states/korkaft.html">Коркафт</a></li><li class="chapter-item "><a href="../../menu/navigation/geopolitics/states/mordwin.html">Древняя Великая Мордвинская империя</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/navigation/geopolitics/states/bureaucracy-dwmi.html">Бюрократия ДВМИ</a></li></ol></li><li class="chapter-item "><a href="../../menu/navigation/geopolitics/states/flatria.html">Доминион Флатрия</a></li><li class="chapter-item "><a href="../../menu/navigation/geopolitics/states/sixtinna.html">Сикстиннский Доминион</a></li><li class="chapter-item "><a href="../../menu/navigation/geopolitics/states/sekri.html">Доминион Секри</a></li><li class="chapter-item "><a href="../../menu/navigation/geopolitics/states/clans.html">Кланы Золотого Гребня</a></li><li class="chapter-item "><a href="../../menu/navigation/geopolitics/states/helgeran.html">Хельгеран</a></li></ol></li><li class="chapter-item "><a href="../../menu/guidebook/guilds.html">Гильдии</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/guidebook/guilds/railworkers.html">Железнодорожники</a></li><li class="chapter-item "><a href="../../menu/guidebook/guilds/sparkle.html">Искра</a></li><li class="chapter-item "><a href="../../menu/guidebook/guilds/purge-bureau.html">Бюро Вычищения</a></li><li class="chapter-item "><a href="../../menu/guidebook/guilds/association.html">Ассоциация С'Итш'Тас</a></li><li class="chapter-item "><a href="../../menu/guidebook/guilds/inferdormis.html">Инфердормис</a></li><li class="chapter-item "><a href="../../menu/guidebook/guilds/admiralty.html">Адмиралтейство</a></li><li class="chapter-item "><a href="../../menu/guidebook/guilds/trium.html">Триум-доктрина</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../menu/navigation/geography.html">География</a></li><li class="chapter-item "><a href="../../menu/navigation/locations.html">Локации</a></li><li class="chapter-item "><div>Транспорт</div></li><li class="chapter-item "><a href="../../menu/navigation/cosmology.html">Космология</a></li><li class="chapter-item "><a href="../../menu/navigation/new-lands.html">Новые земли</a></li><li class="chapter-item "><div>Законы</div></li><li class="chapter-item "><div>Розыск</div></li><li class="chapter-item "><div>Учёт</div></li></ol></li><li class="chapter-item "><a href="../../menu/economy.html">Экономика</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/economy/about-money.html">О деньгах</a></li><li class="chapter-item "><a href="../../menu/economy/earning.html">Заработок</a></li><li class="chapter-item "><a href="../../menu/economy/finances.html">Финансы</a></li></ol></li><li class="chapter-item "><a href="../../menu/characters.html">Персонажи</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/characters/registered.html">Зарегистрированные</a></li><li class="chapter-item "><a href="../../menu/characters/canons.html">Каноны</a></li><li class="chapter-item "><a href="../../menu/characters/graveyard.html">Кладбище</a></li></ol></li><li class="chapter-item expanded "><a href="../../menu/tools.html">Инструменты</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../menu/tools/age.html" class="active">Возраст</a></li><li class="chapter-item "><a href="../../menu/tools/banking.html">Банкинг</a></li><li class="chapter-item "><a href="../../menu/tools/map.html">Карта</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../menu/tools/map/map-geographical.html">Общегеографическая карта</a></li><li class="chapter-item "><a href="../../menu/tools/map/map-political.html">Политическая карта</a></li><li class="chapter-item "><a href="../../menu/tools/map/map-extended.html">Расширенная карта</a></li></ol></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+        
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Содержание" aria-label="Содержание" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Сменить тему" aria-label="Сменить тему" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Темы" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Светлый</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Темный</button></li>
+                        </ul>
+                        <button id="expand-toggle" class="icon-button" type="button" onclick="ToggleExpand()" title="Expand. (Shortkey: e)" aria-label="Toggle Expand" aria-expanded="false" aria-keyshortcuts="E">
+                            <i class="fa fa-arrows-alt"></i>
+                        </button>                    
+                    </div>
+                    <h1 class="menu-title">Злорадство Нихерии</h1>                    
+            
+                    
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content condensed">
+                    <main>
+                        <div class="niheria-nav main-menu-el">
+                            <a class="niheria-nav-btn main-menu-text" href="javascript:history.back()">Назад</a>  
+                            <a class="niheria-nav-btn main-menu-text" href="../../index.html">Меню</a>  
+                        </div>
+                        <p>Работаем...</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../menu/tools.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../menu/tools/banking.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+
+                    <div footer>
+                        <div onclick="Play()" niheria-player id="niheria-player-div" class="paused">
+                            <button id="player-play-button" >
+                                <i id="player-play-button-icon" class="fa fa-play"></i>
+                            </button>
+                            <span id="player-track-name">Band Name - Track Name</span>
+                        </div>                
+                        <audio niheria-player id="niheria-player"></audio>
+                    </div>
+                </div>
+                <script>
+                    /* Expandable view script */
+                    function ToggleExpand() {
+                        let expanded = (window.localStorage.getItem("niheria-expanded") === 'true')
+                        window.localStorage.setItem("niheria-expanded", !expanded)
+                        SetExtension()
+                    }
+
+                    function SetExtension() {
+                        let expanded = (window.localStorage.getItem("niheria-expanded") === 'true')
+                        let content = document.getElementById("content")
+                        if (expanded) {
+                            content.classList.add("expanded")
+                            content.classList.remove("condensed")
+                        }
+                        else {
+                            content.classList.remove("expanded")
+                            content.classList.add("condensed")
+                        }
+                    }
+                    SetExtension()
+                    
+                </script>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../menu/tools.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../menu/tools/banking.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+        <!-- Open details to print -->
+        <script>
+            // open closed details elements for printing
+            window.addEventListener('beforeprint',() => {
+                const allDetails = document.body.querySelectorAll('details');
+                for(let i=0; i<allDetails.length; i++)
+                    if(allDetails[i].open)
+                        allDetails[i].dataset.open = '1';
+                    else
+                        allDetails[i].setAttribute('open', '');
+            });
+
+            // after printing close details elements not opened before
+            window.addEventListener('afterprint',() => {
+                const allDetails = document.body.querySelectorAll('details');
+                for(let i=0; i<allDetails.length; i++)
+                    if(allDetails[i].dataset.open)                    
+                        allDetails[i].dataset.open = '';
+                    else 
+                        allDetails[i].removeAttribute('open');
+            });
+        </script>
+        <script>
+            let audio_open_tag = "[[_Audio("
+            let audio_close_tag = ")_]]"
+            let player = document.getElementById("niheria-player")
+            let isPlaying = false
+            let src = ""
+
+            GetSrc()
+            InitializePlayer()
+
+            function GetSrc() {
+                let content = document.getElementById("content").innerHTML
+                if (content.includes(audio_open_tag) && content.includes(audio_close_tag)) {
+                    let part1 = content.split(audio_open_tag)
+                    let part2 = part1[1].split(audio_close_tag)
+                    document.getElementById("content").innerHTML = content.replace(audio_open_tag+part2[0]+audio_close_tag, "")
+                    src = part2[0]
+                }
+                else 
+                    src = ""
+                
+            }
+
+            function InitializePlayer() {
+                if (src != "") {
+                    player.src = src
+                    let title = document.getElementById("player-track-name")
+                    if (src.includes("/")) 
+                        title.innerText = src.split("/")[1].replace(".mp3", "")
+                }
+                else {
+                    let playerDiv = document.getElementById("niheria-player-div")
+                    playerDiv.style.display = "none"
+                }
+            }
+
+            function Play() {
+                let playBtn = document.getElementById("player-play-button-icon")
+                let playerDiv = document.getElementById("niheria-player-div")
+
+                isPlaying = !isPlaying
+
+                if (isPlaying) {
+                    playBtn.classList.add("fa-pause")
+                    playBtn.classList.remove("fa-play")
+                    playerDiv.classList.remove("paused")
+                    playerDiv.classList.add("playing")
+                    player.play()
+                }
+                else {
+                    playBtn.classList.remove("fa-pause")
+                    playBtn.classList.add("fa-play")
+                    playerDiv.classList.add("paused")
+                    playerDiv.classList.remove("playing")                            
+                    player.pause()
+                }
+            }
+
+            let embeddedAudioTagStart = '[[_EmbeddedAudio('
+            let embeddedAudioTagEnd = ')_]]'
+
+            FormatPlayers()
+            function FormatPlayers() {
+                let i = 0
+                while (isThereOldPlayer() && i < 10) {
+                    let content = document.getElementById("content").innerHTML
+                    let part1 = content.split(embeddedAudioTagStart)
+                    let part2 = part1[1].split(embeddedAudioTagEnd)                   
+                    let oldSrc = part2[0]
+                    let track_title
+                    if (oldSrc.includes("/"))
+                        track_title = oldSrc.split("/")[1].replace(".mp3", "")
+                    else {
+                        track_title = oldSrc.replace(".mp3", "")
+                    }
+                    let tag = embeddedAudioTagStart + oldSrc + embeddedAudioTagEnd
+
+                    let newPlayer = "<div>"
+                    newPlayer += `<div niheria-player-embedded id="niheria-player-${i}" onclick=Player(${i})>`   
+                        newPlayer += `<button class="player-play-button" id="player-${i}-play-button">`
+                        newPlayer += `<i id="player-${i}-play-button-icon" class="fa fa-play"></i>`   
+                        newPlayer += '</button>'    
+                        newPlayer += `<span class="player-track-name" id="player-${i}-track-name">${track_title}</span>`                 
+                    newPlayer += '</div>'
+                    newPlayer += `<audio niheria-player id="player-${i}" src="${oldSrc}"></audio></div>`
+                        
+                    document.getElementById("content").innerHTML = content.replace(tag, newPlayer)
+                    i++
+                }
+            }
+            function isThereOldPlayer() {
+                let content = document.getElementById("content").innerHTML
+                if (content.includes(embeddedAudioTagStart) && content.includes(embeddedAudioTagEnd)) return true
+                else return false
+                
+            }
+
+            function Player(playerID) {
+                let playBtn = document.getElementById('player-' + playerID + '-play-button-icon')
+                let playerDiv = document.getElementById('niheria-player-' + playerID)
+                let player = document.getElementById('player-' + playerID)
+
+                if (player.paused) {
+                    playBtn.classList.add("fa-pause")
+                    playBtn.classList.remove("fa-play")
+                    playerDiv.classList.remove("playing")
+                    playerDiv.classList.add("paused")
+                    player.play()
+                }
+                else {
+                    playBtn.classList.remove("fa-pause")
+                    playBtn.classList.add("fa-play")
+                    playerDiv.classList.add("playing")
+                    playerDiv.classList.remove("paused")                            
+                    player.pause()
+                }
+            }
+        </script>
+
+        <script>
+            UpdateDisclaimer()
+            function UpdateDisclaimer() {
+                if (window.localStorage.getItem("drugs-disclaimer") === "true" &&
+                    window.localStorage.getItem("admin") === "false") {
+                    let elements = document.getElementsByClassName("drugs-disclaimer")
+                    for (let el of elements) {
+                        el.classList.add("hidden")
+                    }
+                }
+            }
+            document.onkeydown = function (e) {
+                if ( e.ctrlKey && e.shiftKey && e.altKey && e.keyCode == 65)
+                {
+                    if (window.localStorage.getItem("admin") === "false")
+                        window.localStorage.setItem("admin", true)
+                    else 
+                        window.localStorage.setItem("admin", false);
+                }
+            };
+            function HideDrugsDisclaimer() {
+                window.localStorage.setItem("drugs-disclaimer", true)
+                UpdateDisclaimer()
+            }
+        </script>
+
+        <script>
+            HideDebugInfo()
+            function HideDebugInfo() {
+                if (window.localStorage.getItem("admin") === "true") {
+                    let d = document.getElementsByClassName("debug")
+                    for (let i = 0; i < d.length; i++) {
+                        d[i].classList.add("hidden");
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

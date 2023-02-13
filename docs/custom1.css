@@ -37,6 +37,10 @@
     border-bottom: 1px solid var(--fg-a);
 }
 
+.hljs {
+    white-space: pre-line;
+}
+
 @media print {
     .remark-slide-scaler {
         width: 100% !important;
@@ -562,6 +566,7 @@ li, ul {
     -webkit-text-fill-color: transparent;
     text-shadow: var(--fg) 1px;
 }
+
 [main-text][onclick]:hover {
     cursor: pointer;
 }
@@ -606,6 +611,22 @@ li, ul {
 }
 video {
     width: 100%;
+}
+
+[title-text] {
+    font-family: bookAntiqua;
+    font-size: 10vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(212, 142, 84);
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: var(--fg) 1px;
+}
+[title-text][sub] {
+    font-size: 6vw;
+    margin-bottom: -15px;
 }
 
 /*....CCCCCCC...........................ttt............iiii........................................
@@ -679,6 +700,13 @@ video {
     margin: 0 0 0 0 !important;
     width: 100% !important;
 }
+.expanded [three-board][or-four] {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto auto -5px auto;
+}
+
 
 
 .two-board {
@@ -1981,6 +2009,9 @@ blockquote[god] > div[justify] {
 [right] {
     text-align: right;
 }
+[hidden] {
+    display: none;
+}
 
 /*....OOOOOOO....................................llll..ttt..iiii............................
 //...OOOOOOOOOO..................................llll.tttt..iiii............................
@@ -2330,7 +2361,7 @@ a[path]:active {
     font-family: 'bookAntiqua';
 
     color: rgb(199, 148, 107);
-    background: var(--gold-gradient-desc);
+    background: var(--gold-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -2341,6 +2372,23 @@ a[path]:active {
 @media only screen and (max-width: 600px) {
     [button-third] > [title-div] > [title] {
         font-size: 100%;
+    }
+}
+
+[button-third] > [title-div] > [desc] {
+    pointer-events: none;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'bookAntiqua';
+    color: rgb(199, 148, 107);
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media only screen and (max-width: 600px) {
+    [button-third] > [title-div] > [desc] {
+        font-size: small;
     }
 }
 
@@ -2483,6 +2531,7 @@ i[lvl3] {
     background: var(--gold-gradient-desc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    filter: drop-shadow(-1px 2px 0px #000);
 
     padding-bottom: 10px;
     margin-bottom: 2px;
@@ -2528,4 +2577,240 @@ i[lvl3] {
 }
 [cosmology] > [four-board] > div:not(:last-child) {
     border-right: 1px solid var(--niheria-gold);
+}
+
+
+/*.........................................
+//....CCCCCCC..............llll............
+//...CCCCCCCCC.............llll............
+//..CCCCCCCCCCC............llll............
+//..CCCC...CCCCC..aaaaaa...llll..cccccc....
+//.CCCC.....CCC..aaaaaaaa..llll.cccccccc...
+//.CCCC.........aaaa.aaaaa.lllllcccc.cccc..
+//.CCCC.............aaaaaa.lllllccc..ccc...
+//.CCCC..........aaaaaaaaa.lllllccc........
+//.CCCC.....CCC.aaaaaaaaaa.lllllccc........
+//..CCCC...CCCCCaaaa.aaaaa.lllllccc..ccc...
+//..CCCCCCCCCCC.aaaa.aaaaa.lllllcccc.cccc..
+//...CCCCCCCCCC.aaaaaaaaaa.llll.ccccccccc..
+//....CCCCCCC....aaaaaaaaa.llll..cccccc..*/
+[calculator] {
+    font-family: 'bookAntiqua';
+
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--niheria-fg);
+    background-color: var(--sidebar-bg);
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+@media only screen and (max-width: 500px) {
+    [calculator] {
+        display: block;
+    }
+}
+[bank-modes], [bank-controls] {
+    padding: 10px;
+}
+[bank-controls] {
+    padding: 20px;
+}
+[bank-modes] {
+    display: flex;
+    flex-direction: column;
+}
+[bank-mode-title] {
+    color: var(--sidebar-active);
+    font-size: 24px;
+    font-family: bookAntiquaBlack;
+}
+[bank-mode] {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 0 5px 5px;
+    
+    border-bottom: 1px dashed var(--niheria-fg);
+}
+[bank-mode]:hover {
+    transition: 0.1s;
+    background-color: var(--fg-a);
+    border-bottom: 1px solid var(--niheria-fg);
+    border-left: 2px solid var(--niheria-fg);
+}
+
+[barter-icon] {
+    margin: 10px;
+}
+
+[pane] > [sub-pane] {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+@media only screen and (max-width: 500px) {
+    [pane] > [sub-pane] {
+        flex-direction: column;
+    }
+}
+[coin-table] {
+    margin: auto;
+}
+[coin-table] input {
+    max-width: 90px;
+    padding: 10px;
+    text-align: center;
+    height: 100%;
+}
+[coin-table] input:active, :focus-visible {
+    outline: none;
+}
+@media only screen and (max-width: 500px) {
+    [coin-table] input {
+        width: 100px;
+    }
+}
+[coin-table], [coin-table] td {
+    padding: 0;
+    border: none;
+}
+[coin-icon] {
+    user-select: none;
+    cursor: default;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--niheria-fg-a);
+    padding: 3px 5px 5px 5px;
+    font-size: 24px;
+    text-align: center;
+}
+
+[coin-table] td {
+    position: relative;
+}
+[coin-desc] {
+    position: absolute;
+    right: 35px;
+    font-size: 16px;
+}
+
+.gold {
+    color: #f5e02a;
+}
+.silver {
+    color: #bdbdbd;
+}
+.copper {
+    color: #b87f42;
+}
+
+.platinum {
+    color: #805463;
+}
+.palladium {
+    color: #80724b;
+}
+.iridium {
+    color: #6e548f;
+}
+
+/*.PPPPPPPPP...Plll.................................................
+//.PPPPPPPPPP..Plll.................................................
+//.PPPPPPPPPPP.Plll.................................................
+//.PPPP...PPPP.Plll..aaaaaa.aaay...yyyy..eeeeee..eerrrrrrrssssss....
+//.PPPP...PPPP.Plll.laaaaaaa.aayy..yyyy.yeeeeeee.eerrrrrrrsssssss...
+//.PPPPPPPPPPP.Plllllaa.aaaaaaayy..yyyyyyee.eeee.eerrr..rrss.ssss...
+//.PPPPPPPPPP..Plll....aaaaaaaayy.yyyy.yyee..eeeeeerr...rrsss.......
+//.PPPPPPPPP...Plll.laaaaaaaa.ayyyyyyy.yyeeeeeeeeeerr....rsssss.....
+//.PPPP........Plllllaaaaaaaa.ayyyyyy..yyeeeeeeeeeerr.....sssssss...
+//.PPPP........Plllllaa.aaaaa..yyyyyy..yyee......eerr.........ssss..
+//.PPPP........Plllllaa.aaaaa..yyyyyy..yyee..eeeeeerr...rrss..ssss..
+//.PPPP........Plllllaaaaaaaa..yyyyy....yeeeeeee.eerr...rrsssssss...
+//.PPPP........Plll.laaaaaaaa...yyyy.....eeeeee..eerr.....ssssss....
+//..............................yyyy................................
+//.............................yyyy.................................
+//...........................aayyyy...............................*/
+
+[filter] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 50px 0 50px;
+}
+[filter] span {
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: bookAntiquaBlack;
+    position: relative;
+}
+@media only screen and (max-width: 500px) {
+    [filter] {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 5px 5px 0 5px;
+    }
+    [filter] span {
+        padding: 5px 5px 5px 10px;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: bookAntiquaBlack;
+        position: relative;
+    }
+}
+[filter] span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--sidebar-active);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+[filter] span:hover::after {    
+    transition: transform 0.25s ease-out;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+[filter] span.selected {
+    color: var(--sidebar-active);
+}
+[list] a[line] {
+    font-family: bookAntiquaBlack;
+    font-size: 24px;
+    margin: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px dashed var(--sidebar-active);
+    display: block;
+    text-align: center;
+}
+[list] a[line]:hover {
+    text-decoration: none;
+}
+[list] a[line]::before {
+    content: "•";
+    margin-right: 10px;
+}
+[list] a[line]::after {
+    content: "•";
+    margin-left: 10px;
+}
+
+#filter-columns {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+@media only screen and (max-width: 500px) { 
+    #filter-columns {
+        display: block;
+        grid-template-columns: none;
+    }
 }
