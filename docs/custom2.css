@@ -295,6 +295,28 @@ li, ul {
 //....CCCCCCCCCCCCC...uuuuuuuuuuuu..sssssssssss...ttttttt.ooooooooooo...mmmm...mmmmm..mmmmm..sssssssssss...
 //.....CCCCCCCCCC......uuuuuuuuuuu...sssssssss....ttttttt..ooooooooo....mmmm...mmmmm..mmmmm...sssssssss..*/
 
+[license] {
+    font-family: 'bookAntiqua';
+    border: none;
+    margin-top: 50px;
+}
+[license] summary {
+    font-size: 20px;
+    list-style: none;
+    color: var(--niheria-gold);
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(1px 0px 0px var(--niheria-gold)) drop-shadow(-1px 1px 0px var(--niheria-black));
+}
+[license] summary:hover {
+    color: var(--niheria-gold);
+    background: var(--light-gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(1px 0px 0px var(--niheria-gold)) drop-shadow(-1px 1px 0px var(--niheria-black));
+}
+
 [wiggly-text] {
     animation: .8s shake infinite alternate;
     display: inline-block;
@@ -2800,7 +2822,8 @@ i[lvl3] {
     margin: 20px 0 20px 20px;
     border: 1px solid var(--niheria-gold);
     max-width: 300px;
-    height: 600px;
+    height: 400px;
+    object-fit: cover;
 }
 [player-page] [title] {
     font-family: robotoSlab;
@@ -2823,6 +2846,7 @@ i[lvl3] {
     font-size: 16px;
     width: 100%;
     text-align: left;
+    padding-bottom: 5px;
 }
 @media only screen and (max-width: 600px) { 
     [player-page] [columns] {
