@@ -98,6 +98,8 @@ Variables */
   --gradient-gold90-a2: linear-gradient(90deg, rgba(231, 158, 99, 0.264) 50%, rgba(0, 0, 0, 0));
   --gradient-fading: -webkit-linear-gradient(0deg, rgba(2, 0, 36, 0.5) 50%, rgba(0, 0, 0, 0));
   --gradient-fading180: -webkit-linear-gradient(180deg, rgba(2, 0, 36, 0.5) 50%, rgba(0, 0, 0, 0));
+  --gradient-fading-ns: -webkit-linear-gradient(-90deg, rgba(2, 0, 36, 0.5) 50%, rgba(0, 0, 0, 0));
+  --gradient-fading-sn: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 0.5) 50%, rgba(0, 0, 0, 0));
 }
 /* 
 //.BBBBBBBBBB.......................siii............
@@ -681,19 +683,19 @@ Buttons */
   background: var(--niheria-gold-bg);
 }
 [square-button] > [title-container] > [title] {
+  font-family: bookAntiqua;
+  color: var(--niheria-gold);
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(1px 0px 0px var(--niheria-gold)) drop-shadow(-1px 1px 0px var(--niheria-black));
   display: block;
   width: 100%;
   height: 100%;
-  text-align: center;
-  font-size: 150%;
-  font-family: 'bookAntiquaBlack';
-  color: #c7946b;
-  background: var(--gradient-gold-light);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(-1px 2px 0px #000);
   padding-bottom: 5px;
   margin-bottom: 2px;
+  text-align: center;
+  font-size: 150%;
 }
 [square-button] > [tag] {
   position: absolute;
@@ -756,11 +758,15 @@ i[lvl3] {
   left: 0;
   bottom: 0;
   margin: 25px auto 25px auto;
-  padding: 5px 0 5px 0;
-  /* height: 60px; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: clip;
   border-top: 1px solid var(--niheria-gold);
   border-bottom: 1px solid var(--niheria-gold);
+  transition: 0.1s;
   background: var(--niheria-gold-bg);
+  backdrop-filter: blur(1px);
 }
 [long-button] > [title-container] > [title] {
   font-family: bookAntiqua;
@@ -771,40 +777,59 @@ i[lvl3] {
   filter: drop-shadow(1px 0px 0px var(--niheria-gold)) drop-shadow(-1px 1px 0px var(--niheria-black));
   pointer-events: none;
   box-sizing: border-box;
-  display: block;
   width: 100%;
-  height: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-size: clamp(0.5rem, 4vw, 3rem);
-  padding: 5px;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--niheria-gold);
+}
+[long-button] > [title-container] > [title]:only-child {
+  margin-bottom: calc(25px/2);
 }
 [long-button] > [title-container] > [desc] {
   font-family: bookAntiqua;
   color: var(--niheria-gold);
-  background: var(--gradient-gold);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(1px 0px 0px var(--niheria-gold)) drop-shadow(-1px 1px 0px var(--niheria-black));
-  pointer-events: none;
-  display: block;
-  font-size: clamp(0.5rem, 3vw, 3rem);
+  background: var(--gradient-fading-ns);
+  background-position-y: 60px;
+  background-size: auto 200px;
+  padding: 5px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  font-size: clamp(0.5rem, 2vw, 1.5rem);
 }
 [long-button]:hover > img {
   transition: 0.1s;
   scale: 1.01;
 }
 [long-button]:hover > [title-container] {
-  transition: 0.05s;
-  margin-bottom: 27px;
   border-color: var(--niheria-gold-light);
+  transition: 0.1s;
+  margin-bottom: 27px;
+  border-width: 1.5px;
   word-wrap: break-word;
 }
 [long-button]:hover > [title-container] > [title] {
-  transition: 0.1s;
+  font-family: bookAntiqua;
+  color: var(--niheria-gold);
+  background: var(--gradient-gold-light);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(1px 0px 0px var(--niheria-gold)) drop-shadow(-1px 1px 0px var(--niheria-black));
   border-color: var(--niheria-gold-light);
+  transition: 0.1s;
+}
+[long-button]:hover > [title-container] > [desc] {
+  font-family: bookAntiqua;
+  color: var(--niheria-gold-light);
+  transition: 0.1s;
+  background-position-y: 100px;
 }
 /* 
 //.BBBBBBBBBB........................okkk..................
@@ -1190,25 +1215,28 @@ Books */
     position: relative;
   }
 }
-[list] a[line] {
+[list] [line] {
   font-family: bookAntiquaBlack;
-  font-size: 24px;
-  margin: 5px;
+  margin: 15px;
   padding-bottom: 5px;
+}
+[list] [line] [name] {
+  font-size: 24px;
   border-bottom: 2px dashed var(--sidebar-active);
-  display: block;
   text-align: center;
+  padding-bottom: 5px;
 }
-[list] a[line]:hover {
-  text-decoration: none;
-}
-[list] a[line]::before {
+[list] [line] [name]::before {
   content: "•";
   margin-right: 10px;
 }
-[list] a[line]::after {
+[list] [line] [name]::after {
   content: "•";
   margin-left: 10px;
+}
+[list] [line] [desc] {
+  padding: 10px;
+  font-size: 2rem;
 }
 #filter-columns {
   display: grid;
@@ -1561,6 +1589,9 @@ blockquote > p {
   font-style: oblique;
   margin-top: -25px;
   margin-bottom: 10px;
+}
+[years-span][left] {
+  margin-top: -10px;
 }
 /* Custom HR */
 hr[short] {
