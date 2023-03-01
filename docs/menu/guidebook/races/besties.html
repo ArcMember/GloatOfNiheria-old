@@ -427,13 +427,16 @@
             function FormatPlayers() {
                 let i = 0
                 while (isThereOldPlayer() && i < 10) {
+                    console.log(i)
                     let content = document.getElementById("content").innerHTML
                     let part1 = content.split(embeddedAudioTagStart)
-                    let part2 = part1[1].split(embeddedAudioTagEnd)                   
+                    let part2 = part1[1].split(embeddedAudioTagEnd)
                     let oldSrc = part2[0]
                     let track_title
-                    if (oldSrc.includes("/"))
-                        track_title = oldSrc.split("/")[1].replace(".mp3", "")
+                    if (oldSrc.includes("/")) {
+                        arr = oldSrc.split("/")
+                        track_title = arr[arr.length-1].replace(".mp3", "")
+                    }
                     else {
                         track_title = oldSrc.replace(".mp3", "")
                     }
@@ -454,7 +457,7 @@
             }
             function isThereOldPlayer() {
                 let content = document.getElementById("content").innerHTML
-                if (content.includes(embeddedAudioTagStart) && content.includes(embeddedAudioTagEnd)) return true
+                if (content.includes(embeddedAudioTagStart) || content.includes(embeddedAudioTagEnd)) return true
                 else return false
                 
             }

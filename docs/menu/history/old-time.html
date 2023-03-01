@@ -134,7 +134,7 @@
                             <a nav-button href="javascript:history.back()">Назад</a>  
                             <a nav-button href="../../index.html">Меню</a>  
                         </div>
-                        <div warning-box style="margin: 0 auto 0 auto;">~200 лет до Уходящей Эпохи</div>
+                        <blockquote warning-box style="margin: 0 auto 0 auto;">~200 лет до Уходящей Эпохи</blockquote>
 <img cover src="old-time/red-dawn/cover.png"></img>
 [[_EmbeddedAudio(old-time/red-dawn/Mars Red Sky - Strong Reflection.mp3)_]]
 <div attention-box>
@@ -144,13 +144,14 @@
 &quot;<em>Рушились города, сменялись русла рек, смещалась земная твердь.</em>&quot; На протяжении еще долгого месяца местные катаклизмы бередили и без того кровоточащие раны на теле Нихерии в форме землетрясений и наводнений, ледяных ураганов и огненных дождей.
 <br></p>
 <hr />
-<p><em>Затем нагрянули...</em>
-<img cover src="old-time/new-ages/cover.png"></img>
-[[<em>EmbeddedAudio(old-time/new-ages/Psychedelic Porn Crumpets - Gallop to Southport.mp3)</em>]]</p>
+<p><em>Затем нагрянули...</em></p>
+<img cover src="old-time/new-ages/cover.png">
+[[_EmbeddedAudio(old-time/new-ages/Psychedelic Porn Crumpets - Gallop to Southport.mp3)_]]
 <div attention-box>
 <p>«Риаф был уничтожен. Северные, восточные и западные земли разделены, а сердце мира поразил <strong>Кратер</strong>. Земли редрехан расколоты, а империя дворфов и вовсе уничтожена. Лишь в возникшей тогда магии последние нашли спасение.
 Близнецы минимизировали разрушения с помощью своих божественных помощников, и в ходе этих работ <strong>Чертог</strong> был восстановлен. Покинув Нихерию, гости Близнецов оставили множество скрежалей с разнообразной информацией. <strong>Западная Империя</strong> успешно применила эти знания, вызвав на своих землях <em>индустриальную революцию</em>, пока <strong>Восточная Империя</strong> изучала <em>божественное проклятие</em> магии.»</p>
 </div>
+[[_EmbeddedAudio(old-time/new-ages/Psychedelic Porn Crumpets - Gallop to Southport.mp3)_]]
 <p>Через почти полвека искусственно форсированного прогресса могучие империи Нихерии схлестнулись в битве, пока за их спинами произрастало бесчисленное множество интриг. <strong>Запад</strong> всецело полагается на технологии, во главе которых <em>механика</em>, <strong>Восток</strong> — положился на силу под названием <em>магия</em>. <strong>Арвия</strong> обеспечивала своим подопечным «долго и счастливо» — <em>продавала вооружение и суда</em> обеим враждующим сторонам. Государство <strong>редрехан</strong> на севере не справляется с попытками <em>сгладить конфликт</em>. В это время <strong>Архипелаг</strong> находился непосредственно между молотом и наковальней, и, будучи государством с наибольшими рисками в ходе военных действий, они не предприняли попыток уладить конфликт, но <em>извлекли из него наибольшую выгоду</em>.</p>
 <p>Обе фракции изрядно пострадали, удар по самолюбию получили обе империи. В этом время в тайне от всего мира группа авантюристов совершила страшнейший обряд еретизма, какого не было видано до сей поры. На сей раз, вместо бессмысленной хаотичной резни, всему миру пришлось объединиться, чтобы предстать перед общим врагом. Неизвестное доселе <em>тёмное божество</em>, покровитель жестокости, тайных знаний и непостижимого кошмара — <strong>Абхот</strong>.</p>
 <p>Внезапно из-под водного покрова возникла новая политическая сила — небольшой городок <strong>Агонтар</strong>, расположившийся на спине исполинской черепахи, населенный мериями. Никогда раньше этот народ не объединялся и потому не представлял опасности, но в единстве они представляют великую силу. Впрочем, первая же попытка в государственность обернулась против них. Не исключено, что это произошло не само собой. <em>Приятнее придумать конспирологическую теорию, чем признать простую глупость, погубившую многих.</em></p>
@@ -340,13 +341,16 @@
             function FormatPlayers() {
                 let i = 0
                 while (isThereOldPlayer() && i < 10) {
+                    console.log(i)
                     let content = document.getElementById("content").innerHTML
                     let part1 = content.split(embeddedAudioTagStart)
-                    let part2 = part1[1].split(embeddedAudioTagEnd)                   
+                    let part2 = part1[1].split(embeddedAudioTagEnd)
                     let oldSrc = part2[0]
                     let track_title
-                    if (oldSrc.includes("/"))
-                        track_title = oldSrc.split("/")[1].replace(".mp3", "")
+                    if (oldSrc.includes("/")) {
+                        arr = oldSrc.split("/")
+                        track_title = arr[arr.length-1].replace(".mp3", "")
+                    }
                     else {
                         track_title = oldSrc.replace(".mp3", "")
                     }
@@ -367,7 +371,7 @@
             }
             function isThereOldPlayer() {
                 let content = document.getElementById("content").innerHTML
-                if (content.includes(embeddedAudioTagStart) && content.includes(embeddedAudioTagEnd)) return true
+                if (content.includes(embeddedAudioTagStart) || content.includes(embeddedAudioTagEnd)) return true
                 else return false
                 
             }
