@@ -70,7 +70,7 @@ function makeMap(type, showLocations=false) {
                     fillOpacity: 0.2,
                     opacity: 0.7,
                 }).addTo(map);
-                /* polygon.bindPopup(`<div map-popup><b>${loc['name']}</b><br><i><a target=”_blank” href="${loc['url']}">Нажмите сюда, чтобы перейти.</a></i></div>`); */
+                polygon.bindPopup(`<div map-popup><b>${loc['name']}</b><br><i><a target=”_blank” href="${loc['url']}">Нажмите сюда, чтобы перейти.</a></i></div>`);
                 regions.addLayer(polygon)
             }
         }
@@ -82,7 +82,7 @@ function makeMap(type, showLocations=false) {
                     fillOpacity: 0.5,
                     radius: 3
                 }).addTo(map);
-                /* circle.bindPopup(`<div map-popup><b>${loc['name']}</b><br><i><a target=”_blank” href="${loc['url']}">Нажмите сюда, чтобы перейти.</a></i></div>`); */
+                circle.bindPopup(`<div map-popup><b>${loc['name']}</b><br><i><a target=”_blank” href="${loc['url']}">Нажмите сюда, чтобы перейти.</a></i></div>`);
                 marks.addLayer(circle)
             }
         }
@@ -94,40 +94,9 @@ function makeMap(type, showLocations=false) {
                     fillOpacity: 0.5,
                     radius: 1
                 }).addTo(map);
-                /* circle.bindPopup(`<div map-popup><b>${loc['name']}</b><br><i><a target=”_blank” href="${loc['url']}">Нажмите сюда, чтобы перейти.</a></i></div`); */
+                circle.bindPopup(`<div map-popup><b>${loc['name']}</b><br><i><a target=”_blank” href="${loc['url']}">Нажмите сюда, чтобы перейти.</a></i></div`);
                 marks.addLayer(circle)
             }
         }
     }
-}
-
-class Vector {
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
-    }
-    plus(number) {
-        var x = this.x + number;
-        var y = this.y + number;
-        return new Vector(x, y);
-    }
-    minus(number) {
-        var x = this.x - number;
-        var y = this.y - number;
-        return new Vector(x, y);
-    }
-    multiply(number) {
-        var x = this.x * number;
-        var y = this.y * number;
-        return new Vector(x, y);
-    }
-    divide(number) {
-        var x = this.x / number;
-        var y = this.y / number;
-        return new Vector(x, y);
-    }
-    toString() {
-        return 'Vector { x: ' + this.x + ', y: ' + this.y + ' }';
-    }
-    
 }
