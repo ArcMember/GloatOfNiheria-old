@@ -738,6 +738,10 @@ i[lvl3] {
 [tag] > i {
   -webkit-text-stroke: 0.5px white;
 }
+a[disabled] {
+  cursor: default !important;
+  pointer-events: none;
+}
 /* Long Buttons */
 [long-button] {
   position: relative;
@@ -780,6 +784,7 @@ i[lvl3] {
   width: 100%;
   height: 90px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -1720,6 +1725,9 @@ Mods */
 }
 [big] {
   font-size: 1.5rem;
+}
+[default] {
+  font-size: 1.2rem;
 }
 [small] {
   font-size: 1rem;
