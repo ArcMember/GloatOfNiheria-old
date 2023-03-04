@@ -575,8 +575,8 @@ audio[niheria-player] {
 /* Quest */
 [quest-tags] {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
   margin: auto;
 }
 [quest-tag] {
@@ -773,7 +773,7 @@ a[disabled] {
   overflow: clip;
   border-top: 1px solid var(--niheria-gold);
   border-bottom: 1px solid var(--niheria-gold);
-  transition: 0.1s;
+  transition: 0.2s;
   background: var(--niheria-gold-bg);
   backdrop-filter: blur(1px);
 }
@@ -815,15 +815,15 @@ a[disabled] {
   font-size: clamp(0.5rem, 2vw, 1.5rem);
 }
 [long-button]:hover > img {
-  transition: 0.1s;
+  transition: 0.2s;
   scale: 1.01;
 }
 [long-button]:hover > [title-container] {
   border-color: var(--niheria-gold-light);
-  transition: 0.1s;
-  margin-bottom: 27px;
+  transition: 0.2s;
   border-width: 1.5px;
   word-wrap: break-word;
+  backdrop-filter: blur(3px) brightness(1.2);
 }
 [long-button]:hover > [title-container] > [title] {
   font-family: bookAntiqua;
@@ -833,12 +833,12 @@ a[disabled] {
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(1px 0px 0px var(--niheria-gold)) drop-shadow(-1px 1px 0px var(--niheria-black));
   border-color: var(--niheria-gold-light);
-  transition: 0.1s;
+  transition: 0.2s;
 }
 [long-button]:hover > [title-container] > [desc] {
   font-family: bookAntiqua;
   color: var(--niheria-gold-light);
-  transition: 0.1s;
+  transition: 0.2s;
   background-position-y: 100px;
 }
 /* 
@@ -1440,6 +1440,9 @@ Containers */
 }
 [two-board][columns] > * {
   margin: 5px;
+}
+[two-board] > * {
+  margin-bottom: -5px;
 }
 [two-flex] {
   width: 100%;
