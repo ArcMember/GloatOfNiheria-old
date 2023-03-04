@@ -91,6 +91,7 @@ Variables */
   --red: #ce3a3a;
   --green: #3ace66;
   --blue: #3696eb;
+  --purple: #eb3fe2;
   --gradient-gold: -webkit-linear-gradient(var(--niheria-gold) 50%, var(--niheria-black));
   --gradient-gold-desc: -webkit-linear-gradient(var(--niheria-gold) 40%, var(--niheria-black));
   --gradient-gold-light: -webkit-linear-gradient(var(--niheria-gold-light) 50%, var(--niheria-black));
@@ -187,6 +188,10 @@ details {
   border: 1px solid var(--niheria-fg);
   border-radius: 4px;
   padding: 10px;
+}
+details[text] {
+  border: none;
+  text-indent: 1.2rem;
 }
 summary {
   cursor: pointer;
@@ -1516,6 +1521,27 @@ blockquote[warning] {
   width: 100%;
   border-top: 2px solid var(--red);
   border-left: 20px solid var(--red);
+  border-bottom: 1px solid var(--red);
+}
+blockquote[mystery] {
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 10px 5px 10px 5px;
+  margin: 20px 0 10px 0;
+  width: 100%;
+  border-top: 2px solid var(--purple);
+  border-bottom: 2px solid var(--purple);
+}
+blockquote[mystery] > p {
+  margin: 15px 0 5px 0;
+}
+blockquote[mystery][text] {
+  padding: 10px 30px 10px 30px;
+  margin: 20px auto 20px auto;
+  border-bottom-left-radius: 50px;
+}
+blockquote[mystery] * {
+  border-color: var(--purple) !important;
 }
 blockquote {
   font-style: normal;
@@ -1835,6 +1861,9 @@ Mods+ */
   vertical-align: middle;
   text-align: left;
   min-width: max-content;
+}
+u[mystery] {
+  text-decoration-color: var(--purple);
 }
 /* 
 //.MMMMMM...MMMMMM.iiii......................
