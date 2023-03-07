@@ -184,7 +184,7 @@ let bankMoney = [
     [0, 0, 0],
     [0, 0, 0]
 ]
-const PERCENT = 1.15
+const PERCENT = 1.015
 let years = 0
 let months = 0
 
@@ -218,8 +218,10 @@ function calculateBank() {
     bankMoney[1][0] = bankMoney[0][2]*(100**2)+bankMoney[0][1]*(100)+bankMoney[0][0]
 
     let time = years*12 + months
-    for (let i = 0; i < time; i++) 
+    for (let i = 0; i < time; i++) {
+        console.log(bankMoney[1][0])
         bankMoney[1][0] *= PERCENT;
+    }
 
     bankMoney[1][0] = Math.floor(bankMoney[1][0])
 
