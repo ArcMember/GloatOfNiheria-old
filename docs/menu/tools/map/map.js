@@ -39,10 +39,10 @@ function makeMap(type, showLocations=false) {
 
     if (showLocations) {
         var overlayMaps = {
-            "Регионы": regions,
+            "Регионы": regions,            
         };
         var layerControl = L.control.layers(null, overlayMaps).addTo(map);
-        layerControl.addOverlay(marks, "Локации")
+        layerControl.addOverlay(marks, "Локации");
         
         makeLocations(map)
     }
@@ -71,9 +71,9 @@ function makeMap(type, showLocations=false) {
                     opacity: 0.7,
                 }).addTo(map);
                 polygon.bindPopup(`<div map-popup><b>${loc['name']}</b><br><i><a target=”_blank” href="${loc['url']}">Нажмите сюда, чтобы перейти.</a></i></div>`);
-                regions.addLayer(polygon)
+                regions.addLayer(polygon)                
             }
-        }
+        }   
         for (const loc of locations) {
             if ('blob' in loc) {
                 let circle = L.circle(loc['blob'], {
@@ -97,6 +97,8 @@ function makeMap(type, showLocations=false) {
                 circle.bindPopup(`<div map-popup><b>${loc['name']}</b><br><i><a target=”_blank” href="${loc['url']}">Нажмите сюда, чтобы перейти.</a></i></div`);
                 marks.addLayer(circle)
             }
-        }
+        }     
+        regions.setZIndex(-1)
+        marks.setZIndex(1)
     }
 }
