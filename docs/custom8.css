@@ -2784,127 +2784,13 @@ div.drugs-disclaimer {
   font-size: smaller;
   font-style: italic;
 }
-[magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2) {
-  transition: 0.2s;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90px;
-  position: relative;
-}
-[magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2) img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-}
-[magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2) div {
-  text-align: center;
-  hyphens: auto;
-}
-[magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2) img[magnifier] {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  opacity: 0;
-  transition: 0.1s;
-}
-[magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2) img[magnifier="true"] {
-  opacity: 1;
-  transition: 0.1s;
-}
-[magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2) [rune-remove] {
-  position: absolute;
-  right: 0;
-  font-size: 3rem;
-  opacity: 0;
-  transition: 0.1s;
-}
-@media only screen and (max-width: 600px) {
-  [magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2) [rune-remove] {
-    opacity: 1 !important;
-  }
-}
-[magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2):hover [rune-remove] {
-  opacity: 1;
-  transition: 0.1s;
-}
-[magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2) [plus] {
-  position: absolute;
-  font-size: 1.5rem;
-  top: 50%;
-  bottom: 50%;
-  left: -15px;
-  display: none;
-}
-[magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2):not(:first-child) [plus] {
-  display: block;
-}
-@media only screen and (max-width: 600px) {
-  [magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2) {
-    transition: 0.2s;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70px;
-    position: relative;
-  }
-  [magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2) img {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-  }
-  [magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2) div {
-    text-align: center;
-    hyphens: auto;
-  }
-  [magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2) img[magnifier] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    opacity: 0;
-    transition: 0.1s;
-  }
-  [magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2) img[magnifier="true"] {
-    opacity: 1;
-    transition: 0.1s;
-  }
-  [magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2) [rune-remove] {
-    position: absolute;
-    right: 0;
-    font-size: 3rem;
-    opacity: 0;
-    transition: 0.1s;
-  }
-  [magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2):hover [rune-remove] {
-    opacity: 1;
-    transition: 0.1s;
-  }
-  [magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2) [plus] {
-    position: absolute;
-    font-size: 1.5rem;
-    top: 50%;
-    bottom: 50%;
-    left: -15px;
-    display: none;
-  }
-  [magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2):not(:first-child) [plus] {
-    display: block;
-  }
-}
-@media only screen and (max-width: 600px) and only screen and (max-width: 600px) {
-  [magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 2) [rune-remove] {
-    opacity: 1 !important;
-  }
-}
 [magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 5) {
   transition: 0.2s;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50px;
+  width: 70px;
   position: relative;
 }
 [magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 5) img {
@@ -2961,7 +2847,7 @@ div.drugs-disclaimer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40px;
+    width: 60px;
     position: relative;
   }
   [magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 5) img {
