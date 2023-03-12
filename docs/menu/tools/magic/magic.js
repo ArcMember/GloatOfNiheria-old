@@ -301,13 +301,13 @@ function makeFormula() {
         spellFormula.innerHTML += `<br>Коэффициент штрафа из-за количества рун: ${penalty}`
     
     if (runesCount == 1)
-        spellDescription.innerHTML = "Одиночная руна.<br><b>Сила:</b> условные 20%; <b>Дальность:</b> 3-10м;<br><b>Сложность:</b> новичок. <b>Каст:</b> быстро."
+        spellDescription.innerHTML = "Одиночная руна.<br><b>Сила:</b> условные 20%; <b>Дальность:</b> 3-10м;<br><b>Сложность:</b> новичок. <b>Каст:</b> быстрый."
     else if (runesCount <= Math.ceil(maxRunes/2))
-        spellDescription.innerHTML = "Сложное заклинание.<br><b>Сила:</b> условные 30-50%; <b>Дальность:</b> до 50м;<br><b>Сложность:</b> ученик. <b>Каст:</b> терпимо."
+        spellDescription.innerHTML = "Сложное заклинание.<br><b>Сила:</b> условные 30-50%; <b>Дальность:</b> до 50м;<br><b>Сложность:</b> ученик. <b>Каст:</b> недолгий."
     else if (runesCount <= maxRunes)
-        spellDescription.innerHTML = "Сложное заклинание.<br><b>Сила:</b> условные 50-80%; <b>Дальность:</b> до 100м;<br><b>Сложность:</b> умелец. <b>Каст:</b> терпимо."
+        spellDescription.innerHTML = "Сложное заклинание.<br><b>Сила:</b> условные 50-80%; <b>Дальность:</b> до 100м;<br><b>Сложность:</b> умелец. <b>Каст:</b> длительный."
     else if (runesCount > maxRunes )
-        spellDescription.innerHTML = "Расширенное заклятие.<br><b>Сила:</b> условные 100% и больше; <b>Дальность:</b> до 500м;<br><b>Сложность:</b> мастер. <b>Каст:</b> долго."    
+        spellDescription.innerHTML = "Расширенное заклятие.<br><b>Сила:</b> условные 100% и больше; <b>Дальность:</b> до 500м;<br><b>Сложность:</b> мастер. <b>Каст:</b> очень долгий."    
 }
 
 let runesTooltip = "Создайте заклинание из рун в меню слева"
