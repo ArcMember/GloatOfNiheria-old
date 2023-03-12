@@ -2668,7 +2668,7 @@ div.drugs-disclaimer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 150px;
+  width: 120px;
   position: relative;
   margin: 10px;
 }
@@ -2726,7 +2726,7 @@ div.drugs-disclaimer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 120px;
+    width: 90px;
     position: relative;
   }
   [magic] [spell] [spell-runes] [spell-rune] img {
@@ -2949,7 +2949,7 @@ div.drugs-disclaimer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 150px;
+  width: 120px;
   position: relative;
 }
 [magic] [runes] [runes-list] [runes-rune] img {
@@ -3006,7 +3006,7 @@ div.drugs-disclaimer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 150px;
+    width: 90px;
     position: relative;
   }
   [magic] [runes] [runes-list] [runes-rune] img {
