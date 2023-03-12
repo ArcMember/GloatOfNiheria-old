@@ -1,0 +1,46 @@
+<html class="ayu">
+<head>
+    <meta charset="UTF-8">
+    <title>Magic</title>
+
+    <link rel="shortcut icon" href="../../../docs/favicon.png">
+    <link rel="stylesheet" href="../../../docs/css/variables.css">
+    <link rel="stylesheet" href="../../../docs/css/general.css">
+    <link rel="stylesheet" href="../../../docs/css/chrome.css">
+    <link rel="stylesheet" href="../../../docs/css/print.css" media="print">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../../../docs/FontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../../docs/fonts/fonts.css">
+    <link rel="stylesheet" href="../../../custom7.css">
+</head>
+<body>
+    <div style="display: flex; justify-content: center; margin-top: 100px;">
+        <div magic>
+            <div buttons>
+                <button id="buttonRunes"><i class="fa fa-bars" aria-hidden="true"></i> Руны</button>
+                <button id="buttonSpells">Заклинания <i class="fa fa-book" aria-hidden="true"></i></button>
+            </div>
+            <div spell>                
+                <div spell-runes id="spellRunes">
+                </div>
+                <div center><i>Не забудьте расставить акценты.</i></div>
+                <hr short>
+                <div spell-formula id="spellFormula"></div>
+                <hr short>
+                <div spell-description id="spellDescription">
+
+                </div>
+            </div>
+            <div magic-menu runes id="menuRunes"></div>
+            <div magic-menu spells id="menuSpells"></div>
+            <div buttons buttons-bottom>
+                <button id="buttonClear"><i class="fa fa-trash" aria-hidden="true"></i> Очистить</button>            
+                <button id="buttonCopy">Скопировать <i class="fa fa-clipboard" aria-hidden="true"></i></button> 
+            </div>
+        </div>
+    </div>
+
+    <script src="magic/magic.js"></script>
+</body>
+</html>
