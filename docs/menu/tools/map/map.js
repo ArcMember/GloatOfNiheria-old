@@ -31,6 +31,30 @@ function makeMap(type, showLocations=false) {
         noWrap: true,
     }).addTo(map);
 
+    options = {
+        circleMarker: {               // Leaflet circle marker options for points used in this plugin
+            color: 'var(--niheria-fg)',
+            radius: 3
+          },
+        lineStyle: {                  // Leaflet polyline options for lines used in this plugin
+            color: 'var(--niheria-fg)',
+            dashArray: '2.5'
+          },
+        lengthUnit: {                 // You can use custom length units. Default unit is kilometers.
+            display: 'km',              // This is the display value will be shown on the screen. Example: 'meters'
+            decimal: 2,                 // Distance result will be fixed to this value. 
+            factor: 0.016,               // This value will be used to convert from kilometers. Example: 1000 (from kilometers to meters)  
+            label: 'Расстояние:'           
+        },
+        angleUnit: {
+            display: '&deg;',           // This is the display value will be shown on the screen. Example: 'Gradian'
+            decimal: 2,                 // Bearing result will be fixed to this value.
+            factor: 1,                // This option is required to customize angle unit. Specify solid angle value for angle unit. Example: 400 (for gradian).
+            label: 'Угол:'
+          }
+      }
+    L.control.ruler(options).addTo(map);
+
     if (L.Browser.ielt9) {
         alert('Обновите браузер.');
     }

@@ -1398,23 +1398,7 @@ Books */
     width: 100%;
   }
 }
-/* 
-//....CCCCCCC...........................ttt............iiii........................................
-//...CCCCCCCCC.........................tttt............iiii........................................
-//..CCCCCCCCCCC........................tttt........................................................
-//..CCCC...CCCCC...oooooo...nnnnnnnn.ntttttta.aaaaaa...iiii.nnnnnnnn....eeeeee..errrrrrrsssssss....
-//.CCCC.....CCC..ooooooooo..nnnnnnnnnnttttttaaaaaaaaa..iiii.nnnnnnnnn..eeeeeeee.errrrrrrssssssss...
-//.CCCC..........oooo.ooooo.nnnn.nnnnn.tttt.aaaa.aaaaa.iiii.nnnn.nnnnneeee.eeee.errrr..rsss.ssss...
-//.CCCC.........oooo...oooo.nnnn..nnnn.tttt.....aaaaaa.iiii.nnnn..nnnneeee..eeeeerrr...rssss.......
-//.CCCC.........oooo...oooo.nnnn..nnnn.tttt..aaaaaaaaa.iiii.nnnn..nnnneeeeeeeeeeerrr....ssssss.....
-//.CCCC.....CCC.oooo...oooo.nnnn..nnnn.tttt.aaaaaaaaaa.iiii.nnnn..nnnneeeeeeeeeeerrr.....sssssss...
-//..CCCC...CCCCCoooo...oooo.nnnn..nnnn.tttt.aaaa.aaaaa.iiii.nnnn..nnnneeee......errr.........ssss..
-//..CCCCCCCCCCC..oooo.ooooo.nnnn..nnnn.tttt.aaaa.aaaaa.iiii.nnnn..nnnneeee..eeeeerrr...rsss..ssss..
-//...CCCCCCCCCC..ooooooooo..nnnn..nnnn.tttttaaaaaaaaaa.iiii.nnnn..nnnn.eeeeeeee.errr...rssssssss...
-//....CCCCCCC......oooooo...nnnn..nnnn.tttttaaaaaaaaaa.iiii.nnnn..nnnn..eeeeee..errr.....ssssss....
-Containers */
-/* Covers */
-[cover] {
+[fame][good] [fame][neutral] [fame][sus] [fame][aggr] [cover] {
   margin: auto auto -5px auto;
 }
 [cover-w][half] {
@@ -2542,7 +2526,7 @@ div.drugs-disclaimer {
   .sidetoc {
     margin-left: auto;
     margin-right: auto;
-    top: 100px;
+    top: 50px;
     left: calc(0% - (var(--content-max-width))/4 - 100px);
     position: absolute;
   }
@@ -2631,8 +2615,11 @@ div.drugs-disclaimer {
   width: 100%;
   height: 100%;
   border: 1px solid var(--fg);
+  border-radius: 5px;
+  overflow: hidden;
 }
 [magic] [buttons] {
+  border-radius: 5px;
   position: relative;
   background-color: var(--bg);
   display: flex;
@@ -2650,13 +2637,16 @@ div.drugs-disclaimer {
   border: none;
   position: relative;
 }
+[magic] [buttons] button:active {
+  background: var(--niheria-fg-a);
+}
 [magic] [buttons-bottom] {
-  position: absolute;
-  bottom: -36px;
+  z-index: 0;
+  bottom: 0;
   width: 100%;
 }
 [magic] [spell] [spell-runes] {
-  min-height: 8rem;
+  min-height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2675,6 +2665,13 @@ div.drugs-disclaimer {
 [magic] [spell] [spell-runes] [spell-rune] img {
   width: 100%;
   aspect-ratio: 1 / 1;
+  filter: drop-shadow(0px 0px 0px var(--niheria-fg));
+  transition: 0.3s;
+}
+[magic] [spell] [spell-runes] [spell-rune]:active img {
+  transition: 0.01s;
+  scale: 1.05;
+  filter: drop-shadow(0px 0px 5px var(--niheria-fg)) brightness(1.3);
 }
 [magic] [spell] [spell-runes] [spell-rune] div {
   text-align: center;
@@ -2732,6 +2729,13 @@ div.drugs-disclaimer {
   [magic] [spell] [spell-runes] [spell-rune] img {
     width: 100%;
     aspect-ratio: 1 / 1;
+    filter: drop-shadow(0px 0px 0px var(--niheria-fg));
+    transition: 0.3s;
+  }
+  [magic] [spell] [spell-runes] [spell-rune]:active img {
+    transition: 0.01s;
+    scale: 1.05;
+    filter: drop-shadow(0px 0px 5px var(--niheria-fg)) brightness(1.3);
   }
   [magic] [spell] [spell-runes] [spell-rune] div {
     text-align: center;
@@ -2796,6 +2800,13 @@ div.drugs-disclaimer {
 [magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 5) img {
   width: 100%;
   aspect-ratio: 1 / 1;
+  filter: drop-shadow(0px 0px 0px var(--niheria-fg));
+  transition: 0.3s;
+}
+[magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 5):active img {
+  transition: 0.01s;
+  scale: 1.05;
+  filter: drop-shadow(0px 0px 5px var(--niheria-fg)) brightness(1.3);
 }
 [magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 5) div {
   text-align: center;
@@ -2853,6 +2864,13 @@ div.drugs-disclaimer {
   [magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 5) img {
     width: 100%;
     aspect-ratio: 1 / 1;
+    filter: drop-shadow(0px 0px 0px var(--niheria-fg));
+    transition: 0.3s;
+  }
+  [magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 5):active img {
+    transition: 0.01s;
+    scale: 1.05;
+    filter: drop-shadow(0px 0px 5px var(--niheria-fg)) brightness(1.3);
   }
   [magic] [spell] [spell-runes] [spell-rune]:nth-child(n + 5) div {
     text-align: center;
@@ -2917,6 +2935,8 @@ div.drugs-disclaimer {
   min-height: 8rem;
 }
 [magic] [magic-menu] {
+  border-radius: 10px;
+  z-index: 1;
   position: absolute;
   overflow: hidden;
   top: 0;
@@ -2925,23 +2945,23 @@ div.drugs-disclaimer {
   padding: 30px 15px 15px 15px;
   box-sizing: border-box;
   pointer-events: none;
-  width: 0;
+  width: 100%;
+  transform: translateX(-100px);
   opacity: 0;
   filter: blur(5px);
   transition: 0.1s;
 }
 [magic] [magic-menu].open {
   pointer-events: all;
-  width: 100%;
+  transform: translateX(0px);
   opacity: 1;
   filter: blur(0px);
   overflow-y: scroll;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 [magic] [runes] [runes-list] {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 [magic] [runes] [runes-list] [runes-rune] {
   transition: 0.2s;
@@ -2955,6 +2975,13 @@ div.drugs-disclaimer {
 [magic] [runes] [runes-list] [runes-rune] img {
   width: 100%;
   aspect-ratio: 1 / 1;
+  filter: drop-shadow(0px 0px 0px var(--niheria-fg));
+  transition: 0.3s;
+}
+[magic] [runes] [runes-list] [runes-rune]:active img {
+  transition: 0.01s;
+  scale: 1.05;
+  filter: drop-shadow(0px 0px 5px var(--niheria-fg)) brightness(1.3);
 }
 [magic] [runes] [runes-list] [runes-rune] div {
   text-align: center;
@@ -3012,6 +3039,13 @@ div.drugs-disclaimer {
   [magic] [runes] [runes-list] [runes-rune] img {
     width: 100%;
     aspect-ratio: 1 / 1;
+    filter: drop-shadow(0px 0px 0px var(--niheria-fg));
+    transition: 0.3s;
+  }
+  [magic] [runes] [runes-list] [runes-rune]:active img {
+    transition: 0.01s;
+    scale: 1.05;
+    filter: drop-shadow(0px 0px 5px var(--niheria-fg)) brightness(1.3);
   }
   [magic] [runes] [runes-list] [runes-rune] div {
     text-align: center;
@@ -3060,9 +3094,9 @@ div.drugs-disclaimer {
 [magic] [spells] {
   right: 0;
 }
-[magic] [spells] div > h2 {
+[magic] [spells] div > h3 {
   cursor: pointer;
 }
-[magic] [spells] div:hover > h2 {
+[magic] [spells] div:hover > h3 {
   color: white !important;
 }

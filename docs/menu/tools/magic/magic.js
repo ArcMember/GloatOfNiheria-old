@@ -75,7 +75,7 @@ spells = [
         runes: "Б И Белой Магии|Б Р Исцеления+|Б Р Исцеления|Б Р Исцеления|"
     },
     {
-        name: "Заклятие деликатного сокрытия",
+        name: "Заклятие деликатного сокрытия магии",
         runes: "В И Единства|В И Внимания|В Р Притока+|В Р Фокуса|"
     },
     {
@@ -135,7 +135,7 @@ let spellDescription = document.getElementById("spellDescription")
 document.getElementById("buttonClear").onclick = clear
 
 let adminCombination = false
-document.getElementById("buttonCopy").onclick = function () {
+document.getElementById("spellFormula").onclick = function () {
     navigator.clipboard.writeText(spellFormula.innerText)
 
     if (adminCombination) {
@@ -212,7 +212,7 @@ function makeSpellsList() {
         let spell = spells[i]
         let spellNode = document.createElement('div')
         spellNode.id = `${spell.name}-branch`
-        spellNode.innerHTML = `<h2>${spell.name}</h2>`
+        spellNode.innerHTML = `<h3>${spell.name}</h3>`
         spellNode.setAttribute('onclick', `setSpell("${spell.runes}")`)
 
         menuSpells.appendChild(spellNode)
@@ -224,7 +224,6 @@ const lengthDefault = 10
 const lengthIdeo = 20
 
 const maxRunes = 5
-const extendedSpellMult = 4
 
 function makeFormula() {
     spellFormula.innerHTML = ""
@@ -289,9 +288,9 @@ function makeFormula() {
             }            
         }
     }
-    /* if (runesCount > maxRunes) {
+    if (runesCount > maxRunes) {
         penalty = (maxRunes/runesCount).toFixed(2)        
-    } */
+    } 
     if (duration >= 0)
         spellFormula.innerHTML += `${Math.round(duration*penalty)} сек`
     else 
